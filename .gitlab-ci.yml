@@ -1,0 +1,40 @@
+image: node:14-alpine
+
+cache:
+  paths:
+    - node_modules/
+
+test_and_lint:
+  script:
+    - yarn
+    - yarn lint
+
+deploy_preview:
+  before_script:
+    - 'command -v ssh-agent >/dev/null || ( apk add --update --no-cache openssh )'
+    - eval $(ssh-agent -s)
+    - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" >> ~/.ssh/config
+  script:
+    - ssh root@192.168.31.211 "cd /root/workspace/cluster-installer-ui && git reset --hard && git pull && nvm use 14 && yarn && yarn vite build && pm2 restart cluster-installer"
+  only:
+    - master
+
+build:
+  stage: build
+  image:
+    name: gcr.io/kaniko-project/executor:debug
+    entrypoint: ['']
+  script:
+    - mkdir -p /kaniko/.docker
+    - echo "${DOCKER_AUTH_CONFIG}" > /kaniko/.docker/config.json
+    - echo "${HARBOR_CERT}" >> /kaniko/ssl/certs/additional-ca-cert-bundle.crt
+    - >-
+      /kaniko/executor
+      --context .
+      --dockerfile ./Dockerfile
+      --destination "harbor.smartx.com/lcm/cluster-installer-ui:${CI_BUILD_TAG}"
+  only:
+    - tags

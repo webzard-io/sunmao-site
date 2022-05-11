@@ -1,0 +1,25 @@
+{
+  "application": {
+    "version": "sunmao/v1",
+    "kind": "Application",
+    "metadata": {
+      "name": "some App"
+    },
+    "spec": {
+      "components": [
+        {
+          "id": "text0",
+          "type": "core/v1/text",
+          "properties": {
+            "value": {
+              "raw": "hello, site!",
+              "format": "plain"
+            }
+          },
+          "traits": []
+        }
+      ]
+    }
+  },
+  "modules": []
+}
