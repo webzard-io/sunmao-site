@@ -8,13 +8,14 @@
     "spec": {
       "components": [
         {
-          "id": "text0",
-          "type": "core/v1/text",
+          "id": "stack0",
+          "type": "core/v1/stack",
           "properties": {
-            "value": {
-              "raw": "hello, site!",
-              "format": "plain"
-            }
+            "spacing": 12,
+            "direction": "horizontal",
+            "align": "auto",
+            "wrap": "",
+            "justify": ""
           },
           "traits": []
         }

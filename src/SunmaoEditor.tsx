@@ -1,6 +1,6 @@
 import { initSunmaoUIEditor } from '@sunmao-ui/editor';
 import { useState, useEffect, useMemo } from 'react';
-import { SunmaoUIRuntimeProps, UtilMethod } from '@sunmao-ui/runtime';
+import { SunmaoUIRuntimeProps } from '@sunmao-ui/runtime';
 import type { Application, Module } from '@sunmao-ui/core';
 
 type FsManagerOptions = { name: string };
@@ -73,9 +73,9 @@ const DEFAULT_APP: Application = {
   },
 };
 
-export default function registerEditor(
+export function registerEditor(
   managerOptions: FsManagerOptions,
-  runtimeProps: SunmaoUIRuntimeProps & { utilMethods?: UtilMethod<any>[] }
+  runtimeProps: SunmaoUIRuntimeProps
 ) {
   const fsManager = new FsManager(managerOptions);
 
@@ -83,8 +83,8 @@ export default function registerEditor(
     const [app, setApp] = useState(JSON.parse(JSON.stringify(DEFAULT_APP)));
     const [modules, setModules] = useState<Module[]>([]);
 
-    const { Editor: SunmaoEditor, registry } = useMemo(() => {
-      const { Editor, registry } = initSunmaoUIEditor({
+    const { Editor: SunmaoEditor } = useMemo(() => {
+      const { Editor } = initSunmaoUIEditor({
         runtimeProps,
         defaultApplication: app,
         defaultModules: modules,
@@ -94,18 +94,13 @@ export default function registerEditor(
         },
       });
 
-      return { Editor, registry };
+      return { Editor };
     }, [app, modules]);
 
     useEffect(() => {
       fsManager.getApp().then(setApp);
       fsManager.getModules().then(setModules);
     }, []);
-    useEffect(() => {
-      runtimeProps?.utilMethods?.forEach(method => {
-        registry.registerUtilMethod(method);
-      });
-    }, [registry]);
 
     return <SunmaoEditor />;
   };

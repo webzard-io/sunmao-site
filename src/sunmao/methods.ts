@@ -1,4 +1,3 @@
-import store from '../store';
 import { Type, Static } from '@sinclair/typebox';
 
 const NavigateParameterSpec = Type.Object({
@@ -16,19 +15,6 @@ export function getNavigateMethod(navigate: (to: string) => void) {
     parameters: NavigateParameterSpec,
   };
 }
-
-const SetStoreParameterSpec = Type.Object({
-  key: Type.String(),
-  value: Type.Any(),
-});
-
-export const setStoreMethod = {
-  name: 'setStore',
-  method(parameters: Static<typeof SetStoreParameterSpec>) {
-    store[parameters.key] = parameters.value;
-  },
-  parameters: SetStoreParameterSpec,
-};
 
 const OpenParameterSpec = Type.Object({
   url: Type.String(),

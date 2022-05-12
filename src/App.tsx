@@ -1,45 +1,36 @@
-import {
-  Routes,
-  Route,
-  useNavigate,
-  useLocation,
-  useParams,
-} from "react-router-dom";
-import { Suspense, lazy, useEffect, useMemo } from "react";
-import { libs } from "./sunmao/lib";
-import registerSunmaoApp from "./SunmaoApp";
-import { getNavigateMethod, setStoreMethod, openHref } from "./sunmao/methods";
-import store from "./store";
-import type { Schema } from "./types";
-import "./init";
+import { Routes, Route, useNavigate } from 'react-router-dom';
+import { ArcoDesignLib } from '@sunmao-ui/arco-lib';
+import { Suspense, lazy, useEffect, useMemo } from 'react';
+import { libs } from './sunmao/lib';
+import registerSunmaoRuntime from './SunmaoRuntime';
+import { getNavigateMethod, openHref } from './sunmao/methods';
+import type { Schema } from './types';
+import './init';
 
 function App() {
   const navigate = useNavigate();
   const options = useMemo(
     () => ({
-      libs,
-      dependencies: {
-        store,
-      },
-      utilMethods: [getNavigateMethod(navigate), setStoreMethod, openHref],
+      libs: [libs, ArcoDesignLib],
+      utilMethods: [getNavigateMethod(navigate), openHref],
     }),
     [navigate]
   );
   const SitePage = useMemo(
     () =>
       lazy(() =>
-        import("./sunmao/site.json").then((site) => ({
-          default: registerSunmaoApp(site as Schema, options),
+        import('./sunmao/site.json').then(site => ({
+          default: registerSunmaoRuntime(site as Schema, options),
         }))
       ),
     [options]
   );
 
   useEffect(() => {
-    if (location.pathname === "/") {
-      navigate("/site");
+    if (location.pathname === '/') {
+      navigate('/site');
     }
-  }, [location.pathname, navigate]);
+  }, [navigate]);
 
   return (
     <Suspense fallback={<span>loading</span>}>

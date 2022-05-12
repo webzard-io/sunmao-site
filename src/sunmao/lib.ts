@@ -7,4 +7,4 @@ const siteLib: SunmaoLib = {
   modules: [],
 };
 
-export const libs: SunmaoLib[] = [siteLib];
+export const libs: SunmaoLib = siteLib;

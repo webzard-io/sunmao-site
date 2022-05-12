@@ -6,18 +6,13 @@ import type { Schema } from './types';
 // rjsf's bundle has some wrong usage of the global variable React
 window.React = React;
 
-function registerSunmaoApp(
+function registerSunmaoRuntime(
   schema: Schema,
   options: SunmaoUIRuntimeProps & { utilMethods?: UtilMethod<any>[] } = {}
 ) {
-  const { App: SunmaoApp, registry } = initSunmaoUI(options);
-  schema.modules.forEach(module => registry.registerModule(module));
-  options.utilMethods?.forEach(method => {
-    registry.registerUtilMethod(method);
-  });
+  const { App: SunmaoApp } = initSunmaoUI(options);
 
   function App() {
-    console.log('rr')
     return (
       <SunmaoApp debugEvent={false} debugStore={false} options={schema.application} />
     );
@@ -26,4 +21,4 @@ function registerSunmaoApp(
   return App;
 }
 
-export default registerSunmaoApp;
+export default registerSunmaoRuntime;

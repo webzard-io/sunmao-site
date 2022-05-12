@@ -1,12 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { HashRouter } from "react-router-dom";
-import VisualEditor from "./VisualEditor";
+import EditorRouter from "./EditorRouter";
 
 ReactDOM.render(
   <React.StrictMode>
     <HashRouter>
-      <VisualEditor />
+      <EditorRouter />
     </HashRouter>
   </React.StrictMode>,
   document.getElementById("root")

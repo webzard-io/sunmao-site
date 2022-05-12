@@ -1135,62 +1135,62 @@
   resolved "http://192.168.26.29:7001/@sinclair/typebox/download/@sinclair/typebox-0.21.2.tgz#d23a42adafc482f4893994e22916b0b54e18c23d"
   integrity sha1-0jpCra/EgvSJOZTiKRawtU4Ywj0=
 
-"@sunmao-ui/arco-lib@^0.2.0-alpha.0":
-  version "0.2.0-alpha.0"
-  resolved "http://192.168.26.29:7001/@sunmao-ui/arco-lib/download/@sunmao-ui/arco-lib-0.2.0-alpha.0.tgz#8c50db8fc6e6b80481fd16ad55ad5cf43ae29f47"
-  integrity sha1-jFDbj8bmuASB/RatVa1c9Drin0c=
+"@sunmao-ui/arco-lib@^0.2.0-alpha.1":
+  version "0.2.0-alpha.1"
+  resolved "https://registry.npmjs.org/@sunmao-ui/arco-lib/-/arco-lib-0.2.0-alpha.1.tgz#eda6026bf3c277b10a926160637bad607a2e3214"
+  integrity sha512-tCZHRP0AaRSht7TQwYNn21AAgSVsexA61mcheLxd5WQBoK+OZvpPtp+wKvq3umODDrP4NQdVArQpDcLrXc+3OQ==
   dependencies:
     "@arco-design/web-react" "^2.29.0"
     "@emotion/css" "^11.7.1"
     "@sinclair/typebox" "^0.21.2"
-    "@sunmao-ui/core" "^0.6.0-alpha.0"
-    "@sunmao-ui/editor-sdk" "^0.2.0-alpha.0"
-    "@sunmao-ui/runtime" "^0.6.0-alpha.0"
+    "@sunmao-ui/core" "^0.6.0-alpha.1"
+    "@sunmao-ui/editor-sdk" "^0.2.0-alpha.1"
+    "@sunmao-ui/runtime" "^0.6.0-alpha.1"
     eslint-plugin-react-hooks "^4.3.0"
     lodash-es "^4.17.21"
     react "^17.0.2"
     react-dom "^17.0.2"
     react-resizable "^3.0.4"
 
-"@sunmao-ui/chakra-ui-lib@^0.4.0-alpha.0":
-  version "0.4.0-alpha.0"
-  resolved "http://192.168.26.29:7001/@sunmao-ui/chakra-ui-lib/download/@sunmao-ui/chakra-ui-lib-0.4.0-alpha.0.tgz#979e50d6a287ab43d8998e1ad76fc504f1529a9a"
-  integrity sha1-l55Q1qKHq0PYmY4a12/FBPFSmpo=
+"@sunmao-ui/chakra-ui-lib@^0.4.0-alpha.1":
+  version "0.4.0-alpha.1"
+  resolved "https://registry.npmjs.org/@sunmao-ui/chakra-ui-lib/-/chakra-ui-lib-0.4.0-alpha.1.tgz#7cf48dd275cd78b3f8ad0357b5623dc26bd86c2b"
+  integrity sha512-YMK+DoKhSyjcVeWDDHQd2RUzgvbOs0iNlEBLz6kgL5iORUq125TdL79+ZdpWsmzB3hGgRalPtCiAHFGoHTL3GA==
   dependencies:
     "@chakra-ui/icons" "^1.0.15"
     "@chakra-ui/react" "^1.7.1"
     "@emotion/styled" "^11.6.0"
     "@sinclair/typebox" "^0.21.2"
-    "@sunmao-ui/core" "^0.6.0-alpha.0"
-    "@sunmao-ui/editor-sdk" "^0.2.0-alpha.0"
-    "@sunmao-ui/runtime" "^0.6.0-alpha.0"
+    "@sunmao-ui/core" "^0.6.0-alpha.1"
+    "@sunmao-ui/editor-sdk" "^0.2.0-alpha.1"
+    "@sunmao-ui/runtime" "^0.6.0-alpha.1"
     chakra-react-select "^1.3.2"
     framer-motion "^4"
     lodash-es "^4.17.21"
     react "^17.0.0"
     react-dom "^17.0.0"
 
-"@sunmao-ui/core@0.6.0-alpha.0", "@sunmao-ui/core@^0.6.0-alpha.0":
-  version "0.6.0-alpha.0"
-  resolved "http://192.168.26.29:7001/@sunmao-ui/core/download/@sunmao-ui/core-0.6.0-alpha.0.tgz#a35f4d527ba6a81607c902b617e0e1eed2774b37"
-  integrity sha1-o19NUnumqBYHyQK2F+Dh7tJ3Szc=
+"@sunmao-ui/core@0.6.0-alpha.1", "@sunmao-ui/core@^0.6.0-alpha.1":
+  version "0.6.0-alpha.1"
+  resolved "https://registry.npmjs.org/@sunmao-ui/core/-/core-0.6.0-alpha.1.tgz#9bf2660c188d0cdf92d31349c327442b06181134"
+  integrity sha512-y6xWmaY1WMo29oYzKipwREOTtmFgxflAophU0mHuRM9JeCQsD1emviD8evZZCbFRKSLci98J/qwcXO6bblWXUQ==
   dependencies:
     "@types/json-schema" "^7.0.7"
     lodash-es "^4.17.21"
 
-"@sunmao-ui/editor-sdk@^0.2.0-alpha.0":
-  version "0.2.0-alpha.0"
-  resolved "http://192.168.26.29:7001/@sunmao-ui/editor-sdk/download/@sunmao-ui/editor-sdk-0.2.0-alpha.0.tgz#8f80944f1ee9292231ce831d7937a2d500712765"
-  integrity sha1-j4CUTx7pKSIxzoMdeTei1QBxJ2U=
+"@sunmao-ui/editor-sdk@^0.2.0-alpha.1":
+  version "0.2.0-alpha.1"
+  resolved "https://registry.npmjs.org/@sunmao-ui/editor-sdk/-/editor-sdk-0.2.0-alpha.1.tgz#7181f8848212c213713dc096368212a117f11e12"
+  integrity sha512-XUd353aqiZPwxaDJyAwx/NKfYka6hI80U+9m5GE9cwkI8CYvKcKQZtd1qYU1iaD8DcOEu/PU0C4JZpqlnZ6Kqg==
   dependencies:
     "@chakra-ui/icons" "^1.0.15"
     "@chakra-ui/react" "^1.7.1"
     "@emotion/css" "^11.7.1"
     "@emotion/react" "^11.1.1"
     "@sinclair/typebox" "^0.21.2"
-    "@sunmao-ui/core" "^0.6.0-alpha.0"
-    "@sunmao-ui/runtime" "^0.6.0-alpha.0"
-    "@sunmao-ui/shared" "^0.1.0-alpha.0"
+    "@sunmao-ui/core" "^0.6.0-alpha.1"
+    "@sunmao-ui/runtime" "^0.6.0-alpha.1"
+    "@sunmao-ui/shared" "^0.1.0-alpha.1"
     codemirror "^5.63.3"
     formik "^2.2.9"
     immer "^9.0.6"
@@ -1201,22 +1201,22 @@
     react-dom "^17.0.2"
     tern "^0.24.3"
 
-"@sunmao-ui/editor@0.6.0-alpha.0":
-  version "0.6.0-alpha.0"
-  resolved "http://192.168.26.29:7001/@sunmao-ui/editor/download/@sunmao-ui/editor-0.6.0-alpha.0.tgz#333bf50f714d3153c0794303d582a672e1293d57"
-  integrity sha1-Mzv1D3FNMVPAeUMD1YKmcuEpPVc=
+"@sunmao-ui/editor@0.6.0-alpha.1":
+  version "0.6.0-alpha.1"
+  resolved "https://registry.npmjs.org/@sunmao-ui/editor/-/editor-0.6.0-alpha.1.tgz#0a8658a1e9c61ec7d6bbff6d7ff245a4ce315573"
+  integrity sha512-pQk8pqtT+fBllSQfj03vmnez9B7SBdHdqrQXq3OOQ2ZzLIKkPG0vzoiUEeSK+mCWYg/FctR3pNOTYYrMH8/r4A==
   dependencies:
     "@chakra-ui/icons" "^1.0.15"
     "@chakra-ui/react" "^1.7.1"
     "@emotion/css" "^11.7.1"
     "@emotion/react" "^11.1.1"
     "@sinclair/typebox" "^0.21.2"
-    "@sunmao-ui/arco-lib" "^0.2.0-alpha.0"
-    "@sunmao-ui/chakra-ui-lib" "^0.4.0-alpha.0"
-    "@sunmao-ui/core" "^0.6.0-alpha.0"
-    "@sunmao-ui/editor-sdk" "^0.2.0-alpha.0"
-    "@sunmao-ui/runtime" "^0.6.0-alpha.0"
-    "@sunmao-ui/shared" "^0.1.0-alpha.0"
+    "@sunmao-ui/arco-lib" "^0.2.0-alpha.1"
+    "@sunmao-ui/chakra-ui-lib" "^0.4.0-alpha.1"
+    "@sunmao-ui/core" "^0.6.0-alpha.1"
+    "@sunmao-ui/editor-sdk" "^0.2.0-alpha.1"
+    "@sunmao-ui/runtime" "^0.6.0-alpha.1"
+    "@sunmao-ui/shared" "^0.1.0-alpha.1"
     acorn "^8.7.0"
     acorn-loose "^8.3.0"
     acorn-walk "^8.2.0"
@@ -1234,15 +1234,15 @@
     react-json-tree "^0.16.1"
     tern "^0.24.3"
 
-"@sunmao-ui/runtime@0.6.0-alpha.0", "@sunmao-ui/runtime@^0.6.0-alpha.0":
-  version "0.6.0-alpha.0"
-  resolved "http://192.168.26.29:7001/@sunmao-ui/runtime/download/@sunmao-ui/runtime-0.6.0-alpha.0.tgz#a6d1b32efdd9ee2ab81eb6427a4646f15e377d27"
-  integrity sha1-ptGzLv3Z7iq4HrZCekZG8V43fSc=
+"@sunmao-ui/runtime@0.6.0-alpha.1", "@sunmao-ui/runtime@^0.6.0-alpha.1":
+  version "0.6.0-alpha.1"
+  resolved "https://registry.npmjs.org/@sunmao-ui/runtime/-/runtime-0.6.0-alpha.1.tgz#2195a9ecad836e245f08897ae4466f0426792d6b"
+  integrity sha512-huMYSsUKo3PYF/Ow51gZD89YNsans6l0U1InyuXiDuMR3DCsiPVhrPgbI5c288Jo9dcd2m/70rBL/YrIyVNQmQ==
   dependencies:
     "@emotion/css" "^11.7.1"
     "@sinclair/typebox" "^0.21.2"
-    "@sunmao-ui/core" "^0.6.0-alpha.0"
-    "@sunmao-ui/shared" "^0.1.0-alpha.0"
+    "@sunmao-ui/core" "^0.6.0-alpha.1"
+    "@sunmao-ui/shared" "^0.1.0-alpha.1"
     "@vue/reactivity" "^3.1.5"
     "@vue/shared" "^3.2.20"
     copy-to-clipboard "^3.3.1"
@@ -1261,10 +1261,10 @@
     use-deep-compare "^1.1.0"
     wouter "^2.7.4"
 
-"@sunmao-ui/shared@^0.1.0-alpha.0":
-  version "0.1.0-alpha.0"
-  resolved "http://192.168.26.29:7001/@sunmao-ui/shared/download/@sunmao-ui/shared-0.1.0-alpha.0.tgz#b1f118d279d77493721e00f6f923b3f27f21d833"
-  integrity sha1-sfEY0nnXdJNyHgD2+SOz8n8h2DM=
+"@sunmao-ui/shared@^0.1.0-alpha.1":
+  version "0.1.0-alpha.1"
+  resolved "https://registry.npmjs.org/@sunmao-ui/shared/-/shared-0.1.0-alpha.1.tgz#367800cd8cac8a4668b37ac94aff19d662ecf9dc"
+  integrity sha512-ZHWOfKLDlGCJ6WgmE9ZiaAkdtcCuzFcjYFSSpU6YY0V7WfNHI90jpvet7P5VFYv00WmnNxX1radVminbGX0Mcw==
   dependencies:
     "@sinclair/typebox" "^0.21.2"
     lodash-es "^4.17.21"
