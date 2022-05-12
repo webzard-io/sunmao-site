@@ -1,10 +1,7 @@
 {
-  "name": "cluster-installer-ui",
+  "name": "sunmao-site",
   "private": true,
   "version": "0.0.0",
-  "engines": {
-    "node": ">= 14"
-  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -42,8 +39,5 @@
     "typescript": "^4.5.4",
     "vite": "^2.8.0",
     "vite-plugin-svg-icons": "^2.0.1"
-  },
-  "resolutions": {
-    "antd": "4.5.0"
   }
 }

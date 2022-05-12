@@ -1,6 +1,6 @@
 import { Routes, Route, useNavigate } from 'react-router-dom';
 import { ArcoDesignLib } from '@sunmao-ui/arco-lib';
-import { Suspense, lazy, useEffect, useMemo } from 'react';
+import { Suspense, lazy, useMemo } from 'react';
 import { libs } from '../sunmao/lib';
 import registerSunmaoRuntime from './SunmaoRuntime';
 import { getNavigateMethod, openHref } from '../sunmao/methods';
@@ -26,16 +26,10 @@ function RuntimeApp() {
     [options]
   );
 
-  useEffect(() => {
-    if (location.pathname === '/') {
-      navigate('/site');
-    }
-  }, [navigate]);
-
   return (
     <Suspense fallback={<span>loading</span>}>
       <Routes>
-        <Route path="/site" element={<SitePage />} />
+        <Route path="/" element={<SitePage />} />
       </Routes>
     </Suspense>
   );

@@ -373,7 +373,7 @@
             "disabled": false,
             "hoverable": false,
             "status": "warning",
-            "href": "/dev.html#/site",
+            "href": "/dev.html",
             "content": "立即体验"
           },
           "traits": [
