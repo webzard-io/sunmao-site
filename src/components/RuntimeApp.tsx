@@ -1,13 +1,13 @@
 import { Routes, Route, useNavigate } from 'react-router-dom';
 import { ArcoDesignLib } from '@sunmao-ui/arco-lib';
 import { Suspense, lazy, useEffect, useMemo } from 'react';
-import { libs } from './sunmao/lib';
+import { libs } from '../sunmao/lib';
 import registerSunmaoRuntime from './SunmaoRuntime';
-import { getNavigateMethod, openHref } from './sunmao/methods';
-import type { Schema } from './types';
-import './init';
+import { getNavigateMethod, openHref } from '../sunmao/methods';
+import type { Schema } from '../types';
+import '../init';
 
-function App() {
+function RuntimeApp() {
   const navigate = useNavigate();
   const options = useMemo(
     () => ({
@@ -19,7 +19,7 @@ function App() {
   const SitePage = useMemo(
     () =>
       lazy(() =>
-        import('./sunmao/site.json').then(site => ({
+        import('../sunmao/site.json').then(site => ({
           default: registerSunmaoRuntime(site as Schema, options),
         }))
       ),
@@ -41,4 +41,4 @@ function App() {
   );
 }
 
-export default App;
+export default RuntimeApp;

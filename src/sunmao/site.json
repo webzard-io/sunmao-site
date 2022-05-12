@@ -8,7 +8,171 @@
     "spec": {
       "components": [
         {
-          "id": "stack0",
+          "id": "main",
+          "type": "core/v1/stack",
+          "properties": {
+            "spacing": 12,
+            "direction": "vertical",
+            "align": "auto",
+            "wrap": "",
+            "justify": ""
+          },
+          "traits": [
+            {
+              "type": "core/v1/style",
+              "properties": {
+                "styles": [
+                  {
+                    "styleSlot": "content",
+                    "style": "background: #E9EDF3;\nwidth: 100%;\nheight: 100%;"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "container",
+          "type": "core/v1/stack",
+          "properties": {
+            "spacing": 12,
+            "direction": "vertical",
+            "align": "auto",
+            "wrap": "",
+            "justify": ""
+          },
+          "traits": [
+            {
+              "type": "core/v1/slot",
+              "properties": {
+                "container": {
+                  "id": "main",
+                  "slot": "content"
+                }
+              }
+            },
+            {
+              "type": "core/v1/style",
+              "properties": {
+                "styles": [
+                  {
+                    "styleSlot": "content",
+                    "style": "max-width: 1440px;\nwidth: 100%;\nposition: relative;\nmargin: auto;\nbackground: #fff;\nheight: 100%;"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "bg1",
+          "type": "arco/v1/image",
+          "properties": {
+            "src": "http://localhost:3001/dist/images/header-illustration-light.svg",
+            "title": "",
+            "description": "",
+            "footerPosition": "inner",
+            "simple": false,
+            "preview": false,
+            "width": "100",
+            "height": 324,
+            "error": ""
+          },
+          "traits": [
+            {
+              "type": "core/v1/slot",
+              "properties": {
+                "container": {
+                  "id": "container",
+                  "slot": "content"
+                }
+              }
+            },
+            {
+              "type": "core/v1/style",
+              "properties": {
+                "styles": [
+                  {
+                    "styleSlot": "content",
+                    "style": "position: absolute !important;\ntop: 0;\nleft: 0;\nright: 0;\nwidth: 100% !important;\nimg {\n  width: 100%;\n}\n"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "bg2",
+          "type": "arco/v1/image",
+          "properties": {
+            "src": "http://localhost:3001/dist/images/hero-media-illustration-light.svg",
+            "title": "",
+            "description": "",
+            "footerPosition": "inner",
+            "simple": false,
+            "preview": false,
+            "width": "100",
+            "height": 324,
+            "error": ""
+          },
+          "traits": [
+            {
+              "type": "core/v1/slot",
+              "properties": {
+                "container": {
+                  "id": "container",
+                  "slot": "content"
+                }
+              }
+            },
+            {
+              "type": "core/v1/style",
+              "properties": {
+                "styles": [
+                  {
+                    "styleSlot": "content",
+                    "style": "position: absolute !important;\ntop: 170px;\nright: 0;\nwidth: auto !important;\nimg {\n  width: 100%;\n}\n"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "content",
+          "type": "core/v1/stack",
+          "properties": {
+            "spacing": 24,
+            "direction": "vertical",
+            "align": "auto",
+            "wrap": "",
+            "justify": ""
+          },
+          "traits": [
+            {
+              "type": "core/v1/style",
+              "properties": {
+                "styles": [
+                  {
+                    "styleSlot": "content",
+                    "style": "max-width: 1128px;\nmargin: 0 auto;"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "core/v1/slot",
+              "properties": {
+                "container": {
+                  "id": "container",
+                  "slot": "content"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "header",
           "type": "core/v1/stack",
           "properties": {
             "spacing": 12,
@@ -17,10 +181,591 @@
             "wrap": "",
             "justify": ""
           },
-          "traits": []
+          "traits": [
+            {
+              "type": "core/v1/slot",
+              "properties": {
+                "container": {
+                  "id": "content",
+                  "slot": "content"
+                }
+              }
+            },
+            {
+              "type": "core/v1/style",
+              "properties": {
+                "styles": [
+                  {
+                    "styleSlot": "content",
+                    "style": "padding: 24px 0;"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "logo",
+          "type": "arco/v1/image",
+          "properties": {
+            "src": "http://localhost:3001/dist/images/logo.png",
+            "title": "",
+            "description": "",
+            "footerPosition": "inner",
+            "simple": false,
+            "preview": false,
+            "width": 30,
+            "height": 30,
+            "error": ""
+          },
+          "traits": [
+            {
+              "type": "core/v1/slot",
+              "properties": {
+                "container": {
+                  "id": "header",
+                  "slot": "content"
+                }
+              }
+            },
+            {
+              "type": "core/v1/style",
+              "properties": {
+                "styles": []
+              }
+            }
+          ]
+        },
+        {
+          "id": "hero",
+          "type": "core/v1/stack",
+          "properties": {
+            "spacing": 12,
+            "direction": "horizontal",
+            "align": "auto",
+            "wrap": "",
+            "justify": ""
+          },
+          "traits": [
+            {
+              "type": "core/v1/slot",
+              "properties": {
+                "container": {
+                  "id": "content",
+                  "slot": "content"
+                }
+              }
+            },
+            {
+              "type": "core/v1/style",
+              "properties": {
+                "styles": [
+                  {
+                    "styleSlot": "content",
+                    "style": "text-align: left;\npadding-top: 88px;\npadding-bottom: 120px;"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "hero_inner",
+          "type": "core/v1/stack",
+          "properties": {
+            "spacing": 16,
+            "direction": "vertical",
+            "align": "auto",
+            "wrap": true,
+            "justify": ""
+          },
+          "traits": [
+            {
+              "type": "core/v1/slot",
+              "properties": {
+                "container": {
+                  "id": "hero",
+                  "slot": "content"
+                }
+              }
+            },
+            {
+              "type": "core/v1/style",
+              "properties": {
+                "styles": [
+                  {
+                    "styleSlot": "content",
+                    "style": "padding-top: 40px;\npadding-right: 48px;\nmin-width: 448px;\nmax-width: 512px;"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "hero_title",
+          "type": "core/v1/text",
+          "properties": {
+            "value": {
+              "raw": "可扩展的低代码UI框架",
+              "format": "plain"
+            }
+          },
+          "traits": [
+            {
+              "type": "core/v1/slot",
+              "properties": {
+                "container": {
+                  "id": "hero_inner",
+                  "slot": "content"
+                }
+              }
+            },
+            {
+              "type": "core/v1/style",
+              "properties": {
+                "styles": [
+                  {
+                    "styleSlot": "content",
+                    "style": "font-size: 44px;\nline-height: 54px;\nletter-spacing: 0px;\ncolor: #182538;\nfont-weight: 600;"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "hero_desc",
+          "type": "core/v1/text",
+          "properties": {
+            "value": {
+              "raw": "带有运行时和编辑器的开源低代码框架\n轻松集成任何自定义UI组件，让你的UI组件库享受低代码的便利。",
+              "format": "plain"
+            }
+          },
+          "traits": [
+            {
+              "type": "core/v1/slot",
+              "properties": {
+                "container": {
+                  "id": "hero_inner",
+                  "slot": "content"
+                }
+              }
+            },
+            {
+              "type": "core/v1/style",
+              "properties": {
+                "styles": [
+                  {
+                    "styleSlot": "content",
+                    "style": "color: #6B7A90;\nfont-size: 20px;"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "edit_link",
+          "type": "arco/v1/link",
+          "properties": {
+            "disabled": false,
+            "hoverable": false,
+            "status": "warning",
+            "href": "/dev.html#/site",
+            "content": "立即体验"
+          },
+          "traits": [
+            {
+              "type": "core/v1/slot",
+              "properties": {
+                "container": {
+                  "id": "hero_inner",
+                  "slot": "content"
+                }
+              }
+            },
+            {
+              "type": "core/v1/style",
+              "properties": {
+                "styles": [
+                  {
+                    "styleSlot": "content",
+                    "style": "width: 170px;\npadding: 16px 32px;\ntext-align: center;\nheight: 48px !important;\nline-height: 48px !important;\ncolor: #fff !important;\nbackground-color: #535FD7 !important;\nfont-size: 14px !important;\nfont-weight: 600 !important;"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "hero_image",
+          "type": "arco/v1/image",
+          "properties": {
+            "src": "http://localhost:3001/dist/images/hero-media.png",
+            "title": "",
+            "description": "",
+            "footerPosition": "inner",
+            "simple": false,
+            "preview": false,
+            "width": 538,
+            "height": 300,
+            "error": ""
+          },
+          "traits": [
+            {
+              "type": "core/v1/slot",
+              "properties": {
+                "container": {
+                  "id": "hero",
+                  "slot": "content"
+                }
+              }
+            },
+            {
+              "type": "core/v1/style",
+              "properties": {
+                "styles": [
+                  {
+                    "styleSlot": "content",
+                    "style": "box-shadow: 48px 16px 48px rgb(24 37 56 / 12%);\nborder-radius: 4px;\ntransform: perspective(1000px) rotateY(16deg) rotateX(2deg) rotateZ(-7deg) scaleY(0.95) translatex(2%);"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "features",
+          "type": "core/v1/stack",
+          "properties": {
+            "spacing": 12,
+            "direction": "vertical",
+            "align": "auto",
+            "wrap": "",
+            "justify": ""
+          },
+          "traits": [
+            {
+              "type": "core/v1/slot",
+              "properties": {
+                "container": {
+                  "id": "content",
+                  "slot": "content"
+                }
+              }
+            },
+            {
+              "type": "core/v1/style",
+              "properties": {
+                "styles": [
+                  {
+                    "styleSlot": "content",
+                    "style": "margin: 0 auto;"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "feature1",
+          "type": "core/v1/moduleContainer",
+          "properties": {
+            "id": "feature1Module",
+            "type": "site/v1/feature",
+            "properties": {
+              "reverse": "{{false}}",
+              "imgSrc": "http://localhost:3001/dist/images/many-components.gif",
+              "title": "强大的可扩展性\n",
+              "desc": "无论是组件，还是逻辑，甚至是编辑器本身，都是可扩展的。也就是说，您可以在低代码工具中，使用您自己的组件库了。\n\n"
+            },
+            "handlers": []
+          },
+          "traits": [
+            {
+              "type": "core/v1/slot",
+              "properties": {
+                "container": {
+                  "id": "features",
+                  "slot": "content"
+                }
+              }
+            },
+            {
+              "type": "core/v1/style",
+              "properties": {
+                "styles": []
+              }
+            }
+          ]
+        },
+        {
+          "id": "feature2",
+          "type": "core/v1/moduleContainer",
+          "properties": {
+            "id": "feature2Module",
+            "type": "site/v1/feature",
+            "properties": {
+              "reverse": "{{true}}",
+              "imgSrc": "http://localhost:3001/dist/images/feature-editor.gif",
+              "title": "功能强大的可视化编辑器\n",
+              "desc": "Sunmao 提供了功能强大且完善可视化低代码编辑器，无需编程基础，并且编辑器本身也是可扩展的。\n\n"
+            },
+            "handlers": []
+          },
+          "traits": [
+            {
+              "type": "core/v1/slot",
+              "properties": {
+                "container": {
+                  "id": "features",
+                  "slot": "content"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "feature3",
+          "type": "core/v1/moduleContainer",
+          "properties": {
+            "id": "feature3Module",
+            "type": "site/v1/feature",
+            "properties": {
+              "reverse": "{{false}}",
+              "imgSrc": "http://localhost:3001/dist/images/type-safe.gif",
+              "title": "类型安全\n",
+              "desc": "无论是在组件开发过程中，还是使用低代码编辑器的过程中，都能享受类型自动推断和补全。\n\n"
+            },
+            "handlers": []
+          },
+          "traits": [
+            {
+              "type": "core/v1/slot",
+              "properties": {
+                "container": {
+                  "id": "features",
+                  "slot": "content"
+                }
+              }
+            }
+          ]
         }
       ]
     }
   },
-  "modules": []
+  "modules": [
+    {
+      "kind": "Module",
+      "parsedVersion": {
+        "category": "custom/v1",
+        "value": "myModule0"
+      },
+      "version": "site/v1",
+      "metadata": {
+        "name": "feature",
+        "description": "my module"
+      },
+      "spec": {
+        "stateMap": {},
+        "events": [],
+        "properties": {}
+      },
+      "impl": [
+        {
+          "id": "{{ $moduleId }}__feature_container",
+          "type": "core/v1/stack",
+          "properties": {
+            "spacing": 64,
+            "direction": "horizontal",
+            "align": "center",
+            "wrap": false,
+            "justify": "flex-start"
+          },
+          "traits": [
+            {
+              "type": "core/v1/style",
+              "properties": {
+                "styles": [
+                  {
+                    "styleSlot": "content",
+                    "style": "padding: 64px 0;\nflex-direction: {{ !!reverse ? 'row-reverse' : 'row' }} !important;"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "{{ $moduleId }}__image_container",
+          "type": "core/v1/stack",
+          "properties": {
+            "spacing": 12,
+            "direction": "horizontal",
+            "align": "auto",
+            "wrap": "",
+            "justify": ""
+          },
+          "traits": [
+            {
+              "type": "core/v1/slot",
+              "properties": {
+                "container": {
+                  "id": "{{ $moduleId }}__feature_container",
+                  "slot": "content"
+                }
+              }
+            },
+            {
+              "type": "core/v1/style",
+              "properties": {
+                "styles": [
+                  {
+                    "styleSlot": "content",
+                    "style": "width: 440px;\nmargin: 0 auto !important;"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "{{ $moduleId }}__feature_image",
+          "type": "arco/v1/image",
+          "properties": {
+            "src": "{{imgSrc}}",
+            "title": "",
+            "description": "",
+            "footerPosition": "inner",
+            "simple": false,
+            "preview": false,
+            "width": "{{'auto'}}",
+            "height": "{{'auto'}}",
+            "error": ""
+          },
+          "traits": [
+            {
+              "type": "core/v1/slot",
+              "properties": {
+                "container": {
+                  "id": "{{ $moduleId }}__image_container",
+                  "slot": "content"
+                }
+              }
+            },
+            {
+              "type": "core/v1/style",
+              "properties": {
+                "styles": [
+                  {
+                    "styleSlot": "content",
+                    "style": "height: auto !important;\nmax-width: 360px;\nmargin: 0 auto !important;"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "{{ $moduleId }}__feature_info",
+          "type": "core/v1/stack",
+          "properties": {
+            "spacing": 12,
+            "direction": "vertical",
+            "align": "auto",
+            "wrap": "",
+            "justify": ""
+          },
+          "traits": [
+            {
+              "type": "core/v1/slot",
+              "properties": {
+                "container": {
+                  "id": "{{ $moduleId }}__feature_container",
+                  "slot": "content"
+                }
+              }
+            },
+            {
+              "type": "core/v1/style",
+              "properties": {
+                "styles": [
+                  {
+                    "styleSlot": "content",
+                    "style": "width: 392px;"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "{{ $moduleId }}__feature_title",
+          "type": "core/v1/text",
+          "properties": {
+            "value": {
+              "raw": "{{title}}",
+              "format": "plain"
+            }
+          },
+          "traits": [
+            {
+              "type": "core/v1/slot",
+              "properties": {
+                "container": {
+                  "id": "{{ $moduleId }}__feature_info",
+                  "slot": "content"
+                }
+              }
+            },
+            {
+              "type": "core/v1/style",
+              "properties": {
+                "styles": [
+                  {
+                    "styleSlot": "content",
+                    "style": "color: #182538;\nfont-weight: 600;\nfont-size: 24px;\nline-height: 34px;"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "{{ $moduleId }}__feature_desc",
+          "type": "core/v1/text",
+          "properties": {
+            "value": {
+              "raw": "{{desc}}",
+              "format": "plain"
+            }
+          },
+          "traits": [
+            {
+              "type": "core/v1/slot",
+              "properties": {
+                "container": {
+                  "id": "{{ $moduleId }}__feature_info",
+                  "slot": "content"
+                }
+              }
+            },
+            {
+              "type": "core/v1/style",
+              "properties": {
+                "styles": [
+                  {
+                    "styleSlot": "content",
+                    "style": "color: #6B7A90;\nfont-size: 20px;"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

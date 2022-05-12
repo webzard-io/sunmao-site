@@ -1,10 +1,9 @@
 import { Routes, Route, useNavigate } from 'react-router-dom';
 import { ArcoDesignLib } from '@sunmao-ui/arco-lib';
 import { useEffect } from 'react';
-import { libs } from './sunmao/lib';
+import { libs } from '../sunmao/lib';
 import { registerEditor } from './SunmaoEditor';
-import './init';
-import '@sunmao-ui/editor/dist/index.css';
+import '../init';
 
 function EditorRouter() {
   const navigate = useNavigate();

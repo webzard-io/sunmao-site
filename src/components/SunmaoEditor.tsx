@@ -2,6 +2,7 @@ import { initSunmaoUIEditor } from '@sunmao-ui/editor';
 import { useState, useEffect, useMemo } from 'react';
 import { SunmaoUIRuntimeProps } from '@sunmao-ui/runtime';
 import type { Application, Module } from '@sunmao-ui/core';
+import '@sunmao-ui/editor/dist/index.css';
 
 type FsManagerOptions = { name: string };
 class FsManager {
