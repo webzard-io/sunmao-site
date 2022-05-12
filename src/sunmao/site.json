@@ -68,7 +68,7 @@
           "id": "bg1",
           "type": "arco/v1/image",
           "properties": {
-            "src": "http://localhost:3001/dist/images/header-illustration-light.svg",
+            "src": "/header-illustration-light.svg",
             "title": "",
             "description": "",
             "footerPosition": "inner",
@@ -105,7 +105,7 @@
           "id": "bg2",
           "type": "arco/v1/image",
           "properties": {
-            "src": "http://localhost:3001/dist/images/hero-media-illustration-light.svg",
+            "src": "/hero-media-illustration-light.svg",
             "title": "",
             "description": "",
             "footerPosition": "inner",
@@ -208,7 +208,7 @@
           "id": "logo",
           "type": "arco/v1/image",
           "properties": {
-            "src": "http://localhost:3001/dist/images/logo.png",
+            "src": "/logo.png",
             "title": "",
             "description": "",
             "footerPosition": "inner",
@@ -403,7 +403,7 @@
           "id": "hero_image",
           "type": "arco/v1/image",
           "properties": {
-            "src": "http://localhost:3001/dist/images/hero-media.png",
+            "src": "/hero-media.png",
             "title": "",
             "description": "",
             "footerPosition": "inner",
@@ -477,7 +477,7 @@
             "type": "site/v1/feature",
             "properties": {
               "reverse": "{{false}}",
-              "imgSrc": "http://localhost:3001/dist/images/many-components.gif",
+              "imgSrc": "/many-components.gif",
               "title": "强大的可扩展性\n",
               "desc": "无论是组件，还是逻辑，甚至是编辑器本身，都是可扩展的。也就是说，您可以在低代码工具中，使用您自己的组件库了。\n\n"
             },
@@ -509,7 +509,7 @@
             "type": "site/v1/feature",
             "properties": {
               "reverse": "{{true}}",
-              "imgSrc": "http://localhost:3001/dist/images/feature-editor.gif",
+              "imgSrc": "/feature-editor.gif",
               "title": "功能强大的可视化编辑器\n",
               "desc": "Sunmao 提供了功能强大且完善可视化低代码编辑器，无需编程基础，并且编辑器本身也是可扩展的。\n\n"
             },
@@ -535,7 +535,7 @@
             "type": "site/v1/feature",
             "properties": {
               "reverse": "{{false}}",
-              "imgSrc": "http://localhost:3001/dist/images/type-safe.gif",
+              "imgSrc": "/type-safe.gif",
               "title": "类型安全\n",
               "desc": "无论是在组件开发过程中，还是使用低代码编辑器的过程中，都能享受类型自动推断和补全。\n\n"
             },
