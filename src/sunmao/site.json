@@ -307,7 +307,7 @@
           "type": "core/v1/text",
           "properties": {
             "value": {
-              "raw": "可扩展的低代码UI框架",
+              "raw": "{{i18n.t('heroTitle')}}",
               "format": "plain"
             }
           },
@@ -339,7 +339,7 @@
           "type": "core/v1/text",
           "properties": {
             "value": {
-              "raw": "带有运行时和编辑器的开源低代码框架\n轻松集成任何自定义UI组件，让你的UI组件库享受低代码的便利。",
+              "raw": "{{i18n.t('heroDesc')}}",
               "format": "plain"
             }
           },
@@ -374,7 +374,7 @@
             "hoverable": false,
             "status": "warning",
             "href": "/dev.html",
-            "content": "立即体验"
+            "content": "{{i18n.t('heroButtonText')}}"
           },
           "traits": [
             {
@@ -478,8 +478,8 @@
             "properties": {
               "reverse": "{{false}}",
               "imgSrc": "/many-components.gif",
-              "title": "强大的可扩展性\n",
-              "desc": "无论是组件，还是逻辑，甚至是编辑器本身，都是可扩展的。也就是说，您可以在低代码工具中，使用您自己的组件库了。\n\n"
+              "title": "{{i18n.t('featureExtensibleTitle')}}",
+              "desc": "{{i18n.t('featureExtensibleDesc')}}"
             },
             "handlers": []
           },
@@ -510,8 +510,8 @@
             "properties": {
               "reverse": "{{true}}",
               "imgSrc": "/feature-editor.gif",
-              "title": "功能强大的可视化编辑器\n",
-              "desc": "Sunmao 提供了功能强大且完善可视化低代码编辑器，无需编程基础，并且编辑器本身也是可扩展的。\n\n"
+              "title": "{{i18n.t('featureEditorTitle')}}",
+              "desc": "{{i18n.t('featureEditorDesc')}}"
             },
             "handlers": []
           },
@@ -536,8 +536,8 @@
             "properties": {
               "reverse": "{{false}}",
               "imgSrc": "/type-safe.gif",
-              "title": "类型安全\n",
-              "desc": "无论是在组件开发过程中，还是使用低代码编辑器的过程中，都能享受类型自动推断和补全。\n\n"
+              "title": "{{i18n.t('featureTypeSafeTitle')}}",
+              "desc": "{{i18n.t('featureTypeSafeDesc')}}"
             },
             "handlers": []
           },

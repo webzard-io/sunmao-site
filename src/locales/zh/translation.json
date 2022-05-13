@@ -1,0 +1,11 @@
+{
+  "heroTitle": "可扩展的低代码 UI 框架",
+  "heroDesc": "带有运行时和编辑器的开源低代码框架。轻松集成任何自定义UI组件，让你的UI组件库享受低代码的便利。",
+  "heroButtonText": "立即编辑",
+  "featureExtensibleTitle" : "灵活的可扩展性",
+  "featureExtensibleDesc" : "无论是组件，还是逻辑，甚至是编辑器本身，都是可扩展的。也就是说，您可以在低代码工具中，使用您自己的组件库了。",
+  "featureEditorTitle" : "强大的可视化编辑器",
+  "featureEditorDesc" : "Sunmao 提供了功能强大且完善可视化低代码编辑器，无需编程基础，并且编辑器本身也是可扩展的。",
+  "featureTypeSafeTitle" : "类型安全",
+  "featureTypeSafeDesc" : "无论是在组件开发过程中，还是使用低代码编辑器的过程中，都能享受类型自动推断和补全。"
+}

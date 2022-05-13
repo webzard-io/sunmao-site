@@ -1,6 +1,7 @@
 import React from 'react';
 import { initSunmaoUI, SunmaoUIRuntimeProps, UtilMethod } from '@sunmao-ui/runtime';
 import type { Schema } from '../types';
+import i18n from 'i18next';
 
 // FIXME: this is used to solve a bug of the react JSON schema form
 // rjsf's bundle has some wrong usage of the global variable React
@@ -12,6 +13,7 @@ function registerSunmaoRuntime(
 ) {
   const { App: SunmaoApp } = initSunmaoUI({
     ...options,
+    dependencies: {i18n: i18n},
     libs: options?.libs?.concat([{ modules: schema.modules }]),
   });
 

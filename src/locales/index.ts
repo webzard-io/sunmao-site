@@ -1,7 +1,11 @@
-import ZH from "./zh-CN";
+import ZH from "./zh";
+import EN from "./en";
 
 export default {
-  'zh-CN': {
+  'zh': {
     translation: ZH,
+  },
+  'en': {
+    translation: EN,
   },
 };

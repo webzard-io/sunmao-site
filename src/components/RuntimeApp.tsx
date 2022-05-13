@@ -6,11 +6,13 @@ import registerSunmaoRuntime from './SunmaoRuntime';
 import { getNavigateMethod, openHref } from '../sunmao/methods';
 import type { Schema } from '../types';
 import '../init';
+import i18n from 'i18next';
 
 function RuntimeApp() {
   const navigate = useNavigate();
   const options = useMemo(
     () => ({
+      dependencies: { i18n },
       libs: [libs, ArcoDesignLib],
       utilMethods: [getNavigateMethod(navigate), openHref],
     }),
