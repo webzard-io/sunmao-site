@@ -12,13 +12,12 @@ export const SunmaoCalendar = implementRuntimeComponent({
   metadata: {
     name: 'calendar',
     displayName: 'Calendar',
-    exampleProperties: {},
+    exampleProperties: {
+      events: [],
+    },
     annotations: {
       category: 'Advance',
     },
-    isDraggable: false,
-    isResizable: false,
-    exampleSize: [1, 1],
   },
   spec: {
     properties: Type.Object({
@@ -43,6 +42,7 @@ export const SunmaoCalendar = implementRuntimeComponent({
   return (
     <div ref={elementRef} className={css(customStyle?.content)}>
       <Calendar
+        toolbar={false}
         localizer={localizer}
         defaultDate={new Date(2022, 5, 1)}
         events={events}

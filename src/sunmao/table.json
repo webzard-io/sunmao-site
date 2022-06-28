@@ -862,7 +862,7 @@
             "tableLayoutFixed": false,
             "borderCell": false,
             "stripe": false,
-            "size": "default",
+            "size": "small",
             "useDefaultFilter": true,
             "useDefaultSort": true,
             "pagePosition": "bottomCenter",

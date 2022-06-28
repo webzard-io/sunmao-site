@@ -24,7 +24,57 @@
                 "styles": [
                   {
                     "styleSlot": "content",
-                    "style": "background: #E9EDF3;\nwidth: 100%;\nheight: 100%;"
+                    "style": "width: 100%;\nheight: 100%;",
+                    "cssProperties": {
+                      "0": "b",
+                      "1": "a",
+                      "2": "c",
+                      "3": "k",
+                      "4": "g",
+                      "5": "r",
+                      "6": "o",
+                      "7": "u",
+                      "8": "n",
+                      "9": "d",
+                      "10": ":",
+                      "11": " ",
+                      "12": "#",
+                      "13": "E",
+                      "14": "9",
+                      "15": "E",
+                      "16": "D",
+                      "17": "F",
+                      "18": "3",
+                      "19": ";",
+                      "20": "\n",
+                      "21": "w",
+                      "22": "i",
+                      "23": "d",
+                      "24": "t",
+                      "25": "h",
+                      "26": ":",
+                      "27": " ",
+                      "28": "1",
+                      "29": "0",
+                      "30": "0",
+                      "31": "%",
+                      "32": ";",
+                      "33": "\n",
+                      "34": "h",
+                      "35": "e",
+                      "36": "i",
+                      "37": "g",
+                      "38": "h",
+                      "39": "t",
+                      "40": ":",
+                      "41": " ",
+                      "42": "1",
+                      "43": "0",
+                      "44": "0",
+                      "45": "%",
+                      "46": ";",
+                      "backgroundColor": "rgba(255, 255, 255, 1)"
+                    }
                   }
                 ]
               }
@@ -57,7 +107,81 @@
                 "styles": [
                   {
                     "styleSlot": "content",
-                    "style": "\nwidth: 100%;\nposition: relative;\nmargin: auto;\nbackground: #fff;\nheight: 100%;"
+                    "style": "max-width: 1600px;\nwidth: 100%;\nposition: relative;\nmargin: auto;\nbackground: #fff;\nheight: 100%;"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "bg1",
+          "type": "arco/v1/image",
+          "properties": {
+            "src": "/header-illustration-light.svg",
+            "title": "",
+            "description": "",
+            "footerPosition": "inner",
+            "simple": false,
+            "preview": false,
+            "width": "100",
+            "height": 324,
+            "error": ""
+          },
+          "traits": [
+            {
+              "type": "core/v1/slot",
+              "properties": {
+                "container": {
+                  "id": "container",
+                  "slot": "content"
+                }
+              }
+            },
+            {
+              "type": "core/v1/style",
+              "properties": {
+                "styles": [
+                  {
+                    "styleSlot": "content",
+                    "style": "position: absolute !important;\ntop: 0;\nleft: 0;\nright: 0;\nwidth: 100% !important;\nimg {\n  width: 100%;\n}\n"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "bg2",
+          "type": "arco/v1/image",
+          "properties": {
+            "src": "/hero-media-illustration-light.svg",
+            "title": "",
+            "description": "",
+            "footerPosition": "inner",
+            "simple": false,
+            "preview": false,
+            "width": "100",
+            "height": 324,
+            "error": ""
+          },
+          "traits": [
+            {
+              "type": "core/v1/slot",
+              "properties": {
+                "container": {
+                  "id": "container",
+                  "slot": "content"
+                }
+              }
+            },
+            {
+              "type": "core/v1/style",
+              "properties": {
+                "styles": [
+                  {
+                    "styleSlot": "content",
+                    "style": "position: absolute !important;\ntop: 170px;\nright: 0;\nwidth: auto !important;\nimg {\n  width: 100%;\n}\n"
                   }
                 ]
               }
@@ -111,80 +235,6 @@
                   "id": "container",
                   "slot": "content"
                 }
-              }
-            }
-          ]
-        },
-        {
-          "id": "bg1",
-          "type": "arco/v1/image",
-          "properties": {
-            "src": "/header-illustration-light.svg",
-            "title": "",
-            "description": "",
-            "footerPosition": "inner",
-            "simple": false,
-            "preview": false,
-            "width": "100",
-            "height": 324,
-            "error": ""
-          },
-          "traits": [
-            {
-              "type": "core/v1/slot",
-              "properties": {
-                "container": {
-                  "id": "content",
-                  "slot": "content"
-                }
-              }
-            },
-            {
-              "type": "core/v1/style",
-              "properties": {
-                "styles": [
-                  {
-                    "styleSlot": "content",
-                    "style": "position: absolute !important;\ntop: 0;\nleft: 0;\nright: 0;\nwidth: 100% !important;\nimg {\n  width: 100%;\n}\n"
-                  }
-                ]
-              }
-            }
-          ]
-        },
-        {
-          "id": "bg2",
-          "type": "arco/v1/image",
-          "properties": {
-            "src": "/hero-media-illustration-light.svg",
-            "title": "",
-            "description": "",
-            "footerPosition": "inner",
-            "simple": false,
-            "preview": false,
-            "width": "100",
-            "height": 324,
-            "error": ""
-          },
-          "traits": [
-            {
-              "type": "core/v1/slot",
-              "properties": {
-                "container": {
-                  "id": "content",
-                  "slot": "content"
-                }
-              }
-            },
-            {
-              "type": "core/v1/style",
-              "properties": {
-                "styles": [
-                  {
-                    "styleSlot": "content",
-                    "style": "position: absolute !important;\ntop: 170px;\nright: 0;\nwidth: auto !important;\nimg {\n  width: 100%;\n}\n"
-                  }
-                ]
               }
             }
           ]
@@ -426,7 +476,9 @@
                       "89": "p",
                       "90": "x",
                       "91": ";",
-                      "width": "100%"
+                      "width": "100%",
+                      "marginBottom": "200px",
+                      "marginTop": "100px"
                     }
                   }
                 ]
@@ -784,35 +836,14 @@
           ]
         },
         {
-          "id": "text23",
-          "type": "core/v1/text",
+          "id": "day1Stack",
+          "type": "core/v1/stack",
           "properties": {
-            "value": {
-              "raw": "text",
-              "format": "plain"
-            }
-          },
-          "traits": [
-            {
-              "type": "core/v1/slot",
-              "properties": {
-                "container": {
-                  "id": "content",
-                  "slot": "content"
-                },
-                "ifCondition": true
-              }
-            }
-          ]
-        },
-        {
-          "id": "text19",
-          "type": "core/v1/text",
-          "properties": {
-            "value": {
-              "raw": "借助 Sunmao UI，你可以轻松创建一个前端应用。不过，这还不够酷。",
-              "format": "plain"
-            }
+            "spacing": 12,
+            "direction": "vertical",
+            "align": "auto",
+            "wrap": "",
+            "justify": ""
           },
           "traits": [
             {
@@ -831,60 +862,34 @@
                 "styles": [
                   {
                     "styleSlot": "content",
-                    "style": "max-width: 1128px;\nmargin: auto;\ntext-align: left;",
+                    "style": "border-radius: 12px;",
                     "cssProperties": {
-                      "0": "m",
-                      "1": "a",
-                      "2": "x",
-                      "3": "-",
-                      "4": "w",
-                      "5": "i",
-                      "6": "d",
-                      "7": "t",
-                      "8": "h",
-                      "9": ":",
-                      "10": " ",
-                      "11": "1",
-                      "12": "1",
+                      "0": "r",
+                      "1": "g",
+                      "2": "b",
+                      "3": "a",
+                      "4": "(",
+                      "5": "0",
+                      "6": ",",
+                      "7": " ",
+                      "8": "2",
+                      "9": "4",
+                      "10": ",",
+                      "11": " ",
+                      "12": "4",
                       "13": "2",
-                      "14": "8",
-                      "15": "p",
-                      "16": "x",
-                      "17": ";",
-                      "18": "\n",
-                      "19": "m",
-                      "20": "a",
-                      "21": "r",
-                      "22": "g",
-                      "23": "i",
-                      "24": "n",
-                      "25": ":",
-                      "26": " ",
-                      "27": "a",
-                      "28": "u",
-                      "29": "t",
-                      "30": "o",
-                      "31": ";",
-                      "32": "\n",
-                      "33": "t",
-                      "34": "e",
-                      "35": "x",
-                      "36": "t",
-                      "37": "-",
-                      "38": "a",
-                      "39": "l",
-                      "40": "i",
-                      "41": "g",
-                      "42": "n",
-                      "43": ":",
-                      "44": " ",
-                      "45": "l",
-                      "46": "e",
-                      "47": "f",
-                      "48": "t",
-                      "49": ";",
-                      "fontSize": "20px",
-                      "width": "100%"
+                      "14": ",",
+                      "15": " ",
+                      "16": "0",
+                      "17": ".",
+                      "18": "6",
+                      "19": "5",
+                      "20": ")",
+                      "backgroundColor": "rgba(0, 24, 42, 0.05)",
+                      "paddingTop": "60px",
+                      "paddingLeft": "60px",
+                      "paddingBottom": "60px",
+                      "paddingRight": "60px"
                     }
                   }
                 ]
@@ -893,7 +898,84 @@
           ]
         },
         {
-          "id": "iframe17",
+          "id": "text22",
+          "type": "core/v1/text",
+          "properties": {
+            "value": {
+              "raw": "Day 1: 创建一个简单的日程管理界面",
+              "format": "plain"
+            }
+          },
+          "traits": [
+            {
+              "type": "core/v1/slot",
+              "properties": {
+                "container": {
+                  "id": "day1Stack",
+                  "slot": "content"
+                },
+                "ifCondition": true
+              }
+            },
+            {
+              "type": "core/v1/style",
+              "properties": {
+                "styles": [
+                  {
+                    "styleSlot": "content",
+                    "style": "",
+                    "cssProperties": {
+                      "fontSize": "22px",
+                      "fontWeight": "800",
+                      "marginTop": "12px",
+                      "marginBottom": "20px"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "text23",
+          "type": "core/v1/text",
+          "properties": {
+            "value": {
+              "raw": "借助强大的 Sunmao 编辑器，你可以轻松编排出一个完整的 CRUD 页面。不过，这仅仅是个开始。",
+              "format": "plain"
+            }
+          },
+          "traits": [
+            {
+              "type": "core/v1/slot",
+              "properties": {
+                "container": {
+                  "id": "day1Stack",
+                  "slot": "content"
+                },
+                "ifCondition": true
+              }
+            },
+            {
+              "type": "core/v1/style",
+              "properties": {
+                "styles": [
+                  {
+                    "styleSlot": "content",
+                    "style": "",
+                    "cssProperties": {
+                      "color": "rgba(0, 24, 42, 0.65)",
+                      "fontSize": "16px",
+                      "marginBottom": "32px"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "tableIframe",
           "type": "core/v1/iframe",
           "properties": {
             "src": "/dev.html#/table",
@@ -906,7 +988,7 @@
               "type": "core/v1/slot",
               "properties": {
                 "container": {
-                  "id": "content",
+                  "id": "day1Stack",
                   "slot": "content"
                 },
                 "ifCondition": true
@@ -918,7 +1000,7 @@
                 "styles": [
                   {
                     "styleSlot": "content",
-                    "style": "z-index: 100;\n",
+                    "style": "z-index: 100;\nborder-radius: 12px;\nbox-shadow: 0px 10px 60px 0px rgba(0, 0, 0, .15), 0px 15px 25px 0px rgba(0, 0, 0, .1);\n",
                     "cssProperties": {
                       "0": "z",
                       "1": "-",
@@ -945,13 +1027,14 @@
           ]
         },
         {
-          "id": "text19_copy1",
-          "type": "core/v1/text",
+          "id": "day2Stack",
+          "type": "core/v1/stack",
           "properties": {
-            "value": {
-              "raw": "你可以将任何 React 组件封装成 Sunmao 组件，从而在 Sunmao 编辑器中使用它，渐进式地开发你的前端应用。",
-              "format": "plain"
-            }
+            "spacing": 12,
+            "direction": "vertical",
+            "align": "auto",
+            "wrap": "",
+            "justify": ""
           },
           "traits": [
             {
@@ -970,62 +1053,34 @@
                 "styles": [
                   {
                     "styleSlot": "content",
-                    "style": "max-width: 1128px;\nmargin: auto;\ntext-align: left;",
+                    "style": "border-radius: 12px;",
                     "cssProperties": {
-                      "0": "m",
-                      "1": "a",
-                      "2": "x",
-                      "3": "-",
-                      "4": "w",
-                      "5": "i",
-                      "6": "d",
-                      "7": "t",
-                      "8": "h",
-                      "9": ":",
-                      "10": " ",
-                      "11": "1",
-                      "12": "1",
+                      "0": "r",
+                      "1": "g",
+                      "2": "b",
+                      "3": "a",
+                      "4": "(",
+                      "5": "0",
+                      "6": ",",
+                      "7": " ",
+                      "8": "2",
+                      "9": "4",
+                      "10": ",",
+                      "11": " ",
+                      "12": "4",
                       "13": "2",
-                      "14": "8",
-                      "15": "p",
-                      "16": "x",
-                      "17": ";",
-                      "18": "\n",
-                      "19": "m",
-                      "20": "a",
-                      "21": "r",
-                      "22": "g",
-                      "23": "i",
-                      "24": "n",
-                      "25": ":",
-                      "26": " ",
-                      "27": "a",
-                      "28": "u",
-                      "29": "t",
-                      "30": "o",
-                      "31": ";",
-                      "32": "\n",
-                      "33": "t",
-                      "34": "e",
-                      "35": "x",
-                      "36": "t",
-                      "37": "-",
-                      "38": "a",
-                      "39": "l",
-                      "40": "i",
-                      "41": "g",
-                      "42": "n",
-                      "43": ":",
-                      "44": " ",
-                      "45": "l",
-                      "46": "e",
-                      "47": "f",
-                      "48": "t",
-                      "49": ";",
-                      "fontSize": "20px",
-                      "width": "100%",
-                      "marginTop": "40px",
-                      "marginBottom": "40px"
+                      "14": ",",
+                      "15": " ",
+                      "16": "0",
+                      "17": ".",
+                      "18": "6",
+                      "19": "5",
+                      "20": ")",
+                      "backgroundColor": "rgba(0, 24, 42, 0.05)",
+                      "paddingTop": "60px",
+                      "paddingLeft": "60px",
+                      "paddingBottom": "60px",
+                      "paddingRight": "60px"
                     }
                   }
                 ]
@@ -1034,7 +1089,260 @@
           ]
         },
         {
-          "id": "iframe17_copy1",
+          "id": "text22_copy0",
+          "type": "core/v1/text",
+          "properties": {
+            "value": {
+              "raw": "Day 2: 封装一个更合适的日历组件来替换表格",
+              "format": "plain"
+            }
+          },
+          "traits": [
+            {
+              "type": "core/v1/slot",
+              "properties": {
+                "container": {
+                  "id": "day2Stack",
+                  "slot": "content"
+                },
+                "ifCondition": true
+              }
+            },
+            {
+              "type": "core/v1/style",
+              "properties": {
+                "styles": [
+                  {
+                    "styleSlot": "content",
+                    "style": "",
+                    "cssProperties": {
+                      "fontSize": "22px",
+                      "fontWeight": "800",
+                      "marginTop": "12px",
+                      "marginBottom": "20px"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "text23_copy0",
+          "type": "core/v1/text",
+          "properties": {
+            "value": {
+              "raw": "一个日历组件可能比表格更适合这个场景。你可以在 Github 上找一个你喜欢的表格组件，把它封装成一个Sunmao 组件，只需写一些代码就能搞定。",
+              "format": "plain"
+            }
+          },
+          "traits": [
+            {
+              "type": "core/v1/slot",
+              "properties": {
+                "container": {
+                  "id": "day2Stack",
+                  "slot": "content"
+                },
+                "ifCondition": true
+              }
+            },
+            {
+              "type": "core/v1/style",
+              "properties": {
+                "styles": [
+                  {
+                    "styleSlot": "content",
+                    "style": "",
+                    "cssProperties": {
+                      "color": "rgba(0, 24, 42, 0.65)",
+                      "fontSize": "16px",
+                      "marginBottom": "32px"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "text24",
+          "type": "core/v1/text",
+          "properties": {
+            "value": {
+              "raw": "",
+              "format": "plain"
+            }
+          },
+          "traits": [
+            {
+              "type": "core/v1/slot",
+              "properties": {
+                "container": {
+                  "id": "day2Stack",
+                  "slot": "content"
+                },
+                "ifCondition": true
+              }
+            },
+            {
+              "type": "core/v1/style",
+              "properties": {
+                "styles": [
+                  {
+                    "styleSlot": "content",
+                    "style": "",
+                    "cssProperties": {
+                      "marginTop": "",
+                      "height": "400px"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "day3Stack",
+          "type": "core/v1/stack",
+          "properties": {
+            "spacing": 12,
+            "direction": "vertical",
+            "align": "auto",
+            "wrap": "",
+            "justify": ""
+          },
+          "traits": [
+            {
+              "type": "core/v1/slot",
+              "properties": {
+                "container": {
+                  "id": "content",
+                  "slot": "content"
+                },
+                "ifCondition": true
+              }
+            },
+            {
+              "type": "core/v1/style",
+              "properties": {
+                "styles": [
+                  {
+                    "styleSlot": "content",
+                    "style": "border-radius: 12px;",
+                    "cssProperties": {
+                      "0": "r",
+                      "1": "g",
+                      "2": "b",
+                      "3": "a",
+                      "4": "(",
+                      "5": "0",
+                      "6": ",",
+                      "7": " ",
+                      "8": "2",
+                      "9": "4",
+                      "10": ",",
+                      "11": " ",
+                      "12": "4",
+                      "13": "2",
+                      "14": ",",
+                      "15": " ",
+                      "16": "0",
+                      "17": ".",
+                      "18": "6",
+                      "19": "5",
+                      "20": ")",
+                      "backgroundColor": "rgba(0, 24, 42, 0.05)",
+                      "paddingTop": "60px",
+                      "paddingLeft": "60px",
+                      "paddingBottom": "60px",
+                      "paddingRight": "60px"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "day3title",
+          "type": "core/v1/text",
+          "properties": {
+            "value": {
+              "raw": "Day 3: 在Editor 中用日历组件替换掉表格组件",
+              "format": "plain"
+            }
+          },
+          "traits": [
+            {
+              "type": "core/v1/slot",
+              "properties": {
+                "container": {
+                  "id": "day3Stack",
+                  "slot": "content"
+                },
+                "ifCondition": true
+              }
+            },
+            {
+              "type": "core/v1/style",
+              "properties": {
+                "styles": [
+                  {
+                    "styleSlot": "content",
+                    "style": "",
+                    "cssProperties": {
+                      "fontSize": "22px",
+                      "fontWeight": "800",
+                      "marginTop": "12px",
+                      "marginBottom": "20px"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "day3desc",
+          "type": "core/v1/text",
+          "properties": {
+            "value": {
+              "raw": "封装好的日历组件可以直接注册到 Sunmao 编辑器使用，替换掉表格组件。你可以渐进式的迭代更新你的 UI。即便是不懂编程的人，也可以使用自定义的组件开发 UI 了。",
+              "format": "plain"
+            }
+          },
+          "traits": [
+            {
+              "type": "core/v1/slot",
+              "properties": {
+                "container": {
+                  "id": "day3Stack",
+                  "slot": "content"
+                },
+                "ifCondition": true
+              }
+            },
+            {
+              "type": "core/v1/style",
+              "properties": {
+                "styles": [
+                  {
+                    "styleSlot": "content",
+                    "style": "",
+                    "cssProperties": {
+                      "color": "rgba(0, 24, 42, 0.65)",
+                      "fontSize": "16px",
+                      "marginBottom": "32px"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "calendarIframe",
           "type": "core/v1/iframe",
           "properties": {
             "src": "/dev.html#/calendar",
@@ -1047,7 +1355,7 @@
               "type": "core/v1/slot",
               "properties": {
                 "container": {
-                  "id": "content",
+                  "id": "day3Stack",
                   "slot": "content"
                 },
                 "ifCondition": true
