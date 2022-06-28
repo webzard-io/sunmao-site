@@ -1,7 +1,8 @@
 import { SunmaoLib } from '@sunmao-ui/runtime';
+import { SunmaoCalendar } from '../components/Calendar';
 
 const siteLib: SunmaoLib = {
-  components: [],
+  components: [SunmaoCalendar],
   traits: [],
   utilMethods: [],
   modules: [],

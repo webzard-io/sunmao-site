@@ -1,26 +1,47 @@
-import React from 'react';
-import { initSunmaoUI, SunmaoUIRuntimeProps, UtilMethod } from '@sunmao-ui/runtime';
-import type { Schema } from '../types';
+import React, { useEffect, useState } from 'react';
+import { initSunmaoUI, SunmaoUIRuntimeProps } from '@sunmao-ui/runtime';
+import { FsManager, FsManagerOptions } from '../FsManager';
+import { Application, createModule, RuntimeModule } from '@sunmao-ui/core';
+import '../init';
 import i18n from 'i18next';
 
+const DEFAULT_APP: Application = {
+  version: 'sunmao/v1',
+  kind: 'Application',
+  metadata: {
+    name: 'some App',
+  },
+  spec: {
+    components: [],
+  },
+};
 // FIXME: this is used to solve a bug of the react JSON schema form
 // rjsf's bundle has some wrong usage of the global variable React
 window.React = React;
 
 function registerSunmaoRuntime(
-  schema: Schema,
-  options: SunmaoUIRuntimeProps & { utilMethods?: UtilMethod<any>[] } = {}
+  managerOptions: FsManagerOptions,
+  options: SunmaoUIRuntimeProps
 ) {
-  const { App: SunmaoApp } = initSunmaoUI({
-    ...options,
-    dependencies: {i18n: i18n},
-    libs: options?.libs?.concat([{ modules: schema.modules }]),
-  });
+  const fsManager = new FsManager(managerOptions);
 
   function App() {
-    return (
-      <SunmaoApp debugEvent={false} debugStore={false} options={schema.application} />
-    );
+    const [app, setApp] = useState(JSON.parse(JSON.stringify(DEFAULT_APP)));
+    const [modules, setModules] = useState<RuntimeModule[]>([]);
+
+    const { App: SunmaoApp } = initSunmaoUI({
+      ...options,
+      dependencies: { i18n: i18n },
+      libs: options?.libs?.concat([{ modules }]),
+    });
+
+    useEffect(() => {
+      fsManager.getApp().then(setApp);
+      fsManager.getModules().then(modules => {
+        setModules(modules.map(createModule));
+      });
+    }, []);
+    return <SunmaoApp options={app} />;
   }
 
   return App;

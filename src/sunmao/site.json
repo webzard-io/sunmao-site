@@ -14,7 +14,7 @@
             "spacing": 12,
             "direction": "vertical",
             "align": "auto",
-            "wrap": "",
+            "wrap": true,
             "justify": ""
           },
           "traits": [
@@ -57,9 +57,60 @@
                 "styles": [
                   {
                     "styleSlot": "content",
-                    "style": "max-width: 1440px;\nwidth: 100%;\nposition: relative;\nmargin: auto;\nbackground: #fff;\nheight: 100%;"
+                    "style": "\nwidth: 100%;\nposition: relative;\nmargin: auto;\nbackground: #fff;\nheight: 100%;"
                   }
                 ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "content",
+          "type": "core/v1/stack",
+          "properties": {
+            "spacing": 24,
+            "direction": "vertical",
+            "align": "auto",
+            "wrap": "",
+            "justify": ""
+          },
+          "traits": [
+            {
+              "type": "core/v1/style",
+              "properties": {
+                "styles": [
+                  {
+                    "styleSlot": "content",
+                    "style": "margin: 0 auto;",
+                    "cssProperties": {
+                      "0": "m",
+                      "1": "a",
+                      "2": "r",
+                      "3": "g",
+                      "4": "i",
+                      "5": "n",
+                      "6": ":",
+                      "7": " ",
+                      "8": "0",
+                      "9": " ",
+                      "10": "a",
+                      "11": "u",
+                      "12": "t",
+                      "13": "o",
+                      "14": ";",
+                      "width": "100%"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "core/v1/slot",
+              "properties": {
+                "container": {
+                  "id": "container",
+                  "slot": "content"
+                }
               }
             }
           ]
@@ -83,7 +134,7 @@
               "type": "core/v1/slot",
               "properties": {
                 "container": {
-                  "id": "container",
+                  "id": "content",
                   "slot": "content"
                 }
               }
@@ -120,7 +171,7 @@
               "type": "core/v1/slot",
               "properties": {
                 "container": {
-                  "id": "container",
+                  "id": "content",
                   "slot": "content"
                 }
               }
@@ -134,39 +185,6 @@
                     "style": "position: absolute !important;\ntop: 170px;\nright: 0;\nwidth: auto !important;\nimg {\n  width: 100%;\n}\n"
                   }
                 ]
-              }
-            }
-          ]
-        },
-        {
-          "id": "content",
-          "type": "core/v1/stack",
-          "properties": {
-            "spacing": 24,
-            "direction": "vertical",
-            "align": "auto",
-            "wrap": "",
-            "justify": ""
-          },
-          "traits": [
-            {
-              "type": "core/v1/style",
-              "properties": {
-                "styles": [
-                  {
-                    "styleSlot": "content",
-                    "style": "max-width: 1128px;\nmargin: 0 auto;"
-                  }
-                ]
-              }
-            },
-            {
-              "type": "core/v1/slot",
-              "properties": {
-                "container": {
-                  "id": "container",
-                  "slot": "content"
-                }
               }
             }
           ]
@@ -197,7 +215,59 @@
                 "styles": [
                   {
                     "styleSlot": "content",
-                    "style": "padding: 24px 0;"
+                    "style": "max-width: 1128px;\npadding: 24px 0;\nmargin: auto;",
+                    "cssProperties": {
+                      "0": "m",
+                      "1": "a",
+                      "2": "x",
+                      "3": "-",
+                      "4": "w",
+                      "5": "i",
+                      "6": "d",
+                      "7": "t",
+                      "8": "h",
+                      "9": ":",
+                      "10": " ",
+                      "11": "1",
+                      "12": "1",
+                      "13": "2",
+                      "14": "8",
+                      "15": "p",
+                      "16": "x",
+                      "17": ";",
+                      "18": "\n",
+                      "19": "p",
+                      "20": "a",
+                      "21": "d",
+                      "22": "d",
+                      "23": "i",
+                      "24": "n",
+                      "25": "g",
+                      "26": ":",
+                      "27": " ",
+                      "28": "2",
+                      "29": "4",
+                      "30": "p",
+                      "31": "x",
+                      "32": " ",
+                      "33": "0",
+                      "34": ";",
+                      "35": "\n",
+                      "36": "m",
+                      "37": "a",
+                      "38": "r",
+                      "39": "g",
+                      "40": "i",
+                      "41": "n",
+                      "42": ":",
+                      "43": " ",
+                      "44": "a",
+                      "45": "u",
+                      "46": "t",
+                      "47": "o",
+                      "48": ";",
+                      "width": "100%"
+                    }
                   }
                 ]
               }
@@ -262,7 +332,102 @@
                 "styles": [
                   {
                     "styleSlot": "content",
-                    "style": "text-align: left;\npadding-top: 88px;\npadding-bottom: 120px;"
+                    "style": "max-width: 1128px;\nmargin: auto;\ntext-align: left;\npadding-top: 88px;\npadding-bottom: 120px;",
+                    "cssProperties": {
+                      "0": "m",
+                      "1": "a",
+                      "2": "x",
+                      "3": "-",
+                      "4": "w",
+                      "5": "i",
+                      "6": "d",
+                      "7": "t",
+                      "8": "h",
+                      "9": ":",
+                      "10": " ",
+                      "11": "1",
+                      "12": "1",
+                      "13": "2",
+                      "14": "8",
+                      "15": "p",
+                      "16": "x",
+                      "17": ";",
+                      "18": "\n",
+                      "19": "m",
+                      "20": "a",
+                      "21": "r",
+                      "22": "g",
+                      "23": "i",
+                      "24": "n",
+                      "25": ":",
+                      "26": " ",
+                      "27": "a",
+                      "28": "u",
+                      "29": "t",
+                      "30": "o",
+                      "31": ";",
+                      "32": "\n",
+                      "33": "t",
+                      "34": "e",
+                      "35": "x",
+                      "36": "t",
+                      "37": "-",
+                      "38": "a",
+                      "39": "l",
+                      "40": "i",
+                      "41": "g",
+                      "42": "n",
+                      "43": ":",
+                      "44": " ",
+                      "45": "l",
+                      "46": "e",
+                      "47": "f",
+                      "48": "t",
+                      "49": ";",
+                      "50": "\n",
+                      "51": "p",
+                      "52": "a",
+                      "53": "d",
+                      "54": "d",
+                      "55": "i",
+                      "56": "n",
+                      "57": "g",
+                      "58": "-",
+                      "59": "t",
+                      "60": "o",
+                      "61": "p",
+                      "62": ":",
+                      "63": " ",
+                      "64": "8",
+                      "65": "8",
+                      "66": "p",
+                      "67": "x",
+                      "68": ";",
+                      "69": "\n",
+                      "70": "p",
+                      "71": "a",
+                      "72": "d",
+                      "73": "d",
+                      "74": "i",
+                      "75": "n",
+                      "76": "g",
+                      "77": "-",
+                      "78": "b",
+                      "79": "o",
+                      "80": "t",
+                      "81": "t",
+                      "82": "o",
+                      "83": "m",
+                      "84": ":",
+                      "85": " ",
+                      "86": "1",
+                      "87": "2",
+                      "88": "0",
+                      "89": "p",
+                      "90": "x",
+                      "91": ";",
+                      "width": "100%"
+                    }
                   }
                 ]
               }
@@ -392,7 +557,189 @@
                 "styles": [
                   {
                     "styleSlot": "content",
-                    "style": "width: 170px;\npadding: 16px 32px;\ntext-align: center;\nheight: 48px !important;\nline-height: 48px !important;\ncolor: #fff !important;\nbackground-color: #535FD7 !important;\nfont-size: 14px !important;\nfont-weight: 600 !important;"
+                    "style": "line-height: 48px",
+                    "cssProperties": {
+                      "0": "w",
+                      "1": "i",
+                      "2": "d",
+                      "3": "t",
+                      "4": "h",
+                      "5": ":",
+                      "6": " ",
+                      "7": "1",
+                      "8": "7",
+                      "9": "0",
+                      "10": "p",
+                      "11": "x",
+                      "12": ";",
+                      "13": "\n",
+                      "14": "p",
+                      "15": "a",
+                      "16": "d",
+                      "17": "d",
+                      "18": "i",
+                      "19": "n",
+                      "20": "g",
+                      "21": ":",
+                      "22": " ",
+                      "23": "1",
+                      "24": "6",
+                      "25": "p",
+                      "26": "x",
+                      "27": " ",
+                      "28": "3",
+                      "29": "2",
+                      "30": "p",
+                      "31": "x",
+                      "32": ";",
+                      "33": "\n",
+                      "34": "t",
+                      "35": "e",
+                      "36": "x",
+                      "37": "t",
+                      "38": "-",
+                      "39": "a",
+                      "40": "l",
+                      "41": "i",
+                      "42": "g",
+                      "43": "n",
+                      "44": ":",
+                      "45": " ",
+                      "46": "c",
+                      "47": "e",
+                      "48": "n",
+                      "49": "t",
+                      "50": "e",
+                      "51": "r",
+                      "52": ";",
+                      "53": "\n",
+                      "54": "h",
+                      "55": "e",
+                      "56": "i",
+                      "57": "g",
+                      "58": "h",
+                      "59": "t",
+                      "60": ":",
+                      "61": " ",
+                      "62": "4",
+                      "63": "8",
+                      "64": "p",
+                      "65": "x",
+                      "66": " ",
+                      "67": "!",
+                      "68": "i",
+                      "69": "m",
+                      "70": "p",
+                      "71": "o",
+                      "72": "r",
+                      "73": "t",
+                      "74": "a",
+                      "75": "n",
+                      "76": "t",
+                      "77": ";",
+                      "78": "\n",
+                      "79": "b",
+                      "80": "a",
+                      "81": "c",
+                      "82": "k",
+                      "83": "g",
+                      "84": "r",
+                      "85": "o",
+                      "86": "u",
+                      "87": "n",
+                      "88": "d",
+                      "89": "-",
+                      "90": "c",
+                      "91": "o",
+                      "92": "l",
+                      "93": "o",
+                      "94": "r",
+                      "95": ":",
+                      "96": " ",
+                      "97": "#",
+                      "98": "5",
+                      "99": "3",
+                      "100": "5",
+                      "101": "F",
+                      "102": "D",
+                      "103": "7",
+                      "104": " ",
+                      "105": "!",
+                      "106": "i",
+                      "107": "m",
+                      "108": "p",
+                      "109": "o",
+                      "110": "r",
+                      "111": "t",
+                      "112": "a",
+                      "113": "n",
+                      "114": "t",
+                      "115": ";",
+                      "116": "\n",
+                      "117": "f",
+                      "118": "o",
+                      "119": "n",
+                      "120": "t",
+                      "121": "-",
+                      "122": "s",
+                      "123": "i",
+                      "124": "z",
+                      "125": "e",
+                      "126": ":",
+                      "127": " ",
+                      "128": "1",
+                      "129": "4",
+                      "130": "p",
+                      "131": "x",
+                      "132": " ",
+                      "133": "!",
+                      "134": "i",
+                      "135": "m",
+                      "136": "p",
+                      "137": "o",
+                      "138": "r",
+                      "139": "t",
+                      "140": "a",
+                      "141": "n",
+                      "142": "t",
+                      "143": ";",
+                      "144": "\n",
+                      "145": "f",
+                      "146": "o",
+                      "147": "n",
+                      "148": "t",
+                      "149": "-",
+                      "150": "w",
+                      "151": "e",
+                      "152": "i",
+                      "153": "g",
+                      "154": "h",
+                      "155": "t",
+                      "156": ":",
+                      "157": " ",
+                      "158": "6",
+                      "159": "0",
+                      "160": "0",
+                      "161": " ",
+                      "162": "!",
+                      "163": "i",
+                      "164": "m",
+                      "165": "p",
+                      "166": "o",
+                      "167": "r",
+                      "168": "t",
+                      "169": "a",
+                      "170": "n",
+                      "171": "t",
+                      "172": ";",
+                      "color": "rgba(255, 255, 255, 1)",
+                      "backgroundColor": "rgba(83, 95, 215, 1)",
+                      "fontSize": "16px",
+                      "fontWeight": "600",
+                      "width": "170px",
+                      "height": "48px",
+                      "textAlign": "center"
+                    }
                   }
                 ]
               }
@@ -437,6 +784,308 @@
           ]
         },
         {
+          "id": "text23",
+          "type": "core/v1/text",
+          "properties": {
+            "value": {
+              "raw": "text",
+              "format": "plain"
+            }
+          },
+          "traits": [
+            {
+              "type": "core/v1/slot",
+              "properties": {
+                "container": {
+                  "id": "content",
+                  "slot": "content"
+                },
+                "ifCondition": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "text19",
+          "type": "core/v1/text",
+          "properties": {
+            "value": {
+              "raw": "借助 Sunmao UI，你可以轻松创建一个前端应用。不过，这还不够酷。",
+              "format": "plain"
+            }
+          },
+          "traits": [
+            {
+              "type": "core/v1/slot",
+              "properties": {
+                "container": {
+                  "id": "content",
+                  "slot": "content"
+                },
+                "ifCondition": true
+              }
+            },
+            {
+              "type": "core/v1/style",
+              "properties": {
+                "styles": [
+                  {
+                    "styleSlot": "content",
+                    "style": "max-width: 1128px;\nmargin: auto;\ntext-align: left;",
+                    "cssProperties": {
+                      "0": "m",
+                      "1": "a",
+                      "2": "x",
+                      "3": "-",
+                      "4": "w",
+                      "5": "i",
+                      "6": "d",
+                      "7": "t",
+                      "8": "h",
+                      "9": ":",
+                      "10": " ",
+                      "11": "1",
+                      "12": "1",
+                      "13": "2",
+                      "14": "8",
+                      "15": "p",
+                      "16": "x",
+                      "17": ";",
+                      "18": "\n",
+                      "19": "m",
+                      "20": "a",
+                      "21": "r",
+                      "22": "g",
+                      "23": "i",
+                      "24": "n",
+                      "25": ":",
+                      "26": " ",
+                      "27": "a",
+                      "28": "u",
+                      "29": "t",
+                      "30": "o",
+                      "31": ";",
+                      "32": "\n",
+                      "33": "t",
+                      "34": "e",
+                      "35": "x",
+                      "36": "t",
+                      "37": "-",
+                      "38": "a",
+                      "39": "l",
+                      "40": "i",
+                      "41": "g",
+                      "42": "n",
+                      "43": ":",
+                      "44": " ",
+                      "45": "l",
+                      "46": "e",
+                      "47": "f",
+                      "48": "t",
+                      "49": ";",
+                      "fontSize": "20px",
+                      "width": "100%"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "iframe17",
+          "type": "core/v1/iframe",
+          "properties": {
+            "src": "/dev.html#/table",
+            "referrerpolicy": "unset",
+            "sandbox": "unset",
+            "fetchpriority": "auto"
+          },
+          "traits": [
+            {
+              "type": "core/v1/slot",
+              "properties": {
+                "container": {
+                  "id": "content",
+                  "slot": "content"
+                },
+                "ifCondition": true
+              }
+            },
+            {
+              "type": "core/v1/style",
+              "properties": {
+                "styles": [
+                  {
+                    "styleSlot": "content",
+                    "style": "z-index: 100;\n",
+                    "cssProperties": {
+                      "0": "z",
+                      "1": "-",
+                      "2": "i",
+                      "3": "n",
+                      "4": "d",
+                      "5": "e",
+                      "6": "x",
+                      "7": ":",
+                      "8": " ",
+                      "9": "1",
+                      "10": "0",
+                      "11": "0",
+                      "12": ";",
+                      "13": "\n",
+                      "height": "800px",
+                      "width": "100%",
+                      "backgroundColor": "rgba(255, 255, 255, 1)"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "text19_copy1",
+          "type": "core/v1/text",
+          "properties": {
+            "value": {
+              "raw": "你可以将任何 React 组件封装成 Sunmao 组件，从而在 Sunmao 编辑器中使用它，渐进式地开发你的前端应用。",
+              "format": "plain"
+            }
+          },
+          "traits": [
+            {
+              "type": "core/v1/slot",
+              "properties": {
+                "container": {
+                  "id": "content",
+                  "slot": "content"
+                },
+                "ifCondition": true
+              }
+            },
+            {
+              "type": "core/v1/style",
+              "properties": {
+                "styles": [
+                  {
+                    "styleSlot": "content",
+                    "style": "max-width: 1128px;\nmargin: auto;\ntext-align: left;",
+                    "cssProperties": {
+                      "0": "m",
+                      "1": "a",
+                      "2": "x",
+                      "3": "-",
+                      "4": "w",
+                      "5": "i",
+                      "6": "d",
+                      "7": "t",
+                      "8": "h",
+                      "9": ":",
+                      "10": " ",
+                      "11": "1",
+                      "12": "1",
+                      "13": "2",
+                      "14": "8",
+                      "15": "p",
+                      "16": "x",
+                      "17": ";",
+                      "18": "\n",
+                      "19": "m",
+                      "20": "a",
+                      "21": "r",
+                      "22": "g",
+                      "23": "i",
+                      "24": "n",
+                      "25": ":",
+                      "26": " ",
+                      "27": "a",
+                      "28": "u",
+                      "29": "t",
+                      "30": "o",
+                      "31": ";",
+                      "32": "\n",
+                      "33": "t",
+                      "34": "e",
+                      "35": "x",
+                      "36": "t",
+                      "37": "-",
+                      "38": "a",
+                      "39": "l",
+                      "40": "i",
+                      "41": "g",
+                      "42": "n",
+                      "43": ":",
+                      "44": " ",
+                      "45": "l",
+                      "46": "e",
+                      "47": "f",
+                      "48": "t",
+                      "49": ";",
+                      "fontSize": "20px",
+                      "width": "100%",
+                      "marginTop": "40px",
+                      "marginBottom": "40px"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "iframe17_copy1",
+          "type": "core/v1/iframe",
+          "properties": {
+            "src": "/dev.html#/calendar",
+            "referrerpolicy": "unset",
+            "sandbox": "unset",
+            "fetchpriority": "auto"
+          },
+          "traits": [
+            {
+              "type": "core/v1/slot",
+              "properties": {
+                "container": {
+                  "id": "content",
+                  "slot": "content"
+                },
+                "ifCondition": true
+              }
+            },
+            {
+              "type": "core/v1/style",
+              "properties": {
+                "styles": [
+                  {
+                    "styleSlot": "content",
+                    "style": "z-index: 100;\n",
+                    "cssProperties": {
+                      "0": "z",
+                      "1": "-",
+                      "2": "i",
+                      "3": "n",
+                      "4": "d",
+                      "5": "e",
+                      "6": "x",
+                      "7": ":",
+                      "8": " ",
+                      "9": "1",
+                      "10": "0",
+                      "11": "0",
+                      "12": ";",
+                      "13": "\n",
+                      "height": "800px",
+                      "width": "100%",
+                      "backgroundColor": "rgba(255, 255, 255, 1)"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
           "id": "features",
           "type": "core/v1/stack",
           "properties": {
@@ -462,7 +1111,44 @@
                 "styles": [
                   {
                     "styleSlot": "content",
-                    "style": "margin: 0 auto;"
+                    "style": "max-width: 1128px;\nmargin: 0 auto;",
+                    "cssProperties": {
+                      "0": "m",
+                      "1": "a",
+                      "2": "x",
+                      "3": "-",
+                      "4": "w",
+                      "5": "i",
+                      "6": "d",
+                      "7": "t",
+                      "8": "h",
+                      "9": ":",
+                      "10": " ",
+                      "11": "1",
+                      "12": "1",
+                      "13": "2",
+                      "14": "8",
+                      "15": "p",
+                      "16": "x",
+                      "17": ";",
+                      "18": "\n",
+                      "19": "m",
+                      "20": "a",
+                      "21": "r",
+                      "22": "g",
+                      "23": "i",
+                      "24": "n",
+                      "25": ":",
+                      "26": " ",
+                      "27": "0",
+                      "28": " ",
+                      "29": "a",
+                      "30": "u",
+                      "31": "t",
+                      "32": "o",
+                      "33": ";",
+                      "width": "100%"
+                    }
                   }
                 ]
               }
@@ -496,7 +1182,14 @@
             {
               "type": "core/v1/style",
               "properties": {
-                "styles": []
+                "styles": [
+                  {
+                    "style": "",
+                    "cssProperties": {
+                      "width": ""
+                    }
+                  }
+                ]
               }
             }
           ]
@@ -571,7 +1264,12 @@
       "spec": {
         "stateMap": {},
         "events": [],
-        "properties": {}
+        "properties": {},
+        "exampleProperties": {
+          "imgSrc": "/many-components.gif",
+          "title": "Feature 1",
+          "desc": "Feature 1Feature 1Feature 1Feature 1Feature 1Feature 1Feature 1Feature 1"
+        }
       },
       "impl": [
         {
@@ -591,7 +1289,94 @@
                 "styles": [
                   {
                     "styleSlot": "content",
-                    "style": "padding: 64px 0;\nflex-direction: {{ !!reverse ? 'row-reverse' : 'row' }} !important;"
+                    "style": "padding: 64px 0;\nflex-direction: {{ !!reverse ? 'row-reverse' : 'row' }} !important;",
+                    "cssProperties": {
+                      "0": "p",
+                      "1": "a",
+                      "2": "d",
+                      "3": "d",
+                      "4": "i",
+                      "5": "n",
+                      "6": "g",
+                      "7": ":",
+                      "8": " ",
+                      "9": "6",
+                      "10": "4",
+                      "11": "p",
+                      "12": "x",
+                      "13": " ",
+                      "14": "0",
+                      "15": ";",
+                      "16": "\n",
+                      "17": "f",
+                      "18": "l",
+                      "19": "e",
+                      "20": "x",
+                      "21": "-",
+                      "22": "d",
+                      "23": "i",
+                      "24": "r",
+                      "25": "e",
+                      "26": "c",
+                      "27": "t",
+                      "28": "i",
+                      "29": "o",
+                      "30": "n",
+                      "31": ":",
+                      "32": " ",
+                      "33": "{",
+                      "34": "{",
+                      "35": " ",
+                      "36": "!",
+                      "37": "!",
+                      "38": "r",
+                      "39": "e",
+                      "40": "v",
+                      "41": "e",
+                      "42": "r",
+                      "43": "s",
+                      "44": "e",
+                      "45": " ",
+                      "46": "?",
+                      "47": " ",
+                      "48": "'",
+                      "49": "r",
+                      "50": "o",
+                      "51": "w",
+                      "52": "-",
+                      "53": "r",
+                      "54": "e",
+                      "55": "v",
+                      "56": "e",
+                      "57": "r",
+                      "58": "s",
+                      "59": "e",
+                      "60": "'",
+                      "61": " ",
+                      "62": ":",
+                      "63": " ",
+                      "64": "'",
+                      "65": "r",
+                      "66": "o",
+                      "67": "w",
+                      "68": "'",
+                      "69": " ",
+                      "70": "}",
+                      "71": "}",
+                      "72": " ",
+                      "73": "!",
+                      "74": "i",
+                      "75": "m",
+                      "76": "p",
+                      "77": "o",
+                      "78": "r",
+                      "79": "t",
+                      "80": "a",
+                      "81": "n",
+                      "82": "t",
+                      "83": ";",
+                      "width": "100%"
+                    }
                   }
                 ]
               }

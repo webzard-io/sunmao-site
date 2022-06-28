@@ -11,10 +11,14 @@ function EditorRouter() {
     libs: [libs, ArcoDesignLib],
   };
   const SitePageEditor = registerEditor({ name: 'site' }, options);
+  const CalendarPageEditor = registerEditor({ name: 'calendar' }, options);
+  const TablePageEditor = registerEditor({ name: 'table' }, options);
 
   return (
     <Routes>
       <Route path="/" element={<SitePageEditor />} />
+      <Route path="/calendar" element={<CalendarPageEditor />} />
+      <Route path="/table" element={<TablePageEditor />} />
     </Routes>
   );
 }

@@ -1,40 +1,21 @@
-import { Routes, Route, useNavigate } from 'react-router-dom';
 import { ArcoDesignLib } from '@sunmao-ui/arco-lib';
-import { Suspense, lazy, useMemo } from 'react';
-import { libs } from '../sunmao/lib';
+import React from 'react';
+import '@sunmao-ui/arco-lib/dist/index.css';
 import registerSunmaoRuntime from './SunmaoRuntime';
-import { getNavigateMethod, openHref } from '../sunmao/methods';
-import type { Schema } from '../types';
-import '../init';
-import i18n from 'i18next';
+import { Route, Routes } from 'react-router-dom';
 
-function RuntimeApp() {
-  const navigate = useNavigate();
-  const options = useMemo(
-    () => ({
-      dependencies: { i18n },
-      libs: [libs, ArcoDesignLib],
-      utilMethods: [getNavigateMethod(navigate), openHref],
-    }),
-    [navigate]
-  );
-  const SitePage = useMemo(
-    () =>
-      lazy(() =>
-        import('../sunmao/site.json').then(site => ({
-          default: registerSunmaoRuntime(site as Schema, options),
-        }))
-      ),
-    [options]
-  );
-
+function App() {
+  const options = { libs: [ArcoDesignLib] };
+  const SitePageEditor = registerSunmaoRuntime({ name: 'site' }, options);
+  const CalendarPageEditor = registerSunmaoRuntime({ name: 'calendar' }, options);
+  const TablePageEditor = registerSunmaoRuntime({ name: 'table' }, options);
   return (
-    <Suspense fallback={<span>loading</span>}>
-      <Routes>
-        <Route path="/" element={<SitePage />} />
-      </Routes>
-    </Suspense>
+    <Routes>
+      <Route path="/" element={<SitePageEditor />} />
+      <Route path="/calendar" element={<CalendarPageEditor />} />
+      <Route path="/table" element={<TablePageEditor />} />
+    </Routes>
   );
 }
 
-export default RuntimeApp;
+export default App;

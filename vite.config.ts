@@ -19,6 +19,14 @@ export default defineConfig({
           name: "site",
           path: path.resolve(__dirname, "./src/sunmao/site.json"),
         },
+        {
+          name: "calendar",
+          path: path.resolve(__dirname, "./src/sunmao/calendar.json"),
+        },
+        {
+          name: "table",
+          path: path.resolve(__dirname, "./src/sunmao/table.json"),
+        },
       ],
     }),
     react(),
