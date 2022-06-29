@@ -1016,6 +1016,114 @@
                       "11": "0",
                       "12": ";",
                       "13": "\n",
+                      "14": "b",
+                      "15": "o",
+                      "16": "r",
+                      "17": "d",
+                      "18": "e",
+                      "19": "r",
+                      "20": "-",
+                      "21": "r",
+                      "22": "a",
+                      "23": "d",
+                      "24": "i",
+                      "25": "u",
+                      "26": "s",
+                      "27": ":",
+                      "28": " ",
+                      "29": "1",
+                      "30": "2",
+                      "31": "p",
+                      "32": "x",
+                      "33": ";",
+                      "34": "\n",
+                      "35": "b",
+                      "36": "o",
+                      "37": "x",
+                      "38": "-",
+                      "39": "s",
+                      "40": "h",
+                      "41": "a",
+                      "42": "d",
+                      "43": "o",
+                      "44": "w",
+                      "45": ":",
+                      "46": " ",
+                      "47": "0",
+                      "48": "p",
+                      "49": "x",
+                      "50": " ",
+                      "51": "1",
+                      "52": "0",
+                      "53": "p",
+                      "54": "x",
+                      "55": " ",
+                      "56": "6",
+                      "57": "0",
+                      "58": "p",
+                      "59": "x",
+                      "60": " ",
+                      "61": "0",
+                      "62": "p",
+                      "63": "x",
+                      "64": " ",
+                      "65": "r",
+                      "66": "g",
+                      "67": "b",
+                      "68": "a",
+                      "69": "(",
+                      "70": "0",
+                      "71": ",",
+                      "72": " ",
+                      "73": "0",
+                      "74": ",",
+                      "75": " ",
+                      "76": "0",
+                      "77": ",",
+                      "78": " ",
+                      "79": ".",
+                      "80": "1",
+                      "81": "5",
+                      "82": ")",
+                      "83": ",",
+                      "84": " ",
+                      "85": "0",
+                      "86": "p",
+                      "87": "x",
+                      "88": " ",
+                      "89": "1",
+                      "90": "5",
+                      "91": "p",
+                      "92": "x",
+                      "93": " ",
+                      "94": "2",
+                      "95": "5",
+                      "96": "p",
+                      "97": "x",
+                      "98": " ",
+                      "99": "0",
+                      "100": "p",
+                      "101": "x",
+                      "102": " ",
+                      "103": "r",
+                      "104": "g",
+                      "105": "b",
+                      "106": "a",
+                      "107": "(",
+                      "108": "0",
+                      "109": ",",
+                      "110": " ",
+                      "111": "0",
+                      "112": ",",
+                      "113": " ",
+                      "114": "0",
+                      "115": ",",
+                      "116": " ",
+                      "117": ".",
+                      "118": "1",
+                      "119": ")",
+                      "120": ";",
+                      "121": "\n",
                       "height": "800px",
                       "width": "100%",
                       "backgroundColor": "rgba(255, 255, 255, 1)"
@@ -1166,13 +1274,14 @@
           ]
         },
         {
-          "id": "text24",
-          "type": "core/v1/text",
+          "id": "stack29",
+          "type": "core/v1/stack",
           "properties": {
-            "value": {
-              "raw": "",
-              "format": "plain"
-            }
+            "spacing": 12,
+            "direction": "horizontal",
+            "align": "auto",
+            "wrap": "",
+            "justify": ""
           },
           "traits": [
             {
@@ -1184,6 +1293,25 @@
                 },
                 "ifCondition": true
               }
+            }
+          ]
+        },
+        {
+          "id": "codeBlock29",
+          "type": "site/v1/codeBlock",
+          "properties": {
+            "code": "const SunmaoCalendar = implementRuntimeComponent({\n  version: 'site/v1',\n  metadata: {\n    name: 'calendar',\n    displayName: 'Calendar',\n    exampleProperties: {\n      events: [],\n    },\n    annotations: {\n      category: 'Advance',\n    },\n  },\n  spec: {\n    properties: Type.Object({\n      events: Type.Array(\n        Type.Object({\n          id: Type.String(),\n          title: Type.String(),\n          start: Type.String(),\n          end: Type.String(),\n        })\n      ),\n    }),\n    state: Type.Object({}),\n    methods: {},\n    slots: {},\n    styleSlots: ['content'],\n    events: [],\n  },\n})(props => {\n  const { events, elementRef, customStyle } = props;\n\n  return (\n    <div ref={elementRef} className={css(customStyle?.content)}>\n      <Calendar\n        toolbar={false}\n        localizer={localizer}\n        defaultDate={new Date(2022, 5, 1)}\n        events={events}\n        startAccessor=\"start\"\n        endAccessor=\"end\"\n      />\n    </div>\n  );\n});\n"
+          },
+          "traits": [
+            {
+              "type": "core/v1/slot",
+              "properties": {
+                "container": {
+                  "id": "stack29",
+                  "slot": "content"
+                },
+                "ifCondition": true
+              }
             },
             {
               "type": "core/v1/style",
@@ -1191,10 +1319,77 @@
                 "styles": [
                   {
                     "styleSlot": "content",
-                    "style": "",
+                    "style": "overflow: auto;",
                     "cssProperties": {
-                      "marginTop": "",
-                      "height": "400px"
+                      "0": "o",
+                      "1": "v",
+                      "2": "e",
+                      "3": "r",
+                      "4": "f",
+                      "5": "l",
+                      "6": "o",
+                      "7": "w",
+                      "8": ":",
+                      "9": " ",
+                      "10": "a",
+                      "11": "u",
+                      "12": "t",
+                      "13": "o",
+                      "14": ";",
+                      "height": "800px",
+                      "width": "40%"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "calendarIframe_copy1",
+          "type": "core/v1/iframe",
+          "properties": {
+            "src": "/dev.html#/calendar",
+            "referrerpolicy": "unset",
+            "sandbox": "unset",
+            "fetchpriority": "auto"
+          },
+          "traits": [
+            {
+              "type": "core/v1/slot",
+              "properties": {
+                "container": {
+                  "id": "stack29",
+                  "slot": "content"
+                },
+                "ifCondition": true
+              }
+            },
+            {
+              "type": "core/v1/style",
+              "properties": {
+                "styles": [
+                  {
+                    "styleSlot": "content",
+                    "style": "z-index: 100;\n",
+                    "cssProperties": {
+                      "0": "z",
+                      "1": "-",
+                      "2": "i",
+                      "3": "n",
+                      "4": "d",
+                      "5": "e",
+                      "6": "x",
+                      "7": ":",
+                      "8": " ",
+                      "9": "1",
+                      "10": "0",
+                      "11": "0",
+                      "12": ";",
+                      "13": "\n",
+                      "height": "800px",
+                      "width": "100%",
+                      "backgroundColor": "rgba(255, 255, 255, 1)"
                     }
                   }
                 ]

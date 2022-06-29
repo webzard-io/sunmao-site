@@ -16,6 +16,7 @@
     "@sunmao-ui/editor": "^0.7.0",
     "@sunmao-ui/runtime": "^0.7.0",
     "@types/react-big-calendar": "^0.38.0",
+    "highlight.js": "^11.5.1",
     "i18next": "^21.6.16",
     "i18next-browser-languagedetector": "^6.1.4",
     "moment": "^2.29.3",

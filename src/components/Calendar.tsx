@@ -22,12 +22,18 @@ export const SunmaoCalendar = implementRuntimeComponent({
   spec: {
     properties: Type.Object({
       events: Type.Array(
-        Type.Object({
-          id: Type.String(),
-          title: Type.String(),
-          start: Type.String(),
-          end: Type.String(),
-        })
+        Type.Object(
+          {
+            id: Type.String(),
+            title: Type.String(),
+            start: Type.String(),
+            end: Type.String(),
+          },
+          {
+            title: 'Events',
+            widget: 'array',
+          }
+        )
       ),
     }),
     state: Type.Object({}),
