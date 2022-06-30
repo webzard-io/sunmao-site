@@ -205,7 +205,7 @@
                 "styles": [
                   {
                     "styleSlot": "content",
-                    "style": "margin: 0 auto;",
+                    "style": "margin: 0 auto;\nposition: relative;",
                     "cssProperties": {
                       "0": "m",
                       "1": "a",
@@ -862,7 +862,7 @@
                 "styles": [
                   {
                     "styleSlot": "content",
-                    "style": "border-radius: 12px;",
+                    "style": "border-radius: 12px;\nbox-sizing: border-box;",
                     "cssProperties": {
                       "0": "r",
                       "1": "g",
@@ -889,7 +889,8 @@
                       "paddingTop": "60px",
                       "paddingLeft": "60px",
                       "paddingBottom": "60px",
-                      "paddingRight": "60px"
+                      "paddingRight": "60px",
+                      "height": "100vh"
                     }
                   }
                 ]
@@ -1124,7 +1125,7 @@
                       "119": ")",
                       "120": ";",
                       "121": "\n",
-                      "height": "800px",
+                      "height": "100%",
                       "width": "100%",
                       "backgroundColor": "rgba(255, 255, 255, 1)"
                     }
@@ -1135,7 +1136,7 @@
           ]
         },
         {
-          "id": "day2Stack",
+          "id": "day2StickyWrapper",
           "type": "core/v1/stack",
           "properties": {
             "spacing": 12,
@@ -1161,7 +1162,45 @@
                 "styles": [
                   {
                     "styleSlot": "content",
-                    "style": "border-radius: 12px;",
+                    "style": "",
+                    "cssProperties": {
+                      "width": "100%",
+                      "height": "400vh"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "day2Stack",
+          "type": "core/v1/stack",
+          "properties": {
+            "spacing": 12,
+            "direction": "vertical",
+            "align": "auto",
+            "wrap": "",
+            "justify": ""
+          },
+          "traits": [
+            {
+              "type": "core/v1/slot",
+              "properties": {
+                "container": {
+                  "id": "day2StickyWrapper",
+                  "slot": "content"
+                },
+                "ifCondition": true
+              }
+            },
+            {
+              "type": "core/v1/style",
+              "properties": {
+                "styles": [
+                  {
+                    "styleSlot": "content",
+                    "style": "border-radius: 12px;\nposition: sticky;\ntop: 0;\nbox-sizing: border-box;",
                     "cssProperties": {
                       "0": "r",
                       "1": "g",
@@ -1184,11 +1223,38 @@
                       "18": "6",
                       "19": "5",
                       "20": ")",
+                      "21": "p",
+                      "22": "o",
+                      "23": "s",
+                      "24": "i",
+                      "25": "t",
+                      "26": "i",
+                      "27": "o",
+                      "28": "n",
+                      "29": ":",
+                      "30": " ",
+                      "31": "s",
+                      "32": "t",
+                      "33": "i",
+                      "34": "c",
+                      "35": "k",
+                      "36": "y",
+                      "37": ";",
+                      "38": "\n",
+                      "39": "t",
+                      "40": "o",
+                      "41": "p",
+                      "42": ":",
+                      "43": " ",
+                      "44": "0",
+                      "45": ";",
                       "backgroundColor": "rgba(0, 24, 42, 0.05)",
                       "paddingTop": "60px",
                       "paddingLeft": "60px",
                       "paddingBottom": "60px",
-                      "paddingRight": "60px"
+                      "paddingRight": "60px",
+                      "width": "100%",
+                      "height": "100vh"
                     }
                   }
                 ]
@@ -1274,15 +1340,9 @@
           ]
         },
         {
-          "id": "stack29",
-          "type": "core/v1/stack",
-          "properties": {
-            "spacing": 12,
-            "direction": "horizontal",
-            "align": "auto",
-            "wrap": "",
-            "justify": ""
-          },
+          "id": "scroll32",
+          "type": "site/v1/scroll",
+          "properties": {},
           "traits": [
             {
               "type": "core/v1/slot",
@@ -1297,17 +1357,21 @@
           ]
         },
         {
-          "id": "codeBlock29",
-          "type": "site/v1/codeBlock",
+          "id": "day3StickyWrapper",
+          "type": "core/v1/stack",
           "properties": {
-            "code": "const SunmaoCalendar = implementRuntimeComponent({\n  version: 'site/v1',\n  metadata: {\n    name: 'calendar',\n    displayName: 'Calendar',\n    exampleProperties: {\n      events: [],\n    },\n    annotations: {\n      category: 'Advance',\n    },\n  },\n  spec: {\n    properties: Type.Object({\n      events: Type.Array(\n        Type.Object({\n          id: Type.String(),\n          title: Type.String(),\n          start: Type.String(),\n          end: Type.String(),\n        })\n      ),\n    }),\n    state: Type.Object({}),\n    methods: {},\n    slots: {},\n    styleSlots: ['content'],\n    events: [],\n  },\n})(props => {\n  const { events, elementRef, customStyle } = props;\n\n  return (\n    <div ref={elementRef} className={css(customStyle?.content)}>\n      <Calendar\n        toolbar={false}\n        localizer={localizer}\n        defaultDate={new Date(2022, 5, 1)}\n        events={events}\n        startAccessor=\"start\"\n        endAccessor=\"end\"\n      />\n    </div>\n  );\n});\n"
+            "spacing": 12,
+            "direction": "horizontal",
+            "align": "auto",
+            "wrap": "",
+            "justify": ""
           },
           "traits": [
             {
               "type": "core/v1/slot",
               "properties": {
                 "container": {
-                  "id": "stack29",
+                  "id": "content",
                   "slot": "content"
                 },
                 "ifCondition": true
@@ -1319,77 +1383,11 @@
                 "styles": [
                   {
                     "styleSlot": "content",
-                    "style": "overflow: auto;",
+                    "style": "",
                     "cssProperties": {
-                      "0": "o",
-                      "1": "v",
-                      "2": "e",
-                      "3": "r",
-                      "4": "f",
-                      "5": "l",
-                      "6": "o",
-                      "7": "w",
-                      "8": ":",
-                      "9": " ",
-                      "10": "a",
-                      "11": "u",
-                      "12": "t",
-                      "13": "o",
-                      "14": ";",
-                      "height": "800px",
-                      "width": "40%"
-                    }
-                  }
-                ]
-              }
-            }
-          ]
-        },
-        {
-          "id": "calendarIframe_copy1",
-          "type": "core/v1/iframe",
-          "properties": {
-            "src": "/dev.html#/calendar",
-            "referrerpolicy": "unset",
-            "sandbox": "unset",
-            "fetchpriority": "auto"
-          },
-          "traits": [
-            {
-              "type": "core/v1/slot",
-              "properties": {
-                "container": {
-                  "id": "stack29",
-                  "slot": "content"
-                },
-                "ifCondition": true
-              }
-            },
-            {
-              "type": "core/v1/style",
-              "properties": {
-                "styles": [
-                  {
-                    "styleSlot": "content",
-                    "style": "z-index: 100;\n",
-                    "cssProperties": {
-                      "0": "z",
-                      "1": "-",
-                      "2": "i",
-                      "3": "n",
-                      "4": "d",
-                      "5": "e",
-                      "6": "x",
-                      "7": ":",
-                      "8": " ",
-                      "9": "1",
-                      "10": "0",
-                      "11": "0",
-                      "12": ";",
-                      "13": "\n",
-                      "height": "800px",
                       "width": "100%",
-                      "backgroundColor": "rgba(255, 255, 255, 1)"
+                      "marginTop": "",
+                      "height": ""
                     }
                   }
                 ]
@@ -1412,7 +1410,7 @@
               "type": "core/v1/slot",
               "properties": {
                 "container": {
-                  "id": "content",
+                  "id": "day3StickyWrapper",
                   "slot": "content"
                 },
                 "ifCondition": true
@@ -1424,7 +1422,7 @@
                 "styles": [
                   {
                     "styleSlot": "content",
-                    "style": "border-radius: 12px;",
+                    "style": "border-radius: 12px;\nposition: sticky;\ntop: 0;\nbox-sizing: border-box;",
                     "cssProperties": {
                       "0": "r",
                       "1": "g",
@@ -1447,11 +1445,38 @@
                       "18": "6",
                       "19": "5",
                       "20": ")",
+                      "21": "p",
+                      "22": "o",
+                      "23": "s",
+                      "24": "i",
+                      "25": "t",
+                      "26": "i",
+                      "27": "o",
+                      "28": "n",
+                      "29": ":",
+                      "30": " ",
+                      "31": "s",
+                      "32": "t",
+                      "33": "i",
+                      "34": "c",
+                      "35": "k",
+                      "36": "y",
+                      "37": ";",
+                      "38": "\n",
+                      "39": "t",
+                      "40": "o",
+                      "41": "p",
+                      "42": ":",
+                      "43": " ",
+                      "44": "0",
+                      "45": ";",
                       "backgroundColor": "rgba(0, 24, 42, 0.05)",
                       "paddingTop": "60px",
                       "paddingLeft": "60px",
                       "paddingBottom": "60px",
-                      "paddingRight": "60px"
+                      "paddingRight": "60px",
+                      "width": "100%",
+                      "height": "100vh"
                     }
                   }
                 ]
@@ -1485,7 +1510,7 @@
                 "styles": [
                   {
                     "styleSlot": "content",
-                    "style": "",
+                    "style": "\nposition: sticky;\ntop: 0;",
                     "cssProperties": {
                       "fontSize": "22px",
                       "fontWeight": "800",
@@ -1578,10 +1603,15 @@
                       "11": "0",
                       "12": ";",
                       "13": "\n",
-                      "height": "800px",
+                      "height": "100%",
                       "width": "100%",
                       "backgroundColor": "rgba(255, 255, 255, 1)"
                     }
+                  },
+                  {
+                    "styleSlot": "content",
+                    "style": "",
+                    "cssProperties": {}
                   }
                 ]
               }

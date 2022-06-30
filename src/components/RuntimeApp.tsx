@@ -3,9 +3,10 @@ import React from 'react';
 import '@sunmao-ui/arco-lib/dist/index.css';
 import registerSunmaoRuntime from './SunmaoRuntime';
 import { Route, Routes } from 'react-router-dom';
+import { libs } from '../sunmao/lib';
 
 function App() {
-  const options = { libs: [ArcoDesignLib] };
+  const options = { libs: [ArcoDesignLib, libs] };
   const SitePageEditor = registerSunmaoRuntime({ name: 'site' }, options);
   const CalendarPageEditor = registerSunmaoRuntime({ name: 'calendar' }, options);
   const TablePageEditor = registerSunmaoRuntime({ name: 'table' }, options);

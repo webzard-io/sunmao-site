@@ -1,9 +1,9 @@
 import { SunmaoLib } from '@sunmao-ui/runtime';
 import { SunmaoCalendar } from '../components/Calendar';
-import { SunmaoCodeBlock } from '../components/CodeBlock';
+import { SunmaoScroll } from '../components/Scroll';
 
 const siteLib: SunmaoLib = {
-  components: [SunmaoCalendar, SunmaoCodeBlock],
+  components: [SunmaoCalendar, SunmaoScroll],
   traits: [],
   utilMethods: [],
   modules: [],
