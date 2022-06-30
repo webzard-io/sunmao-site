@@ -1,11 +1,12 @@
 import { implementRuntimeComponent } from '@sunmao-ui/runtime';
 import { Type } from '@sinclair/typebox';
 import { css, cx } from '@emotion/css';
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
+import Highlight from 'react-highlight';
 import { codes } from './code';
+import 'highlight.js/styles/github.css';
 
 const scrollCss = css`
-  background: white;
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -13,6 +14,7 @@ const scrollCss = css`
   flex: 1 1 0;
 `;
 const codeCss = css`
+  background: white;
   box-sizing: border-box;
   margin: 0;
   height: 100%;
@@ -58,51 +60,64 @@ export const SunmaoScroll = implementRuntimeComponent({
   },
 })(props => {
   const { elementRef, customStyle } = props;
-  const [distance, setDistance] = useState(0);
+  const codeRef = useRef<HTMLPreElement | null>(null);
+  const [distance, setDistance] = useState(-1);
   const [step, setStep] = useState(0);
+  const [isInEditor, setIsInEditor] = useState(false);
+
   useEffect(() => {
-    console.log(step);
-  }, [step]);
-  const cb = useCallback(() => {
-    const rect = elementRef?.current.getBoundingClientRect();
-    const html = document.getElementsByTagName('html')[0];
-    if (!distance && rect.top === 205) {
-      setDistance(html.scrollTop);
+    if (document.getElementById('editor-mask-wrapper')) {
+      setIsInEditor(true);
+    }
+    if (codeRef.current) {
+      hljs.highlightElement(codeRef.current);
+    }
+  }, []);
+
+  const onScroll = useCallback(() => {
+    const rect = elementRef?.current.parentElement.getBoundingClientRect();
+    const scrollElement =
+      document.getElementById('editor-mask-wrapper') ||
+      document.getElementsByTagName('html')[0];
+    if (distance < 0 && rect.top === (isInEditor ? 78 : 0)) {
+      setDistance(scrollElement.scrollTop);
     }
 
-    if (distance > 0 && html.scrollTop < distance + window.innerHeight) {
-      console.log('一阶段');
+    if (distance > 0 && scrollElement.scrollTop < distance + window.innerHeight) {
       setStep(0);
-    } else if (distance > 0 && html.scrollTop < distance + window.innerHeight * 2) {
-      console.log('二阶段');
+    } else if (
+      distance > 0 &&
+      scrollElement.scrollTop < distance + window.innerHeight * 2
+    ) {
       setStep(1);
-    } else if (distance > 0 && html.scrollTop < distance + window.innerHeight * 3) {
-      console.log('三阶段');
+    } else if (
+      distance > 0 &&
+      scrollElement.scrollTop < distance + window.innerHeight * 3
+    ) {
       setStep(2);
     }
-  }, [distance, elementRef]);
+  }, [distance, elementRef, isInEditor]);
 
   useEffect(() => {
     const scrollWrapper = document.getElementById('editor-mask-wrapper') || document;
-    scrollWrapper?.addEventListener('scroll', cb);
+    scrollWrapper?.addEventListener('scroll', onScroll);
     return () => {
-      scrollWrapper.removeEventListener('scroll', cb);
+      scrollWrapper.removeEventListener('scroll', onScroll);
     };
-  }, [cb]);
+  }, [onScroll]);
+
   return (
     <div ref={elementRef} className={cx([scrollCss, css(customStyle?.content)])}>
-      <pre className={codeCss}>
-        <code>{codes[step]}</code>
-      </pre>
+      <Highlight className={cx(['typescript', codeCss])}>{codes[step]}</Highlight>
       <img className={imageCss} src={images[step]} />
-      <div className={cx([maskCss, css(maskPos[step])])} />
+      <div className={cx([maskCss, css(masks[step])])} />
     </div>
   );
 });
 
 const images = ['/editor-name.png', '/editor-property.png', '/editor-calendar.png'];
 
-const maskPos = [
+const masks = [
   `top: 33px; left: 0; height: 85px; width: 250px;`,
   `top: 160px; left: 0; height: 380px; width: 320px;`,
   `top: 700px; left: 0; height: 170px; width: 560px`,

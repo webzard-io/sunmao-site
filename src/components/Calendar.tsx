@@ -18,6 +18,9 @@ export const SunmaoCalendar = implementRuntimeComponent({
     annotations: {
       category: 'Advance',
     },
+    isDraggable: false,
+    isResizable: false,
+    exampleSize: [1, 1],
   },
   spec: {
     properties: Type.Object({

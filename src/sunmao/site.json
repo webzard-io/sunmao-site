@@ -334,8 +334,8 @@
             "footerPosition": "inner",
             "simple": false,
             "preview": false,
-            "width": 30,
-            "height": 30,
+            "width": 60,
+            "height": 60,
             "error": ""
           },
           "traits": [
@@ -346,6 +346,38 @@
                   "id": "header",
                   "slot": "content"
                 }
+              }
+            },
+            {
+              "type": "core/v1/style",
+              "properties": {
+                "styles": []
+              }
+            }
+          ]
+        },
+        {
+          "id": "button33",
+          "type": "arco/v1/button",
+          "properties": {
+            "type": "default",
+            "status": "default",
+            "long": false,
+            "size": "default",
+            "disabled": false,
+            "loading": false,
+            "shape": "square",
+            "text": "button"
+          },
+          "traits": [
+            {
+              "type": "core/v1/slot",
+              "properties": {
+                "container": {
+                  "id": "header",
+                  "slot": "content"
+                },
+                "ifCondition": true
               }
             },
             {
@@ -828,7 +860,7 @@
                 "styles": [
                   {
                     "styleSlot": "content",
-                    "style": "box-shadow: 48px 16px 48px rgb(24 37 56 / 12%);\nborder-radius: 4px;\ntransform: perspective(1000px) rotateY(16deg) rotateX(2deg) rotateZ(-7deg) scaleY(0.95) translatex(2%);"
+                    "style": "box-shadow: 48px 16px 48px rgb(24 37 56 / 12%);\nborder-radius: 4px;\ntransform: perspective(1000px) rotateY(16deg) rotateX(2deg) rotateZ(-7deg) scale(1.2) translatex(8%);"
                   }
                 ]
               }
@@ -1619,6 +1651,81 @@
           ]
         },
         {
+          "id": "text31",
+          "type": "core/v1/text",
+          "properties": {
+            "value": {
+              "raw": "{{i18n.t('sunmaoFeatures')}}",
+              "format": "plain"
+            }
+          },
+          "traits": [
+            {
+              "type": "core/v1/slot",
+              "properties": {
+                "container": {
+                  "id": "content",
+                  "slot": "content"
+                },
+                "ifCondition": true
+              }
+            },
+            {
+              "type": "core/v1/style",
+              "properties": {
+                "styles": [
+                  {
+                    "styleSlot": "content",
+                    "style": "max-width: 1128px;\nmargin: 0 auto;",
+                    "cssProperties": {
+                      "0": "m",
+                      "1": "a",
+                      "2": "x",
+                      "3": "-",
+                      "4": "w",
+                      "5": "i",
+                      "6": "d",
+                      "7": "t",
+                      "8": "h",
+                      "9": ":",
+                      "10": " ",
+                      "11": "1",
+                      "12": "1",
+                      "13": "2",
+                      "14": "8",
+                      "15": "p",
+                      "16": "x",
+                      "17": ";",
+                      "18": "\n",
+                      "19": "m",
+                      "20": "a",
+                      "21": "r",
+                      "22": "g",
+                      "23": "i",
+                      "24": "n",
+                      "25": ":",
+                      "26": " ",
+                      "27": "0",
+                      "28": " ",
+                      "29": "a",
+                      "30": "u",
+                      "31": "t",
+                      "32": "o",
+                      "33": ";",
+                      "marginLeft": "",
+                      "paddingTop": "",
+                      "width": "100%",
+                      "fontSize": "32px",
+                      "marginTop": "32px",
+                      "fontWeight": "700"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
           "id": "features",
           "type": "core/v1/stack",
           "properties": {
@@ -1822,7 +1929,7 @@
                 "styles": [
                   {
                     "styleSlot": "content",
-                    "style": "padding: 64px 0;\nflex-direction: {{ !!reverse ? 'row-reverse' : 'row' }} !important;",
+                    "style": "padding: 64px 0;\nborder-radius: 20px;\noverflow: hidden;\nflex-direction: {{ !!reverse ? 'row-reverse' : 'row' }} !important;",
                     "cssProperties": {
                       "0": "p",
                       "1": "a",
@@ -1908,7 +2015,47 @@
                       "81": "n",
                       "82": "t",
                       "83": ";",
-                      "width": "100%"
+                      "84": " ",
+                      "85": "?",
+                      "86": " ",
+                      "87": "'",
+                      "88": "r",
+                      "89": "o",
+                      "90": "w",
+                      "91": "-",
+                      "92": "r",
+                      "93": "e",
+                      "94": "v",
+                      "95": "e",
+                      "96": "r",
+                      "97": "s",
+                      "98": "e",
+                      "99": "'",
+                      "100": " ",
+                      "101": ":",
+                      "102": " ",
+                      "103": "'",
+                      "104": "r",
+                      "105": "o",
+                      "106": "w",
+                      "107": "'",
+                      "108": " ",
+                      "109": "}",
+                      "110": "}",
+                      "111": " ",
+                      "112": "!",
+                      "113": "i",
+                      "114": "m",
+                      "115": "p",
+                      "116": "o",
+                      "117": "r",
+                      "118": "t",
+                      "119": "a",
+                      "120": "n",
+                      "121": "t",
+                      "122": ";",
+                      "width": "100%",
+                      "backgroundColor": "rgba(255, 255, 255, 1)"
                     }
                   }
                 ]
