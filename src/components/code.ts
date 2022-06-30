@@ -15,7 +15,7 @@ const NameCode = `const SunmaoCalendar = implementRuntimeComponent({
 })({ events, elementRef, customStyle } => {
   return (
     <div ref={elementRef} className={css(customStyle?.content)}>
-      {/* Here will be calendar */}
+      Here will be calendar
     </div>
   );
 });
@@ -55,7 +55,7 @@ const PropertiesCode = `const SunmaoCalendar = implementRuntimeComponent({
 })({ events, elementRef, customStyle } => {
   return (
     <div ref={elementRef} className={css(customStyle?.content)}>
-      {/* Here will be calendar */}
+      Here will be calendar
     </div>
   );
 });

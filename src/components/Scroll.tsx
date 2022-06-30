@@ -100,7 +100,7 @@ export const SunmaoScroll = implementRuntimeComponent({
   );
 });
 
-const images = ['/editor-name.png', '/editor-property.png', '/editor-component.png'];
+const images = ['/editor-name.png', '/editor-property.png', '/editor-calendar.png'];
 
 const maskPos = [
   `top: 33px; left: 0; height: 85px; width: 250px;`,
