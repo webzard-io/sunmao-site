@@ -8,21 +8,7 @@
     "spec": {
       "components": [
         {
-          "id": "events",
-          "type": "core/v1/dummy",
-          "properties": {},
-          "traits": [
-            {
-              "type": "core/v1/localStorage",
-              "properties": {
-                "key": "value",
-                "initialValue": "{{ [\n    {\n      id: 0,\n      title: 'Board meeting',\n      start: '2022-06-10',\n      end: '2022-06-10',\n    },\n    {\n      id: 1,\n      title: 'MS training',\n      start: '2022-06-20',\n      end: '2022-06-20',\n    },\n    {\n      id: 2,\n      title: 'Team lead meeting',\n      start: '2022-06-22',\n      end: '2022-06-22',\n    },\n    {\n      id: 11,\n      title: 'Birthday Party',\n      start: '2022-06-06',\n      end: '2022-06-06',\n    },\n  ] }}"
-              }
-            }
-          ]
-        },
-        {
-          "id": "stack12",
+          "id": "app",
           "type": "core/v1/stack",
           "properties": {
             "spacing": 12,
@@ -96,7 +82,7 @@
           ]
         },
         {
-          "id": "text13",
+          "id": "title",
           "type": "core/v1/text",
           "properties": {
             "value": {
@@ -109,7 +95,7 @@
               "type": "core/v1/slot",
               "properties": {
                 "container": {
-                  "id": "stack12",
+                  "id": "app",
                   "slot": "content"
                 },
                 "ifCondition": true
@@ -134,7 +120,7 @@
           ]
         },
         {
-          "id": "stack11",
+          "id": "container",
           "type": "core/v1/stack",
           "properties": {
             "spacing": 12,
@@ -162,7 +148,7 @@
               "type": "core/v1/slot",
               "properties": {
                 "container": {
-                  "id": "stack12",
+                  "id": "app",
                   "slot": "content"
                 },
                 "ifCondition": true
@@ -171,7 +157,7 @@
           ]
         },
         {
-          "id": "stack2",
+          "id": "form",
           "type": "core/v1/stack",
           "properties": {
             "spacing": 12,
@@ -246,7 +232,7 @@
               "type": "core/v1/slot",
               "properties": {
                 "container": {
-                  "id": "stack11",
+                  "id": "container",
                   "slot": "content"
                 },
                 "ifCondition": true
@@ -255,7 +241,7 @@
           ]
         },
         {
-          "id": "text10",
+          "id": "formTitle",
           "type": "core/v1/text",
           "properties": {
             "value": {
@@ -268,7 +254,7 @@
               "type": "core/v1/slot",
               "properties": {
                 "container": {
-                  "id": "stack2",
+                  "id": "form",
                   "slot": "content"
                 },
                 "ifCondition": true
@@ -321,7 +307,7 @@
               "type": "core/v1/slot",
               "properties": {
                 "container": {
-                  "id": "stack2",
+                  "id": "form",
                   "slot": "content"
                 },
                 "ifCondition": true
@@ -399,7 +385,7 @@
               "type": "core/v1/slot",
               "properties": {
                 "container": {
-                  "id": "stack2",
+                  "id": "form",
                   "slot": "content"
                 },
                 "ifCondition": true
@@ -589,7 +575,7 @@
               "type": "core/v1/slot",
               "properties": {
                 "container": {
-                  "id": "stack2",
+                  "id": "form",
                   "slot": "content"
                 },
                 "ifCondition": true
@@ -744,7 +730,7 @@
           ]
         },
         {
-          "id": "button8",
+          "id": "createButton",
           "type": "arco/v1/button",
           "properties": {
             "type": "primary",
@@ -761,7 +747,7 @@
               "type": "core/v1/slot",
               "properties": {
                 "container": {
-                  "id": "stack2",
+                  "id": "form",
                   "slot": "content"
                 },
                 "ifCondition": true
@@ -791,7 +777,7 @@
                     "method": {
                       "name": "setValue",
                       "parameters": {
-                        "value": "{{\nevents.value.concat({\n  id: `${Math.random()}`,\n  title: eventInput.value,\n  start: startdate.dateString,\n  end: endDate.dateString\n})\n}}"
+                        "value": "{{\n(events.value || []).concat({\n  id: `${Math.random()}`,\n  title: eventInput.value,\n  start: startdate.dateString,\n  end: endDate.dateString\n})\n}}"
                       }
                     },
                     "disabled": false,
@@ -875,7 +861,7 @@
               "type": "core/v1/slot",
               "properties": {
                 "container": {
-                  "id": "stack11",
+                  "id": "container",
                   "slot": "content"
                 },
                 "ifCondition": true
@@ -893,6 +879,20 @@
                     }
                   }
                 ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "events",
+          "type": "core/v1/dummy",
+          "properties": {},
+          "traits": [
+            {
+              "type": "core/v1/localStorage",
+              "properties": {
+                "key": "value",
+                "initialValue": "{{ [\n    {\n      id: 0,\n      title: 'Board meeting',\n      start: '2022-06-10',\n      end: '2022-06-10',\n    },\n    {\n      id: 1,\n      title: 'MS training',\n      start: '2022-06-20',\n      end: '2022-06-20',\n    },\n    {\n      id: 2,\n      title: 'Team lead meeting',\n      start: '2022-06-22',\n      end: '2022-06-22',\n    },\n    {\n      id: 11,\n      title: 'Birthday Party',\n      start: '2022-06-06',\n      end: '2022-06-06',\n    },\n  ] }}"
               }
             }
           ]

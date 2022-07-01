@@ -1,7 +1,7 @@
 import { implementRuntimeComponent } from '@sunmao-ui/runtime';
 import { Type } from '@sinclair/typebox';
 import { css, cx } from '@emotion/css';
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import Highlight from 'react-highlight';
 import { codes } from './code';
 import 'highlight.js/styles/github.css';
@@ -33,11 +33,11 @@ const imageCss = css`
   width: 0;
   flex: 1 1 auto;
 `;
-export const SunmaoScroll = implementRuntimeComponent({
+export const SunmaoParallelScroll = implementRuntimeComponent({
   version: 'site/v1',
   metadata: {
-    name: 'scroll',
-    displayName: 'Scroll',
+    name: 'parallelScroll',
+    displayName: 'ParallelScroll',
     exampleProperties: {},
     annotations: {
       category: 'Advance',
@@ -50,17 +50,12 @@ export const SunmaoScroll = implementRuntimeComponent({
     properties: Type.Object({}),
     state: Type.Object({}),
     methods: {},
-    slots: {
-      content: {
-        slotProps: Type.Object({}),
-      },
-    },
+    slots: {},
     styleSlots: ['content'],
     events: [],
   },
 })(props => {
   const { elementRef, customStyle } = props;
-  const codeRef = useRef<HTMLPreElement | null>(null);
   const [distance, setDistance] = useState(-1);
   const [step, setStep] = useState(0);
   const [isInEditor, setIsInEditor] = useState(false);
@@ -68,9 +63,6 @@ export const SunmaoScroll = implementRuntimeComponent({
   useEffect(() => {
     if (document.getElementById('editor-mask-wrapper')) {
       setIsInEditor(true);
-    }
-    if (codeRef.current) {
-      hljs.highlightElement(codeRef.current);
     }
   }, []);
 
@@ -118,7 +110,7 @@ export const SunmaoScroll = implementRuntimeComponent({
 const images = ['/editor-name.png', '/editor-property.png', '/editor-calendar.png'];
 
 const masks = [
-  `top: 33px; left: 0; height: 85px; width: 250px;`,
+  `top: 30px; left: 0; height: 85px; width: 250px;`,
   `top: 160px; left: 0; height: 380px; width: 320px;`,
-  `top: 700px; left: 0; height: 170px; width: 560px`,
+  `top: 745px; left: 0; height: 170px; width: 560px`,
 ];

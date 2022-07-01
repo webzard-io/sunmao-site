@@ -1,9 +1,10 @@
 import { SunmaoLib } from '@sunmao-ui/runtime';
-import { SunmaoCalendar } from '../components/Calendar';
-import { SunmaoScroll } from '../components/Scroll';
+import { SunmaoCalendar } from './components/Calendar';
+import { SunmaoParallelScroll } from './components/ParallelScroll';
+import { SunmaoLink } from './components/Link';
 
 const siteLib: SunmaoLib = {
-  components: [SunmaoCalendar, SunmaoScroll],
+  components: [SunmaoCalendar, SunmaoParallelScroll, SunmaoLink],
   traits: [],
   utilMethods: [],
   modules: [],

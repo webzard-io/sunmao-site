@@ -7,6 +7,3 @@ i18n.use(LanguageDetector).init({
     ...locales,
   },
 });
-
-console.log('locales', locales);
-window.i18n = i18n;

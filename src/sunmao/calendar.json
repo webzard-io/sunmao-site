@@ -8,37 +8,126 @@
     "spec": {
       "components": [
         {
-          "id": "events",
-          "type": "core/v1/dummy",
-          "properties": {},
+          "id": "app",
+          "type": "core/v1/stack",
+          "properties": {
+            "spacing": 12,
+            "direction": "vertical",
+            "align": "center",
+            "wrap": "",
+            "justify": ""
+          },
           "traits": [
             {
-              "type": "core/v1/localStorage",
+              "type": "core/v1/style",
               "properties": {
-                "key": "value",
-                "initialValue": "{{ [\n    {\n      id: 0,\n      title: 'Board meeting',\n      start: '2022-06-10',\n      end: '2022-06-10',\n    },\n    {\n      id: 1,\n      title: 'MS training',\n      start: '2022-06-20',\n      end: '2022-06-20',\n    },\n    {\n      id: 2,\n      title: 'Team lead meeting',\n      start: '2022-06-22',\n      end: '2022-06-22',\n    },\n    {\n      id: 11,\n      title: 'Birthday Party',\n      start: '2022-06-06',\n      end: '2022-06-06',\n    },\n  ] }}"
+                "styles": [
+                  {
+                    "styleSlot": "content",
+                    "style": "border: 1px #eee solid;\nborder-radius: 4px;",
+                    "cssProperties": {
+                      "0": "b",
+                      "1": "o",
+                      "2": "r",
+                      "3": "d",
+                      "4": "e",
+                      "5": "r",
+                      "6": ":",
+                      "7": " ",
+                      "8": "1",
+                      "9": "p",
+                      "10": "x",
+                      "11": " ",
+                      "12": "#",
+                      "13": "e",
+                      "14": "e",
+                      "15": "e",
+                      "16": " ",
+                      "17": "s",
+                      "18": "o",
+                      "19": "l",
+                      "20": "i",
+                      "21": "d",
+                      "22": ";",
+                      "23": "\n",
+                      "24": "b",
+                      "25": "o",
+                      "26": "r",
+                      "27": "d",
+                      "28": "e",
+                      "29": "r",
+                      "30": "-",
+                      "31": "r",
+                      "32": "a",
+                      "33": "d",
+                      "34": "i",
+                      "35": "u",
+                      "36": "s",
+                      "37": ":",
+                      "38": " ",
+                      "39": "4",
+                      "40": "p",
+                      "41": "x",
+                      "42": ";",
+                      "width": "100%",
+                      "paddingTop": "12px",
+                      "paddingLeft": "12px",
+                      "paddingRight": "12px",
+                      "paddingBottom": "12px"
+                    }
+                  }
+                ]
               }
             }
           ]
         },
         {
-          "id": "calendar1",
-          "type": "site/v1/calendar",
+          "id": "title",
+          "type": "core/v1/text",
           "properties": {
-            "events": [
-              {
-                "id": "1",
-                "title": "Birthday",
-                "start": "2022-06-14",
-                "end": "2022-06-14"
-              },
-              {
-                "id": "1",
-                "title": "Meeting",
-                "start": "2022-06-22",
-                "end": "2022-06-22"
+            "value": {
+              "raw": "Event Manager",
+              "format": "plain"
+            }
+          },
+          "traits": [
+            {
+              "type": "core/v1/slot",
+              "properties": {
+                "container": {
+                  "id": "app",
+                  "slot": "content"
+                },
+                "ifCondition": true
               }
-            ]
+            },
+            {
+              "type": "core/v1/style",
+              "properties": {
+                "styles": [
+                  {
+                    "styleSlot": "content",
+                    "style": "",
+                    "cssProperties": {
+                      "fontSize": "20px",
+                      "fontWeight": "700",
+                      "textAlign": "center"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "container",
+          "type": "core/v1/stack",
+          "properties": {
+            "spacing": 12,
+            "direction": "horizontal",
+            "align": "auto",
+            "wrap": "",
+            "justify": ""
           },
           "traits": [
             {
@@ -49,10 +138,703 @@
                     "styleSlot": "content",
                     "style": "",
                     "cssProperties": {
-                      "height": "800px"
+                      "width": "100%"
                     }
                   }
                 ]
+              }
+            },
+            {
+              "type": "core/v1/slot",
+              "properties": {
+                "container": {
+                  "id": "app",
+                  "slot": "content"
+                },
+                "ifCondition": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "form",
+          "type": "core/v1/stack",
+          "properties": {
+            "spacing": 12,
+            "direction": "vertical",
+            "align": "flex-start",
+            "wrap": "",
+            "justify": "flex-start"
+          },
+          "traits": [
+            {
+              "type": "core/v1/style",
+              "properties": {
+                "styles": [
+                  {
+                    "styleSlot": "content",
+                    "style": "border: 1px #eee solid;\nborder-radius: 4px;",
+                    "cssProperties": {
+                      "0": "b",
+                      "1": "o",
+                      "2": "r",
+                      "3": "d",
+                      "4": "e",
+                      "5": "r",
+                      "6": ":",
+                      "7": " ",
+                      "8": "1",
+                      "9": "p",
+                      "10": "x",
+                      "11": " ",
+                      "12": "#",
+                      "13": "e",
+                      "14": "e",
+                      "15": "e",
+                      "16": " ",
+                      "17": "s",
+                      "18": "o",
+                      "19": "l",
+                      "20": "i",
+                      "21": "d",
+                      "22": ";",
+                      "23": "\n",
+                      "24": "b",
+                      "25": "o",
+                      "26": "r",
+                      "27": "d",
+                      "28": "e",
+                      "29": "r",
+                      "30": "-",
+                      "31": "r",
+                      "32": "a",
+                      "33": "d",
+                      "34": "i",
+                      "35": "u",
+                      "36": "s",
+                      "37": ":",
+                      "38": " ",
+                      "39": "4",
+                      "40": "p",
+                      "41": "x",
+                      "42": ";",
+                      "paddingTop": "12px",
+                      "paddingLeft": "12px",
+                      "paddingBottom": "12px",
+                      "paddingRight": "12px",
+                      "width": "400px"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "core/v1/slot",
+              "properties": {
+                "container": {
+                  "id": "container",
+                  "slot": "content"
+                },
+                "ifCondition": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "formTitle",
+          "type": "core/v1/text",
+          "properties": {
+            "value": {
+              "raw": "Create Events Form",
+              "format": "plain"
+            }
+          },
+          "traits": [
+            {
+              "type": "core/v1/slot",
+              "properties": {
+                "container": {
+                  "id": "form",
+                  "slot": "content"
+                },
+                "ifCondition": true
+              }
+            },
+            {
+              "type": "core/v1/style",
+              "properties": {
+                "styles": [
+                  {
+                    "styleSlot": "content",
+                    "style": "",
+                    "cssProperties": {
+                      "fontSize": "16px",
+                      "fontWeight": "600"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "formControl5",
+          "type": "arco/v1/formControl",
+          "properties": {
+            "label": {
+              "format": "plain",
+              "raw": "Event"
+            },
+            "layout": "vertical",
+            "required": false,
+            "hidden": false,
+            "extra": "",
+            "errorMsg": "",
+            "labelAlign": "left",
+            "colon": false,
+            "help": "",
+            "labelCol": {
+              "span": -2,
+              "offset": 0
+            },
+            "wrapperCol": {
+              "span": 21,
+              "offset": 0
+            }
+          },
+          "traits": [
+            {
+              "type": "core/v1/slot",
+              "properties": {
+                "container": {
+                  "id": "form",
+                  "slot": "content"
+                },
+                "ifCondition": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "eventInput",
+          "type": "arco/v1/input",
+          "properties": {
+            "allowClear": false,
+            "disabled": false,
+            "readOnly": false,
+            "defaultValue": "",
+            "updateWhenDefaultValueChanges": false,
+            "placeholder": "",
+            "error": false,
+            "size": "default"
+          },
+          "traits": [
+            {
+              "type": "core/v1/slot",
+              "properties": {
+                "container": {
+                  "id": "formControl5",
+                  "slot": "content"
+                },
+                "ifCondition": true
+              }
+            },
+            {
+              "type": "core/v1/style",
+              "properties": {
+                "styles": [
+                  {
+                    "styleSlot": "input",
+                    "style": "",
+                    "cssProperties": {
+                      "width": "100%"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "formControl6",
+          "type": "arco/v1/formControl",
+          "properties": {
+            "label": {
+              "format": "plain",
+              "raw": "Start Date"
+            },
+            "layout": "vertical",
+            "required": false,
+            "hidden": false,
+            "extra": "",
+            "errorMsg": "",
+            "labelAlign": "left",
+            "colon": false,
+            "help": "",
+            "labelCol": {
+              "span": 3,
+              "offset": 0
+            },
+            "wrapperCol": {
+              "span": 21,
+              "offset": 0
+            }
+          },
+          "traits": [
+            {
+              "type": "core/v1/slot",
+              "properties": {
+                "container": {
+                  "id": "form",
+                  "slot": "content"
+                },
+                "ifCondition": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "startdate",
+          "type": "arco/v1/datePicker",
+          "properties": {
+            "disabled": false,
+            "useUtcOffset": false,
+            "utcOffset": 0,
+            "timezone": "",
+            "placeholder": "Please Select",
+            "position": "bl",
+            "dayStartOfWeek": 0,
+            "allowClear": false,
+            "type": "date",
+            "range": false,
+            "defaultValue": "",
+            "showTime": false,
+            "panelOnly": false,
+            "size": "default",
+            "disabledTime": {
+              "disabledHours": [
+                0,
+                1,
+                2
+              ],
+              "disabledMinutes": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29
+              ],
+              "disabledSeconds": [
+                10
+              ]
+            },
+            "rangePlaceholder": [
+              "Start date",
+              "End Date"
+            ],
+            "disabledRangeTime": {
+              "disabledHours": [
+                [
+                  0,
+                  1,
+                  2
+                ],
+                [
+                  7,
+                  9,
+                  10
+                ]
+              ],
+              "disabledMinutes": [
+                [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10,
+                  11,
+                  12,
+                  13,
+                  14,
+                  15,
+                  16,
+                  17,
+                  18,
+                  19,
+                  20,
+                  21,
+                  22,
+                  23,
+                  24,
+                  25,
+                  26,
+                  27,
+                  28,
+                  29
+                ],
+                [
+                  58,
+                  59
+                ]
+              ],
+              "disabledSeconds": [
+                [],
+                []
+              ]
+            },
+            "disabledDate": {
+              "disabledType": "range",
+              "dateRange": [
+                "2022-5-23",
+                "2022-5-26"
+              ]
+            },
+            "rangeDisabled": [
+              false,
+              false
+            ],
+            "clearRangeOnReselect": false
+          },
+          "traits": [
+            {
+              "type": "core/v1/slot",
+              "properties": {
+                "container": {
+                  "id": "formControl6",
+                  "slot": "content"
+                },
+                "ifCondition": true
+              }
+            },
+            {
+              "type": "core/v1/style",
+              "properties": {
+                "styles": []
+              }
+            }
+          ]
+        },
+        {
+          "id": "formControl8",
+          "type": "arco/v1/formControl",
+          "properties": {
+            "label": {
+              "format": "plain",
+              "raw": "End Date"
+            },
+            "layout": "vertical",
+            "required": false,
+            "hidden": false,
+            "extra": "",
+            "errorMsg": "",
+            "labelAlign": "left",
+            "colon": false,
+            "help": "",
+            "labelCol": {
+              "span": 3,
+              "offset": 0
+            },
+            "wrapperCol": {
+              "span": 21,
+              "offset": 0
+            }
+          },
+          "traits": [
+            {
+              "type": "core/v1/slot",
+              "properties": {
+                "container": {
+                  "id": "form",
+                  "slot": "content"
+                },
+                "ifCondition": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "endDate",
+          "type": "arco/v1/datePicker",
+          "properties": {
+            "disabled": false,
+            "useUtcOffset": false,
+            "utcOffset": 0,
+            "timezone": "",
+            "placeholder": "Please Select",
+            "position": "bl",
+            "dayStartOfWeek": 0,
+            "allowClear": false,
+            "type": "date",
+            "range": false,
+            "defaultValue": "",
+            "showTime": false,
+            "panelOnly": false,
+            "size": "default",
+            "disabledTime": {
+              "disabledHours": [
+                0,
+                1,
+                2
+              ],
+              "disabledMinutes": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29
+              ],
+              "disabledSeconds": [
+                10
+              ]
+            },
+            "rangePlaceholder": [
+              "Start date",
+              "End Date"
+            ],
+            "disabledRangeTime": {
+              "disabledHours": [
+                [
+                  0,
+                  1,
+                  2
+                ],
+                [
+                  7,
+                  9,
+                  10
+                ]
+              ],
+              "disabledMinutes": [
+                [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10,
+                  11,
+                  12,
+                  13,
+                  14,
+                  15,
+                  16,
+                  17,
+                  18,
+                  19,
+                  20,
+                  21,
+                  22,
+                  23,
+                  24,
+                  25,
+                  26,
+                  27,
+                  28,
+                  29
+                ],
+                [
+                  58,
+                  59
+                ]
+              ],
+              "disabledSeconds": [
+                [],
+                []
+              ]
+            },
+            "disabledDate": {
+              "disabledType": "range",
+              "dateRange": [
+                "2022-5-23",
+                "2022-5-26"
+              ]
+            },
+            "rangeDisabled": [
+              false,
+              false
+            ],
+            "clearRangeOnReselect": false
+          },
+          "traits": [
+            {
+              "type": "core/v1/slot",
+              "properties": {
+                "container": {
+                  "id": "formControl8",
+                  "slot": "content"
+                },
+                "ifCondition": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "createButton",
+          "type": "arco/v1/button",
+          "properties": {
+            "type": "primary",
+            "status": "default",
+            "long": false,
+            "size": "default",
+            "disabled": false,
+            "loading": false,
+            "shape": "square",
+            "text": "Create"
+          },
+          "traits": [
+            {
+              "type": "core/v1/slot",
+              "properties": {
+                "container": {
+                  "id": "form",
+                  "slot": "content"
+                },
+                "ifCondition": true
+              }
+            },
+            {
+              "type": "core/v1/style",
+              "properties": {
+                "styles": [
+                  {
+                    "styleSlot": "content",
+                    "style": "",
+                    "cssProperties": {
+                      "width": "100px"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "core/v1/event",
+              "properties": {
+                "handlers": [
+                  {
+                    "type": "onClick",
+                    "componentId": "events",
+                    "method": {
+                      "name": "setValue",
+                      "parameters": {
+                        "value": "{{\n(events.value || []).concat({\n  id: `${Math.random()}`,\n  title: eventInput.value,\n  start: startdate.dateString,\n  end: endDate.dateString\n})\n}}"
+                      }
+                    },
+                    "disabled": false,
+                    "wait": {
+                      "type": "delay",
+                      "time": 0
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "calendar0",
+          "type": "site/v1/calendar",
+          "properties": {
+            "events": "{{events.value}}"
+          },
+          "traits": [
+            {
+              "type": "core/v1/style",
+              "properties": {
+                "styles": [
+                  {
+                    "styleSlot": "content",
+                    "style": "",
+                    "cssProperties": {
+                      "height": "800px",
+                      "width": "100%"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "core/v1/slot",
+              "properties": {
+                "container": {
+                  "id": "container",
+                  "slot": "content"
+                },
+                "ifCondition": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "events",
+          "type": "core/v1/dummy",
+          "properties": {},
+          "traits": [
+            {
+              "type": "core/v1/localStorage",
+              "properties": {
+                "key": "value",
+                "initialValue": "{{ [\n    {\n      id: 0,\n      title: 'Board meeting',\n      start: '2022-06-10',\n      end: '2022-06-10',\n    },\n    {\n      id: 1,\n      title: 'MS training',\n      start: '2022-06-20',\n      end: '2022-06-20',\n    },\n    {\n      id: 2,\n      title: 'Team lead meeting',\n      start: '2022-06-22',\n      end: '2022-06-22',\n    },\n    {\n      id: 11,\n      title: 'Birthday Party',\n      start: '2022-06-06',\n      end: '2022-06-06',\n    },\n  ] }}"
               }
             }
           ]

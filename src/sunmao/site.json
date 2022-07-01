@@ -334,8 +334,8 @@
             "footerPosition": "inner",
             "simple": false,
             "preview": false,
-            "width": 60,
-            "height": 60,
+            "width": 48,
+            "height": 48,
             "error": ""
           },
           "traits": [
@@ -346,38 +346,6 @@
                   "id": "header",
                   "slot": "content"
                 }
-              }
-            },
-            {
-              "type": "core/v1/style",
-              "properties": {
-                "styles": []
-              }
-            }
-          ]
-        },
-        {
-          "id": "button33",
-          "type": "arco/v1/button",
-          "properties": {
-            "type": "default",
-            "status": "default",
-            "long": false,
-            "size": "default",
-            "disabled": false,
-            "loading": false,
-            "shape": "square",
-            "text": "button"
-          },
-          "traits": [
-            {
-              "type": "core/v1/slot",
-              "properties": {
-                "container": {
-                  "id": "header",
-                  "slot": "content"
-                },
-                "ifCondition": true
               }
             },
             {
@@ -616,14 +584,14 @@
           ]
         },
         {
-          "id": "edit_link",
-          "type": "arco/v1/link",
+          "id": "linkGroup",
+          "type": "core/v1/stack",
           "properties": {
-            "disabled": false,
-            "hoverable": false,
-            "status": "warning",
-            "href": "/dev.html",
-            "content": "{{i18n.t('heroButtonText')}}"
+            "spacing": 12,
+            "direction": "horizontal",
+            "align": "auto",
+            "wrap": "",
+            "justify": ""
           },
           "traits": [
             {
@@ -632,7 +600,72 @@
                 "container": {
                   "id": "hero_inner",
                   "slot": "content"
-                }
+                },
+                "ifCondition": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "editLink",
+          "type": "site/v1/link",
+          "properties": {
+            "href": "/dev.html"
+          },
+          "traits": [
+            {
+              "type": "core/v1/slot",
+              "properties": {
+                "container": {
+                  "id": "linkGroup",
+                  "slot": "content"
+                },
+                "ifCondition": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "editLinkBtn",
+          "type": "arco/v1/button",
+          "properties": {
+            "type": "primary",
+            "status": "default",
+            "long": false,
+            "size": "large",
+            "disabled": false,
+            "loading": false,
+            "shape": "square",
+            "text": "{{i18n.t('heroButtonText')}}"
+          },
+          "traits": [
+            {
+              "type": "core/v1/slot",
+              "properties": {
+                "container": {
+                  "id": "editLink",
+                  "slot": "content"
+                },
+                "ifCondition": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "githubLink",
+          "type": "site/v1/link",
+          "properties": {
+            "href": "https://github.com/webzard-io/sunmao-ui"
+          },
+          "traits": [
+            {
+              "type": "core/v1/slot",
+              "properties": {
+                "container": {
+                  "id": "linkGroup",
+                  "slot": "content"
+                },
+                "ifCondition": true
               }
             },
             {
@@ -641,188 +674,49 @@
                 "styles": [
                   {
                     "styleSlot": "content",
-                    "style": "line-height: 48px",
+                    "style": "",
+                    "cssProperties": {}
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "githubLogo",
+          "type": "arco/v1/image",
+          "properties": {
+            "src": "/github-32.png",
+            "title": "",
+            "description": "",
+            "footerPosition": "inner",
+            "simple": false,
+            "preview": false,
+            "width": 32,
+            "height": 32,
+            "error": ""
+          },
+          "traits": [
+            {
+              "type": "core/v1/slot",
+              "properties": {
+                "container": {
+                  "id": "githubLink",
+                  "slot": "content"
+                },
+                "ifCondition": true
+              }
+            },
+            {
+              "type": "core/v1/style",
+              "properties": {
+                "styles": [
+                  {
+                    "styleSlot": "content",
+                    "style": "",
                     "cssProperties": {
-                      "0": "w",
-                      "1": "i",
-                      "2": "d",
-                      "3": "t",
-                      "4": "h",
-                      "5": ":",
-                      "6": " ",
-                      "7": "1",
-                      "8": "7",
-                      "9": "0",
-                      "10": "p",
-                      "11": "x",
-                      "12": ";",
-                      "13": "\n",
-                      "14": "p",
-                      "15": "a",
-                      "16": "d",
-                      "17": "d",
-                      "18": "i",
-                      "19": "n",
-                      "20": "g",
-                      "21": ":",
-                      "22": " ",
-                      "23": "1",
-                      "24": "6",
-                      "25": "p",
-                      "26": "x",
-                      "27": " ",
-                      "28": "3",
-                      "29": "2",
-                      "30": "p",
-                      "31": "x",
-                      "32": ";",
-                      "33": "\n",
-                      "34": "t",
-                      "35": "e",
-                      "36": "x",
-                      "37": "t",
-                      "38": "-",
-                      "39": "a",
-                      "40": "l",
-                      "41": "i",
-                      "42": "g",
-                      "43": "n",
-                      "44": ":",
-                      "45": " ",
-                      "46": "c",
-                      "47": "e",
-                      "48": "n",
-                      "49": "t",
-                      "50": "e",
-                      "51": "r",
-                      "52": ";",
-                      "53": "\n",
-                      "54": "h",
-                      "55": "e",
-                      "56": "i",
-                      "57": "g",
-                      "58": "h",
-                      "59": "t",
-                      "60": ":",
-                      "61": " ",
-                      "62": "4",
-                      "63": "8",
-                      "64": "p",
-                      "65": "x",
-                      "66": " ",
-                      "67": "!",
-                      "68": "i",
-                      "69": "m",
-                      "70": "p",
-                      "71": "o",
-                      "72": "r",
-                      "73": "t",
-                      "74": "a",
-                      "75": "n",
-                      "76": "t",
-                      "77": ";",
-                      "78": "\n",
-                      "79": "b",
-                      "80": "a",
-                      "81": "c",
-                      "82": "k",
-                      "83": "g",
-                      "84": "r",
-                      "85": "o",
-                      "86": "u",
-                      "87": "n",
-                      "88": "d",
-                      "89": "-",
-                      "90": "c",
-                      "91": "o",
-                      "92": "l",
-                      "93": "o",
-                      "94": "r",
-                      "95": ":",
-                      "96": " ",
-                      "97": "#",
-                      "98": "5",
-                      "99": "3",
-                      "100": "5",
-                      "101": "F",
-                      "102": "D",
-                      "103": "7",
-                      "104": " ",
-                      "105": "!",
-                      "106": "i",
-                      "107": "m",
-                      "108": "p",
-                      "109": "o",
-                      "110": "r",
-                      "111": "t",
-                      "112": "a",
-                      "113": "n",
-                      "114": "t",
-                      "115": ";",
-                      "116": "\n",
-                      "117": "f",
-                      "118": "o",
-                      "119": "n",
-                      "120": "t",
-                      "121": "-",
-                      "122": "s",
-                      "123": "i",
-                      "124": "z",
-                      "125": "e",
-                      "126": ":",
-                      "127": " ",
-                      "128": "1",
-                      "129": "4",
-                      "130": "p",
-                      "131": "x",
-                      "132": " ",
-                      "133": "!",
-                      "134": "i",
-                      "135": "m",
-                      "136": "p",
-                      "137": "o",
-                      "138": "r",
-                      "139": "t",
-                      "140": "a",
-                      "141": "n",
-                      "142": "t",
-                      "143": ";",
-                      "144": "\n",
-                      "145": "f",
-                      "146": "o",
-                      "147": "n",
-                      "148": "t",
-                      "149": "-",
-                      "150": "w",
-                      "151": "e",
-                      "152": "i",
-                      "153": "g",
-                      "154": "h",
-                      "155": "t",
-                      "156": ":",
-                      "157": " ",
-                      "158": "6",
-                      "159": "0",
-                      "160": "0",
-                      "161": " ",
-                      "162": "!",
-                      "163": "i",
-                      "164": "m",
-                      "165": "p",
-                      "166": "o",
-                      "167": "r",
-                      "168": "t",
-                      "169": "a",
-                      "170": "n",
-                      "171": "t",
-                      "172": ";",
-                      "color": "rgba(255, 255, 255, 1)",
-                      "backgroundColor": "rgba(83, 95, 215, 1)",
-                      "fontSize": "16px",
-                      "fontWeight": "600",
-                      "width": "170px",
-                      "height": "48px",
-                      "textAlign": "center"
+                      "width": "32px",
+                      "height": "32px"
                     }
                   }
                 ]
@@ -861,6 +755,81 @@
                   {
                     "styleSlot": "content",
                     "style": "box-shadow: 48px 16px 48px rgb(24 37 56 / 12%);\nborder-radius: 4px;\ntransform: perspective(1000px) rotateY(16deg) rotateX(2deg) rotateZ(-7deg) scale(1.2) translatex(8%);"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "sunmaoExpierenceTitle",
+          "type": "core/v1/text",
+          "properties": {
+            "value": {
+              "raw": "{{i18n.t('sunmaoExperienceTitle')}}",
+              "format": "plain"
+            }
+          },
+          "traits": [
+            {
+              "type": "core/v1/slot",
+              "properties": {
+                "container": {
+                  "id": "content",
+                  "slot": "content"
+                },
+                "ifCondition": true
+              }
+            },
+            {
+              "type": "core/v1/style",
+              "properties": {
+                "styles": [
+                  {
+                    "styleSlot": "content",
+                    "style": "\nmargin: 0 auto;",
+                    "cssProperties": {
+                      "0": "m",
+                      "1": "a",
+                      "2": "x",
+                      "3": "-",
+                      "4": "w",
+                      "5": "i",
+                      "6": "d",
+                      "7": "t",
+                      "8": "h",
+                      "9": ":",
+                      "10": " ",
+                      "11": "1",
+                      "12": "1",
+                      "13": "2",
+                      "14": "8",
+                      "15": "p",
+                      "16": "x",
+                      "17": ";",
+                      "18": "\n",
+                      "19": "m",
+                      "20": "a",
+                      "21": "r",
+                      "22": "g",
+                      "23": "i",
+                      "24": "n",
+                      "25": ":",
+                      "26": " ",
+                      "27": "0",
+                      "28": " ",
+                      "29": "a",
+                      "30": "u",
+                      "31": "t",
+                      "32": "o",
+                      "33": ";",
+                      "marginLeft": "",
+                      "paddingTop": "",
+                      "width": "100%",
+                      "fontSize": "32px",
+                      "marginTop": "32px",
+                      "fontWeight": "700"
+                    }
                   }
                 ]
               }
@@ -931,11 +900,11 @@
           ]
         },
         {
-          "id": "text22",
+          "id": "day1Title",
           "type": "core/v1/text",
           "properties": {
             "value": {
-              "raw": "Day 1: 创建一个简单的日程管理界面",
+              "raw": "{{i18n.t('sunmaoDay1Title')}}",
               "format": "plain"
             }
           },
@@ -970,11 +939,11 @@
           ]
         },
         {
-          "id": "text23",
+          "id": "day1Desc",
           "type": "core/v1/text",
           "properties": {
             "value": {
-              "raw": "借助强大的 Sunmao 编辑器，你可以轻松编排出一个完整的 CRUD 页面。不过，这仅仅是个开始。",
+              "raw": "{{i18n.t('sunmaoDay1Desc')}}",
               "format": "plain"
             }
           },
@@ -1295,11 +1264,11 @@
           ]
         },
         {
-          "id": "text22_copy0",
+          "id": "day2Title",
           "type": "core/v1/text",
           "properties": {
             "value": {
-              "raw": "Day 2: 封装一个更合适的日历组件来替换表格",
+              "raw": "{{i18n.t('sunmaoDay2Title')}}",
               "format": "plain"
             }
           },
@@ -1334,11 +1303,11 @@
           ]
         },
         {
-          "id": "text23_copy0",
+          "id": "day2Desc",
           "type": "core/v1/text",
           "properties": {
             "value": {
-              "raw": "一个日历组件可能比表格更适合这个场景。你可以在 Github 上找一个你喜欢的表格组件，把它封装成一个Sunmao 组件，只需写一些代码就能搞定。",
+              "raw": "{{i18n.t('sunmaoDay2Desc')}}",
               "format": "plain"
             }
           },
@@ -1372,8 +1341,8 @@
           ]
         },
         {
-          "id": "scroll32",
-          "type": "site/v1/scroll",
+          "id": "parallelScroll",
+          "type": "site/v1/parallelScroll",
           "properties": {},
           "traits": [
             {
@@ -1521,7 +1490,7 @@
           "type": "core/v1/text",
           "properties": {
             "value": {
-              "raw": "Day 3: 在Editor 中用日历组件替换掉表格组件",
+              "raw": "{{i18n.t('sunmaoDay3Title')}}",
               "format": "plain"
             }
           },
@@ -1542,7 +1511,7 @@
                 "styles": [
                   {
                     "styleSlot": "content",
-                    "style": "\nposition: sticky;\ntop: 0;",
+                    "style": "",
                     "cssProperties": {
                       "fontSize": "22px",
                       "fontWeight": "800",
@@ -1560,7 +1529,7 @@
           "type": "core/v1/text",
           "properties": {
             "value": {
-              "raw": "封装好的日历组件可以直接注册到 Sunmao 编辑器使用，替换掉表格组件。你可以渐进式的迭代更新你的 UI。即便是不懂编程的人，也可以使用自定义的组件开发 UI 了。",
+              "raw": "{{i18n.t('sunmaoDay3Desc')}}",
               "format": "plain"
             }
           },
@@ -1651,7 +1620,7 @@
           ]
         },
         {
-          "id": "text31",
+          "id": "featureTitle",
           "type": "core/v1/text",
           "properties": {
             "value": {
