@@ -1,7 +1,7 @@
 import { implementRuntimeComponent } from '@sunmao-ui/runtime';
 import { Type } from '@sinclair/typebox';
 import { css, cx } from '@emotion/css';
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import Highlight from 'react-highlight';
 import { codes } from './code';
 import 'highlight.js/styles/github.css';
@@ -13,15 +13,20 @@ const scrollCss = css`
   height: 0;
   flex: 1 1 0;
 `;
-const codeCss = css`
+const codeWrapperCss = css`
+  position: relative;
   background: white;
   box-sizing: border-box;
   margin: 0;
   height: 100%;
-  padding: 12px;
   border-radius: 12px;
   overflow: auto;
 `;
+
+const codeCss = css`
+  padding: 12px;
+`;
+
 const maskCss = css`
   position: absolute;
   border: 3px solid red;
@@ -56,6 +61,7 @@ export const SunmaoParallelScroll = implementRuntimeComponent({
   },
 })(props => {
   const { elementRef, customStyle } = props;
+  const maskRef = useRef<HTMLDivElement | null>(null);
   const [distance, setDistance] = useState(-1);
   const [step, setStep] = useState(0);
   const [isInEditor, setIsInEditor] = useState(false);
@@ -98,11 +104,19 @@ export const SunmaoParallelScroll = implementRuntimeComponent({
     };
   }, [onScroll]);
 
+  useEffect(() => {
+    if (step === 2) {
+      maskRef.current?.scrollIntoView();
+    }
+  });
+
   return (
     <div ref={elementRef} className={cx([scrollCss, css(customStyle?.content)])}>
-      <Highlight className={cx(['typescript', codeCss])}>{codes[step]}</Highlight>
+      <div className={codeWrapperCss}>
+        <Highlight className={cx(['typescript', codeCss])}>{codes[step]}</Highlight>
+        <div ref={maskRef} className={cx([maskCss, css(masks[step])])} />
+      </div>
       <img className={imageCss} src={images[step]} />
-      <div className={cx([maskCss, css(masks[step])])} />
     </div>
   );
 });
