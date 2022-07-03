@@ -10,11 +10,16 @@ function App() {
   const SitePageEditor = registerSunmaoRuntime({ name: 'site' }, options);
   const CalendarPageEditor = registerSunmaoRuntime({ name: 'calendar' }, options);
   const TablePageEditor = registerSunmaoRuntime({ name: 'table' }, options);
+  const OnlyCalendarPageEditor = registerSunmaoRuntime(
+    { name: 'only-calendar' },
+    options
+  );
   return (
     <Routes>
       <Route path="/" element={<SitePageEditor />} />
       <Route path="/calendar" element={<CalendarPageEditor />} />
       <Route path="/table" element={<TablePageEditor />} />
+      <Route path="/only-calendar" element={<OnlyCalendarPageEditor />} />
     </Routes>
   );
 }

@@ -757,14 +757,11 @@
           ]
         },
         {
-          "id": "day2StickyWrapper",
-          "type": "core/v1/stack",
+          "id": "day2Code",
+          "type": "site/v1/code_surf",
           "properties": {
-            "spacing": 12,
-            "direction": "vertical",
-            "align": "auto",
-            "wrap": "",
-            "justify": ""
+            "height": "500px",
+            "steps": "{{[\n  {\n    \"code\": codes.code01,\n    \"lang\": \"jsx\",\n    \"title\": \"setup the component\"\n  },\n  {\n    code: codes.code02,\n    lang: 'jsx',\n    title: 'use react-big-calendar',\n  },\n  {\n    code: codes.code03,\n    lang: 'jsx',\n    title: 'define properties',\n  },\n  {\n    code: codes.code04,\n    lang: 'jsx',\n    title: 'define a style slot',\n  },\n  {\n    code: codes.code05,\n    lang: 'jsx',\n    title: \"customize properties' editor\",\n  },\n]}}"
           },
           "traits": [
             {
@@ -782,11 +779,30 @@
               "properties": {
                 "styles": [
                   {
-                    "styleSlot": "content",
-                    "style": "",
+                    "styleSlot": "code",
+                    "style": "width: 50%;\nmax-width: 600px;",
                     "cssProperties": {
-                      "width": "100%",
-                      "height": "400vh"
+                      "paddingTop": "",
+                      "paddingLeft": "",
+                      "paddingRight": "",
+                      "paddingBottom": ""
+                    }
+                  },
+                  {
+                    "styleSlot": "innerWrapper",
+                    "style": "border-radius: 12px;\nbox-sizing: border-box;\nbackground: linear-gradient(180deg,#fff,#fff 108px,#edf0f7 480px);",
+                    "cssProperties": {
+                      "paddingLeft": "60px",
+                      "paddingBottom": "60px",
+                      "paddingTop": "60px",
+                      "paddingRight": "60px"
+                    }
+                  },
+                  {
+                    "styleSlot": "content",
+                    "style": "display: flex;\nalign-items: center;\nborder-radius: 12px;\noverflow: hidden;\nbox-shadow: 0px 10px 60px 0px rgba(0, 0, 0, .15), 0px 15px 25px 0px rgba(0, 0, 0, .1);",
+                    "cssProperties": {
+                      "backgroundColor": ""
                     }
                   }
                 ]
@@ -809,8 +825,8 @@
               "type": "core/v1/slot",
               "properties": {
                 "container": {
-                  "id": "day2StickyWrapper",
-                  "slot": "content"
+                  "id": "day2Code",
+                  "slot": "before"
                 },
                 "ifCondition": true
               }
@@ -821,15 +837,15 @@
                 "styles": [
                   {
                     "styleSlot": "content",
-                    "style": "border-radius: 12px;\nposition: sticky;\ntop: 0;\nbox-sizing: border-box;\nbackground: linear-gradient(180deg,#fff,#fff 108px,#edf0f7 480px);",
+                    "style": "",
                     "cssProperties": {
                       "backgroundColor": "",
-                      "paddingTop": "60px",
-                      "paddingLeft": "60px",
-                      "paddingBottom": "60px",
-                      "paddingRight": "60px",
+                      "paddingTop": "",
+                      "paddingLeft": "",
+                      "paddingBottom": "",
+                      "paddingRight": "",
                       "width": "100%",
-                      "height": "100vh"
+                      "height": ""
                     }
                   }
                 ]
@@ -915,18 +931,38 @@
           ]
         },
         {
-          "id": "parallelScroll",
-          "type": "site/v1/parallelScroll",
-          "properties": {},
+          "id": "day2CodeImage",
+          "type": "core/v1/stack",
+          "properties": {
+            "spacing": 0,
+            "direction": "horizontal",
+            "align": "auto",
+            "wrap": "",
+            "justify": ""
+          },
           "traits": [
             {
               "type": "core/v1/slot",
               "properties": {
                 "container": {
-                  "id": "day2Stack",
+                  "id": "day2Code",
                   "slot": "content"
                 },
                 "ifCondition": true
+              }
+            },
+            {
+              "type": "core/v1/style",
+              "properties": {
+                "styles": [
+                  {
+                    "styleSlot": "content",
+                    "style": "flex: 1;\ntransition: all .3s ease-in-out;\nbackground-size: contain;\nbackground-repeat: no-repeat;\nbackground-position: center center;\nbackground-image: url(/step-2-0{{Math.floor(day2Code.progress) + 1}}.png);",
+                    "cssProperties": {
+                      "height": "500px"
+                    }
+                  }
+                ]
               }
             }
           ]

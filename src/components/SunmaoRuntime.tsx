@@ -3,7 +3,7 @@ import { initSunmaoUI, SunmaoUIRuntimeProps } from '@sunmao-ui/runtime';
 import { FsManager, FsManagerOptions } from '../FsManager';
 import { Application, createModule, RuntimeModule } from '@sunmao-ui/core';
 import '../init';
-import i18n from 'i18next';
+import { dependencies } from '../sunmao/lib';
 
 const DEFAULT_APP: Application = {
   version: 'sunmao/v1',
@@ -31,7 +31,7 @@ function registerSunmaoRuntime(
 
     const { App: SunmaoApp } = initSunmaoUI({
       ...options,
-      dependencies: { i18n: i18n },
+      dependencies: dependencies,
       libs: options?.libs?.concat([{ modules }]),
     });
 
