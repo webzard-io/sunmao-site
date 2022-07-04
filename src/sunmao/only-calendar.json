@@ -1,0 +1,42 @@
+{
+  "application": {
+    "version": "sunmao/v1",
+    "kind": "Application",
+    "metadata": {
+      "name": "some App"
+    },
+    "spec": {
+      "components": [
+        {
+          "id": "calendar0",
+          "type": "site/v1/calendar",
+          "properties": {
+            "events": [
+              {
+                "id": "1",
+                "title": "new-event",
+                "start": "2022-06-04",
+                "end": "2022-06-05"
+              }
+            ]
+          },
+          "traits": [
+            {
+              "type": "core/v1/style",
+              "properties": {
+                "styles": [
+                  {
+                    "styleSlot": "content",
+                    "style": "height: 400px;\nbox-shadow: 48px 16px 48px rgb(24 37 56 / 12%);",
+                    "cssProperties": {}
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "modules": []
+}
