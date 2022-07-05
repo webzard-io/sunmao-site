@@ -1190,7 +1190,7 @@
                 "styles": [
                   {
                     "styleSlot": "content",
-                    "style": "max-width: 1128px;\nmargin: 0 auto;",
+                    "style": "margin: 0 auto;",
                     "cssProperties": {
                       "marginLeft": "",
                       "paddingTop": "",
@@ -1206,13 +1206,13 @@
           ]
         },
         {
-          "id": "features",
+          "id": "featuresRow1",
           "type": "core/v1/stack",
           "properties": {
-            "spacing": 12,
-            "direction": "vertical",
+            "spacing": 24,
+            "direction": "horizontal",
             "align": "auto",
-            "wrap": "",
+            "wrap": true,
             "justify": ""
           },
           "traits": [
@@ -1231,9 +1231,10 @@
                 "styles": [
                   {
                     "styleSlot": "content",
-                    "style": "max-width: 1128px;\nmargin: 0 auto;",
+                    "style": ".module-container {\n  width: 0;\n  flex: 1 1 auto;\n}",
                     "cssProperties": {
-                      "width": "100%"
+                      "width": "100%",
+                      "marginLeft": ""
                     }
                   }
                 ]
@@ -1248,8 +1249,7 @@
             "id": "feature1Module",
             "type": "site/v1/feature",
             "properties": {
-              "reverse": "{{false}}",
-              "imgSrc": "/many-components.gif",
+              "imgSrc": "/extension.png",
               "title": "{{i18n.t('featureExtensibleTitle')}}",
               "desc": "{{i18n.t('featureExtensibleDesc')}}"
             },
@@ -1260,7 +1260,7 @@
               "type": "core/v1/slot",
               "properties": {
                 "container": {
-                  "id": "features",
+                  "id": "featuresRow1",
                   "slot": "content"
                 }
               }
@@ -1268,14 +1268,7 @@
             {
               "type": "core/v1/style",
               "properties": {
-                "styles": [
-                  {
-                    "style": "",
-                    "cssProperties": {
-                      "width": ""
-                    }
-                  }
-                ]
+                "styles": []
               }
             }
           ]
@@ -1287,8 +1280,7 @@
             "id": "feature2Module",
             "type": "site/v1/feature",
             "properties": {
-              "reverse": "{{true}}",
-              "imgSrc": "/feature-editor.gif",
+              "imgSrc": "/gui.png",
               "title": "{{i18n.t('featureEditorTitle')}}",
               "desc": "{{i18n.t('featureEditorDesc')}}"
             },
@@ -1299,9 +1291,15 @@
               "type": "core/v1/slot",
               "properties": {
                 "container": {
-                  "id": "features",
+                  "id": "featuresRow1",
                   "slot": "content"
                 }
+              }
+            },
+            {
+              "type": "core/v1/style",
+              "properties": {
+                "styles": []
               }
             }
           ]
@@ -1313,8 +1311,7 @@
             "id": "feature3Module",
             "type": "site/v1/feature",
             "properties": {
-              "reverse": "{{false}}",
-              "imgSrc": "/type-safe.gif",
+              "imgSrc": "/typescript.png",
               "title": "{{i18n.t('featureTypeSafeTitle')}}",
               "desc": "{{i18n.t('featureTypeSafeDesc')}}"
             },
@@ -1325,7 +1322,131 @@
               "type": "core/v1/slot",
               "properties": {
                 "container": {
-                  "id": "features",
+                  "id": "featuresRow1",
+                  "slot": "content"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "featuresRow2",
+          "type": "core/v1/stack",
+          "properties": {
+            "spacing": 24,
+            "direction": "horizontal",
+            "align": "auto",
+            "wrap": true,
+            "justify": ""
+          },
+          "traits": [
+            {
+              "type": "core/v1/slot",
+              "properties": {
+                "container": {
+                  "id": "content",
+                  "slot": "content"
+                }
+              }
+            },
+            {
+              "type": "core/v1/style",
+              "properties": {
+                "styles": [
+                  {
+                    "styleSlot": "content",
+                    "style": ".module-container {\n  width: 0;\n  flex: 1 1 auto;\n}",
+                    "cssProperties": {
+                      "width": "100%",
+                      "marginLeft": ""
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "feature4",
+          "type": "core/v1/moduleContainer",
+          "properties": {
+            "id": "feature1Module",
+            "type": "site/v1/feature",
+            "properties": {
+              "imgSrc": "/expression.png",
+              "title": "{{i18n.t('featureExpressionTitle')}}",
+              "desc": "{{i18n.t('featureExpressionDesc')}}"
+            },
+            "handlers": []
+          },
+          "traits": [
+            {
+              "type": "core/v1/slot",
+              "properties": {
+                "container": {
+                  "id": "featuresRow2",
+                  "slot": "content"
+                }
+              }
+            },
+            {
+              "type": "core/v1/style",
+              "properties": {
+                "styles": []
+              }
+            }
+          ]
+        },
+        {
+          "id": "feature5",
+          "type": "core/v1/moduleContainer",
+          "properties": {
+            "id": "feature2Module",
+            "type": "site/v1/feature",
+            "properties": {
+              "imgSrc": "/module.png",
+              "title": "{{i18n.t('featureModuleTitle')}}",
+              "desc": "{{i18n.t('featureModuleDesc')}}"
+            },
+            "handlers": []
+          },
+          "traits": [
+            {
+              "type": "core/v1/slot",
+              "properties": {
+                "container": {
+                  "id": "featuresRow2",
+                  "slot": "content"
+                }
+              }
+            },
+            {
+              "type": "core/v1/style",
+              "properties": {
+                "styles": []
+              }
+            }
+          ]
+        },
+        {
+          "id": "feature6",
+          "type": "core/v1/moduleContainer",
+          "properties": {
+            "id": "feature3Module",
+            "type": "site/v1/feature",
+            "properties": {
+              "imgSrc": "/validator.png",
+              "title": "{{i18n.t('featureValidatorTitle')}}",
+              "desc": "{{i18n.t('featureValidatorDesc')}}"
+            },
+            "handlers": []
+          },
+          "traits": [
+            {
+              "type": "core/v1/slot",
+              "properties": {
+                "container": {
+                  "id": "featuresRow2",
                   "slot": "content"
                 }
               }
@@ -1417,9 +1538,9 @@
         "events": [],
         "properties": {},
         "exampleProperties": {
-          "imgSrc": "/many-components.gif",
-          "title": "Feature 1",
-          "desc": "Feature 1Feature 1Feature 1Feature 1Feature 1Feature 1Feature 1Feature 1"
+          "imgSrc": "/typescript.png",
+          "title": "灵活的可扩展性",
+          "desc": "无论是组件，还是逻辑，甚至是编辑器本身，都是可扩展的。你的低代码工具，由你做主。"
         }
       },
       "impl": [
@@ -1427,8 +1548,8 @@
           "id": "{{ $moduleId }}__feature_container",
           "type": "core/v1/stack",
           "properties": {
-            "spacing": 64,
-            "direction": "horizontal",
+            "spacing": 32,
+            "direction": "vertical",
             "align": "center",
             "wrap": false,
             "justify": "flex-start"
@@ -1440,10 +1561,14 @@
                 "styles": [
                   {
                     "styleSlot": "content",
-                    "style": "padding: 64px 0;\nborder-radius: 20px;\noverflow: hidden;\nflex-direction: {{ !!reverse ? 'row-reverse' : 'row' }} !important;",
+                    "style": "padding: 64px 0;\nborder-radius: 20px;\noverflow: hidden;",
                     "cssProperties": {
-                      "width": "100%",
-                      "backgroundColor": "rgba(255, 255, 255, 1)"
+                      "backgroundColor": "rgba(237, 240, 247, 0.55)",
+                      "paddingTop": "32px",
+                      "paddingLeft": "32px",
+                      "paddingBottom": "32px",
+                      "paddingRight": "32px",
+                      "height": "304px"
                     }
                   }
                 ]
@@ -1494,8 +1619,8 @@
             "footerPosition": "inner",
             "simple": false,
             "preview": false,
-            "width": "{{'auto'}}",
-            "height": "{{'auto'}}",
+            "width": "72",
+            "height": "72",
             "error": ""
           },
           "traits": [

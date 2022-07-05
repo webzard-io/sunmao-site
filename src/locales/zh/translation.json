@@ -16,5 +16,11 @@
   "featureEditorDesc": "Sunmao 提供了功能强大且完善图形化低代码编辑器，无需编程基础即可使用。",
   "featureTypeSafeTitle": "类型安全",
   "featureTypeSafeDesc": "无论是在开发组件过程中，还是使用编辑器的过程中，都能享受类型自动推断和补全。",
+  "featureExpressionTitle": "表达式",
+  "featureExpressionDesc": "Sunmao 表达式支持所有 JS 语法，赋予开发者自由创造力。",
+  "featureModuleTitle": "模块机制",
+  "featureModuleDesc": "模块机制让使用者可以复用组件和逻辑，提升开发效率。",
+  "featureValidatorTitle": "格式校验",
+  "featureValidatorDesc": "内置格式校验器，提早发现潜在 Bug，让应用更健壮。",
   "copyright": "Copyright © 2022 SmartX Inc. 保留所有权利。"
 }
