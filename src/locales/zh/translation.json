@@ -15,5 +15,6 @@
   "featureEditorTitle": "强大的可视化编辑器",
   "featureEditorDesc": "Sunmao 提供了功能强大且完善图形化低代码编辑器，无需编程基础即可使用。",
   "featureTypeSafeTitle": "类型安全",
-  "featureTypeSafeDesc": "无论是在开发组件过程中，还是使用编辑器的过程中，都能享受类型自动推断和补全。"
+  "featureTypeSafeDesc": "无论是在开发组件过程中，还是使用编辑器的过程中，都能享受类型自动推断和补全。",
+  "copyright": "Copyright © 2022 SmartX Inc. 保留所有权利。"
 }

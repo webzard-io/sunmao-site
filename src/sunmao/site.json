@@ -1158,11 +1158,6 @@
                       "width": "100%",
                       "backgroundColor": "rgba(255, 255, 255, 1)"
                     }
-                  },
-                  {
-                    "styleSlot": "content",
-                    "style": "",
-                    "cssProperties": {}
                   }
                 ]
               }
@@ -1333,6 +1328,71 @@
                   "id": "features",
                   "slot": "content"
                 }
+              }
+            }
+          ]
+        },
+        {
+          "id": "footerDivider",
+          "type": "arco/v1/divider",
+          "properties": {
+            "type": "horizontal",
+            "orientation": "center"
+          },
+          "traits": [
+            {
+              "type": "core/v1/slot",
+              "properties": {
+                "container": {
+                  "id": "container",
+                  "slot": "content"
+                },
+                "ifCondition": true
+              }
+            },
+            {
+              "type": "core/v1/style",
+              "properties": {
+                "styles": []
+              }
+            }
+          ]
+        },
+        {
+          "id": "footer",
+          "type": "core/v1/text",
+          "properties": {
+            "value": {
+              "raw": "{{i18n.t('copyright')}}",
+              "format": "plain"
+            }
+          },
+          "traits": [
+            {
+              "type": "core/v1/slot",
+              "properties": {
+                "container": {
+                  "id": "container",
+                  "slot": "content"
+                },
+                "ifCondition": true
+              }
+            },
+            {
+              "type": "core/v1/style",
+              "properties": {
+                "styles": [
+                  {
+                    "styleSlot": "content",
+                    "style": "",
+                    "cssProperties": {
+                      "width": "100%",
+                      "textAlign": "center",
+                      "marginBottom": "",
+                      "paddingBottom": "30px"
+                    }
+                  }
+                ]
               }
             }
           ]

@@ -864,15 +864,10 @@
     prismjs "^1.16.0"
     shell-quote "^1.6.1"
 
-"@code-surfer/themes@3.1.1":
+"@code-surfer/themes@3.1.1", "@code-surfer/themes@^3.1.1":
   version "3.1.1"
   resolved "https://registry.npmjs.org/@code-surfer/themes/-/themes-3.1.1.tgz#b7ec59e3bdf552bd41a1240fe1d999595f4aeb61"
   integrity sha512-XKoRsVgr09DPVfhmUeULzVykjjsV7OPPSexgF3T1NBG9sAoZcPe5aJljFyc3hutR90cLhavbDWCeikYqryPpfg==
-
-"@code-surfer/themes@^3.1.1":
-  version "3.1.1"
-  resolved "http://192.168.26.29:7001/@code-surfer/themes/download/@code-surfer/themes-3.1.1.tgz#b7ec59e3bdf552bd41a1240fe1d999595f4aeb61"
-  integrity sha1-t+xZ4731Ur1BoSQP4dmZWV9K62E=
 
 "@ctrl/tinycolor@^3.4.0":
   version "3.4.1"
