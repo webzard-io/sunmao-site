@@ -1373,9 +1373,9 @@
             "id": "feature1Module",
             "type": "site/v1/feature",
             "properties": {
-              "imgSrc": "/expression.png",
-              "title": "{{i18n.t('featureExpressionTitle')}}",
-              "desc": "{{i18n.t('featureExpressionDesc')}}"
+              "imgSrc": "/open.png",
+              "title": "{{i18n.t('featureOpenTitle')}}",
+              "desc": "{{i18n.t('featureOpenDesc')}}"
             },
             "handlers": []
           },
