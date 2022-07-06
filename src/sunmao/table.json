@@ -14,8 +14,8 @@
             "spacing": 12,
             "direction": "vertical",
             "align": "center",
-            "wrap": "",
-            "justify": ""
+            "wrap": false,
+            "justify": "flex-start"
           },
           "traits": [
             {
@@ -126,8 +126,8 @@
             "spacing": 12,
             "direction": "horizontal",
             "align": "auto",
-            "wrap": "",
-            "justify": ""
+            "wrap": false,
+            "justify": "flex-start"
           },
           "traits": [
             {
@@ -163,7 +163,7 @@
             "spacing": 12,
             "direction": "vertical",
             "align": "flex-start",
-            "wrap": "",
+            "wrap": false,
             "justify": "flex-start"
           },
           "traits": [
@@ -360,7 +360,7 @@
             "timezone": "",
             "placeholder": "Please Select",
             "position": "bl",
-            "dayStartOfWeek": 0,
+            "dayStartOfWeek": "0",
             "allowClear": false,
             "type": "date",
             "range": false,
@@ -550,7 +550,7 @@
             "timezone": "",
             "placeholder": "Please Select",
             "position": "bl",
-            "dayStartOfWeek": 0,
+            "dayStartOfWeek": "0",
             "allowClear": false,
             "type": "date",
             "range": false,

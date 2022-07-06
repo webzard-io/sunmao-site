@@ -15,7 +15,7 @@
             "direction": "vertical",
             "align": "auto",
             "wrap": true,
-            "justify": ""
+            "justify": "flex-start"
           },
           "traits": [
             {
@@ -115,8 +115,8 @@
             "spacing": 12,
             "direction": "vertical",
             "align": "auto",
-            "wrap": "",
-            "justify": ""
+            "wrap": false,
+            "justify": "flex-start"
           },
           "traits": [
             {
@@ -148,8 +148,8 @@
             "spacing": 24,
             "direction": "vertical",
             "align": "auto",
-            "wrap": "",
-            "justify": ""
+            "wrap": false,
+            "justify": "flex-start"
           },
           "traits": [
             {
@@ -184,8 +184,8 @@
             "spacing": 12,
             "direction": "horizontal",
             "align": "auto",
-            "wrap": "",
-            "justify": ""
+            "wrap": false,
+            "justify": "flex-start"
           },
           "traits": [
             {
@@ -252,8 +252,8 @@
             "spacing": 12,
             "direction": "horizontal",
             "align": "auto",
-            "wrap": "",
-            "justify": ""
+            "wrap": false,
+            "justify": "flex-start"
           },
           "traits": [
             {
@@ -291,7 +291,7 @@
             "direction": "vertical",
             "align": "auto",
             "wrap": true,
-            "justify": ""
+            "justify": "flex-start"
           },
           "traits": [
             {
@@ -387,8 +387,8 @@
             "spacing": 12,
             "direction": "horizontal",
             "align": "auto",
-            "wrap": "",
-            "justify": ""
+            "wrap": false,
+            "justify": "flex-start"
           },
           "traits": [
             {
@@ -606,8 +606,8 @@
             "spacing": 12,
             "direction": "vertical",
             "align": "auto",
-            "wrap": "",
-            "justify": ""
+            "wrap": false,
+            "justify": "flex-start"
           },
           "traits": [
             {
@@ -817,8 +817,8 @@
             "spacing": 12,
             "direction": "vertical",
             "align": "auto",
-            "wrap": "",
-            "justify": ""
+            "wrap": false,
+            "justify": "flex-start"
           },
           "traits": [
             {
@@ -937,8 +937,8 @@
             "spacing": 0,
             "direction": "horizontal",
             "align": "auto",
-            "wrap": "",
-            "justify": ""
+            "wrap": false,
+            "justify": "flex-start"
           },
           "traits": [
             {
@@ -974,8 +974,8 @@
             "spacing": 12,
             "direction": "horizontal",
             "align": "auto",
-            "wrap": "",
-            "justify": ""
+            "wrap": false,
+            "justify": "flex-start"
           },
           "traits": [
             {
@@ -1013,8 +1013,8 @@
             "spacing": 12,
             "direction": "vertical",
             "align": "auto",
-            "wrap": "",
-            "justify": ""
+            "wrap": false,
+            "justify": "flex-start"
           },
           "traits": [
             {
@@ -1213,7 +1213,7 @@
             "direction": "horizontal",
             "align": "auto",
             "wrap": true,
-            "justify": ""
+            "justify": "flex-start"
           },
           "traits": [
             {
@@ -1337,7 +1337,7 @@
             "direction": "horizontal",
             "align": "auto",
             "wrap": true,
-            "justify": ""
+            "justify": "flex-start"
           },
           "traits": [
             {
@@ -1583,8 +1583,8 @@
             "spacing": 12,
             "direction": "horizontal",
             "align": "auto",
-            "wrap": "",
-            "justify": ""
+            "wrap": false,
+            "justify": "flex-start"
           },
           "traits": [
             {
@@ -1653,8 +1653,8 @@
             "spacing": 12,
             "direction": "vertical",
             "align": "auto",
-            "wrap": "",
-            "justify": ""
+            "wrap": false,
+            "justify": "flex-start"
           },
           "traits": [
             {
