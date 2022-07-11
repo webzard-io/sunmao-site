@@ -4,6 +4,10 @@ import { FsManager, FsManagerOptions } from '../FsManager';
 import { Application, createModule, RuntimeModule } from '@sunmao-ui/core';
 import '../init';
 import { dependencies } from '../sunmao/lib';
+import SiteSchema from '../sunmao/site.json';
+import CalendarSchema from '../sunmao/calendar.json';
+import TableSchema from '../sunmao/table.json';
+import OnlyCalendarSchema from '../sunmao/only-calendar.json';
 
 const DEFAULT_APP: Application = {
   version: 'sunmao/v1',
@@ -23,9 +27,28 @@ function registerSunmaoRuntime(
   managerOptions: FsManagerOptions,
   options: SunmaoUIRuntimeProps
 ) {
-  const fsManager = new FsManager(managerOptions);
+  
+  if (process.env.NODE_ENV === 'production') {
+    const schemaMap: Record<string, any> = {
+      site: SiteSchema,
+      calendar: CalendarSchema,
+      table: TableSchema,
+      'only-calendar': OnlyCalendarSchema,
+    };
+    return function () {
+      const schema = schemaMap[managerOptions.name];
+      const { App: SunmaoApp } = initSunmaoUI({
+        ...options,
+        dependencies: dependencies,
+        libs: options?.libs?.concat([{ modules: schema.modules }]),
+      });
+      
+      return <SunmaoApp options={schema.application} />;
+    };
+  }
 
-  function App() {
+  const fsManager = new FsManager(managerOptions);
+  return function () {
     const [app, setApp] = useState(JSON.parse(JSON.stringify(DEFAULT_APP)));
     const [modules, setModules] = useState<RuntimeModule[]>([]);
 
@@ -42,9 +65,7 @@ function registerSunmaoRuntime(
       });
     }, []);
     return <SunmaoApp options={app} />;
-  }
-
-  return App;
+  };
 }
 
 export default registerSunmaoRuntime;
