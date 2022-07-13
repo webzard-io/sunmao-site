@@ -1660,7 +1660,7 @@
                 "styles": [
                   {
                     "styleSlot": "content",
-                    "style": "width: 440px;\nmargin: 0 auto !important;"
+                    "style": "margin: 0 auto !important;"
                   }
                 ]
               }
@@ -1727,12 +1727,7 @@
             {
               "type": "core/v1/style",
               "properties": {
-                "styles": [
-                  {
-                    "styleSlot": "content",
-                    "style": "width: 392px;"
-                  }
-                ]
+                "styles": []
               }
             }
           ]
