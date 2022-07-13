@@ -35,6 +35,42 @@
           ]
         },
         {
+          "id": "mobileWarning",
+          "type": "core/v1/text",
+          "properties": {
+            "value": {
+              "raw": "{{i18n.t('mobileWarning', { lng: language.value })}}",
+              "format": "plain"
+            }
+          },
+          "traits": [
+            {
+              "type": "core/v1/slot",
+              "properties": {
+                "container": {
+                  "id": "main",
+                  "slot": "content"
+                },
+                "ifCondition": "{{window.innerWidth < 1024}}"
+              }
+            },
+            {
+              "type": "core/v1/style",
+              "properties": {
+                "styles": [
+                  {
+                    "styleSlot": "content",
+                    "style": "display: block;\npadding: 16px;\nz-index: 1;",
+                    "cssProperties": {
+                      "backgroundColor": "rgba(248, 231, 28, 1)"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
           "id": "bg1",
           "type": "arco/v1/image",
           "properties": {
