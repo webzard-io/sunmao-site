@@ -7,15 +7,16 @@ import { fileURLToPath } from 'url';
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  server: {
+    watch: {
+      ignored: [path.resolve(__dirname, './src/sunmao/*.json')],
+    },
+  },
   build: {
     rollupOptions: {
       input: {
-        index: fileURLToPath(
-          new URL('./index.html', import.meta.url)
-        ),
-        dev: fileURLToPath(
-          new URL('./dev.html', import.meta.url)
-        ),
+        index: fileURLToPath(new URL('./index.html', import.meta.url)),
+        dev: fileURLToPath(new URL('./dev.html', import.meta.url)),
       },
     },
   },

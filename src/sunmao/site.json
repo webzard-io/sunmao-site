@@ -14,7 +14,7 @@
             "spacing": 12,
             "direction": "vertical",
             "align": "auto",
-            "wrap": true,
+            "wrap": false,
             "justify": "flex-start"
           },
           "traits": [
@@ -185,7 +185,7 @@
             "direction": "horizontal",
             "align": "auto",
             "wrap": false,
-            "justify": "flex-start"
+            "justify": "space-between"
           },
           "traits": [
             {
@@ -241,6 +241,50 @@
               "type": "core/v1/style",
               "properties": {
                 "styles": []
+              }
+            }
+          ]
+        },
+        {
+          "id": "button43",
+          "type": "arco/v1/button",
+          "properties": {
+            "type": "default",
+            "status": "default",
+            "long": false,
+            "size": "default",
+            "disabled": false,
+            "loading": false,
+            "shape": "square",
+            "text": "{{ language.value === 'zh-CN' ? 'EN' : '中文'}}"
+          },
+          "traits": [
+            {
+              "type": "core/v1/slot",
+              "properties": {
+                "container": {
+                  "id": "header",
+                  "slot": "content"
+                },
+                "ifCondition": true
+              }
+            },
+            {
+              "type": "core/v1/event",
+              "properties": {
+                "handlers": [
+                  {
+                    "type": "onClick",
+                    "componentId": "language",
+                    "method": {
+                      "name": "setValue",
+                      "parameters": {
+                        "key": "value",
+                        "value": "{{ language.value === 'zh-CN' ? 'en' : 'zh-CN'}}"
+                      }
+                    }
+                  }
+                ]
               }
             }
           ]
@@ -321,7 +365,7 @@
           "type": "core/v1/text",
           "properties": {
             "value": {
-              "raw": "{{i18n.t('heroTitle')}}",
+              "raw": "{{i18n.t('heroTitle', { lng: language.value })}}",
               "format": "plain"
             }
           },
@@ -353,7 +397,7 @@
           "type": "core/v1/text",
           "properties": {
             "value": {
-              "raw": "{{i18n.t('heroDesc')}}",
+              "raw": "{{i18n.t('heroDesc', { lng: language.value })}}",
               "format": "plain"
             }
           },
@@ -433,7 +477,7 @@
             "disabled": false,
             "loading": false,
             "shape": "round",
-            "text": "{{i18n.t('heroButtonText')}}"
+            "text": "{{i18n.t('heroButtonText', { lng: language.value })}}"
           },
           "traits": [
             {
@@ -563,7 +607,7 @@
           "type": "core/v1/text",
           "properties": {
             "value": {
-              "raw": "{{i18n.t('sunmaoExperienceTitle')}}",
+              "raw": "{{i18n.t('sunmaoExperienceTitle', { lng: language.value })}}",
               "format": "plain"
             }
           },
@@ -646,7 +690,7 @@
           "type": "core/v1/text",
           "properties": {
             "value": {
-              "raw": "{{i18n.t('sunmaoDay1Title')}}",
+              "raw": "{{i18n.t('sunmaoDay1Title', { lng: language.value })}}",
               "format": "plain"
             }
           },
@@ -685,7 +729,7 @@
           "type": "core/v1/text",
           "properties": {
             "value": {
-              "raw": "{{i18n.t('sunmaoDay1Desc')}}",
+              "raw": "{{i18n.t('sunmaoDay1Desc', { lng: language.value })}}",
               "format": "plain"
             }
           },
@@ -858,7 +902,7 @@
           "type": "core/v1/text",
           "properties": {
             "value": {
-              "raw": "{{i18n.t('sunmaoDay2Title')}}",
+              "raw": "{{i18n.t('sunmaoDay2Title', { lng: language.value })}}",
               "format": "plain"
             }
           },
@@ -897,7 +941,7 @@
           "type": "core/v1/text",
           "properties": {
             "value": {
-              "raw": "{{i18n.t('sunmaoDay2Desc')}}",
+              "raw": "{{i18n.t('sunmaoDay2Desc', { lng: language.value })}}",
               "format": "plain"
             }
           },
@@ -1054,7 +1098,7 @@
           "type": "core/v1/text",
           "properties": {
             "value": {
-              "raw": "{{i18n.t('sunmaoDay3Title')}}",
+              "raw": "{{i18n.t('sunmaoDay3Title', { lng: language.value })}}",
               "format": "plain"
             }
           },
@@ -1093,7 +1137,7 @@
           "type": "core/v1/text",
           "properties": {
             "value": {
-              "raw": "{{i18n.t('sunmaoDay3Desc')}}",
+              "raw": "{{i18n.t('sunmaoDay3Desc', { lng: language.value })}}",
               "format": "plain"
             }
           },
@@ -1169,7 +1213,7 @@
           "type": "core/v1/text",
           "properties": {
             "value": {
-              "raw": "{{i18n.t('sunmaoFeatures')}}",
+              "raw": "{{i18n.t('sunmaoFeatures', { lng: language.value })}}",
               "format": "plain"
             }
           },
@@ -1250,8 +1294,8 @@
             "type": "site/v1/feature",
             "properties": {
               "imgSrc": "/extension.png",
-              "title": "{{i18n.t('featureExtensibleTitle')}}",
-              "desc": "{{i18n.t('featureExtensibleDesc')}}"
+              "title": "{{i18n.t('featureExtensibleTitle', { lng: language.value })}}",
+              "desc": "{{i18n.t('featureExtensibleDesc', { lng: language.value })}}"
             },
             "handlers": []
           },
@@ -1281,8 +1325,8 @@
             "type": "site/v1/feature",
             "properties": {
               "imgSrc": "/gui.png",
-              "title": "{{i18n.t('featureEditorTitle')}}",
-              "desc": "{{i18n.t('featureEditorDesc')}}"
+              "title": "{{i18n.t('featureEditorTitle', { lng: language.value })}}",
+              "desc": "{{i18n.t('featureEditorDesc', { lng: language.value })}}"
             },
             "handlers": []
           },
@@ -1312,8 +1356,8 @@
             "type": "site/v1/feature",
             "properties": {
               "imgSrc": "/typescript.png",
-              "title": "{{i18n.t('featureTypeSafeTitle')}}",
-              "desc": "{{i18n.t('featureTypeSafeDesc')}}"
+              "title": "{{i18n.t('featureTypeSafeTitle', { lng: language.value })}}",
+              "desc": "{{i18n.t('featureTypeSafeDesc', { lng: language.value })}}"
             },
             "handlers": []
           },
@@ -1374,8 +1418,8 @@
             "type": "site/v1/feature",
             "properties": {
               "imgSrc": "/open.png",
-              "title": "{{i18n.t('featureOpenTitle')}}",
-              "desc": "{{i18n.t('featureOpenDesc')}}"
+              "title": "{{i18n.t('featureOpenTitle', { lng: language.value })}}",
+              "desc": "{{i18n.t('featureOpenDesc', { lng: language.value })}}"
             },
             "handlers": []
           },
@@ -1405,8 +1449,8 @@
             "type": "site/v1/feature",
             "properties": {
               "imgSrc": "/module.png",
-              "title": "{{i18n.t('featureModuleTitle')}}",
-              "desc": "{{i18n.t('featureModuleDesc')}}"
+              "title": "{{i18n.t('featureModuleTitle', { lng: language.value })}}",
+              "desc": "{{i18n.t('featureModuleDesc', { lng: language.value })}}"
             },
             "handlers": []
           },
@@ -1436,8 +1480,8 @@
             "type": "site/v1/feature",
             "properties": {
               "imgSrc": "/validator.png",
-              "title": "{{i18n.t('featureValidatorTitle')}}",
-              "desc": "{{i18n.t('featureValidatorDesc')}}"
+              "title": "{{i18n.t('featureValidatorTitle', { lng: language.value })}}",
+              "desc": "{{i18n.t('featureValidatorDesc', { lng: language.value })}}"
             },
             "handlers": []
           },
@@ -1484,7 +1528,7 @@
           "type": "core/v1/text",
           "properties": {
             "value": {
-              "raw": "{{i18n.t('copyright')}}",
+              "raw": "{{i18n.t('copyright', { lng: language.value })}}",
               "format": "plain"
             }
           },
@@ -1514,6 +1558,20 @@
                     }
                   }
                 ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "language",
+          "type": "core/v1/dummy",
+          "properties": {},
+          "traits": [
+            {
+              "type": "core/v1/state",
+              "properties": {
+                "key": "value",
+                "initialValue": "{{i18n.language}}"
               }
             }
           ]
