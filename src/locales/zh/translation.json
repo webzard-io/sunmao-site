@@ -22,6 +22,6 @@
   "featureModuleDesc": "模块机制让使用者可以复用组件和逻辑，提升开发效率。",
   "featureValidatorTitle": "代码校验",
   "featureValidatorDesc": "内置代码校验器，提早发现潜在 Bug，让应用更健壮。",
-  "copyright": "Copyright © 2022 SmartX Inc. 保留所有权利。",
+  "copyright": "Copyright © 2022 SmartX Inc. Made with Sunmao.",
   "mobileWarning": "我们检测到您可能正在使用手机观看，为了获得更加完整的体验，请切换到电脑浏览。"
 }

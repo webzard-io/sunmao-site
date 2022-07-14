@@ -11,7 +11,7 @@
           "id": "main",
           "type": "core/v1/stack",
           "properties": {
-            "spacing": 12,
+            "spacing": 0,
             "direction": "vertical",
             "align": "auto",
             "wrap": false,
@@ -24,9 +24,11 @@
                 "styles": [
                   {
                     "styleSlot": "content",
-                    "style": "width: 100%;\nheight: 100%;",
+                    "style": "position: relative;",
                     "cssProperties": {
-                      "backgroundColor": "rgba(255, 255, 255, 1)"
+                      "backgroundColor": "rgba(255, 255, 255, 1)",
+                      "width": "100%",
+                      "height": "100%"
                     }
                   }
                 ]
@@ -71,6 +73,172 @@
           ]
         },
         {
+          "id": "header",
+          "type": "core/v1/stack",
+          "properties": {
+            "spacing": 12,
+            "direction": "horizontal",
+            "align": "auto",
+            "wrap": false,
+            "justify": "flex-start"
+          },
+          "traits": [
+            {
+              "type": "core/v1/slot",
+              "properties": {
+                "container": {
+                  "id": "main",
+                  "slot": "content"
+                },
+                "ifCondition": true
+              }
+            },
+            {
+              "type": "core/v1/style",
+              "properties": {
+                "styles": [
+                  {
+                    "styleSlot": "content",
+                    "style": "z-index: 1",
+                    "cssProperties": {
+                      "backgroundColor": "rgba(255, 255, 255, 1)",
+                      "paddingTop": "12px",
+                      "marginTop": "",
+                      "paddingBottom": "12px"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "headerContent",
+          "type": "core/v1/stack",
+          "properties": {
+            "spacing": 12,
+            "direction": "horizontal",
+            "align": "auto",
+            "wrap": false,
+            "justify": "space-between"
+          },
+          "traits": [
+            {
+              "type": "core/v1/slot",
+              "properties": {
+                "container": {
+                  "id": "header",
+                  "slot": "content"
+                }
+              }
+            },
+            {
+              "type": "core/v1/style",
+              "properties": {
+                "styles": [
+                  {
+                    "styleSlot": "content",
+                    "style": "max-width: 1128px;\nmargin: auto;",
+                    "cssProperties": {
+                      "width": "100%"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "logo",
+          "type": "arco/v1/image",
+          "properties": {
+            "src": "/logo.png",
+            "title": "",
+            "description": "",
+            "footerPosition": "inner",
+            "simple": false,
+            "preview": false,
+            "width": 48,
+            "height": 48,
+            "error": ""
+          },
+          "traits": [
+            {
+              "type": "core/v1/slot",
+              "properties": {
+                "container": {
+                  "id": "headerContent",
+                  "slot": "content"
+                }
+              }
+            },
+            {
+              "type": "core/v1/style",
+              "properties": {
+                "styles": []
+              }
+            }
+          ]
+        },
+        {
+          "id": "languageButton",
+          "type": "arco/v1/button",
+          "properties": {
+            "type": "text",
+            "status": "default",
+            "long": false,
+            "size": "large",
+            "disabled": false,
+            "loading": false,
+            "shape": "square",
+            "text": "{{ language.value === 'zh-CN' ? 'EN' : '中文'}}"
+          },
+          "traits": [
+            {
+              "type": "core/v1/slot",
+              "properties": {
+                "container": {
+                  "id": "headerContent",
+                  "slot": "content"
+                },
+                "ifCondition": true
+              }
+            },
+            {
+              "type": "core/v1/event",
+              "properties": {
+                "handlers": [
+                  {
+                    "type": "onClick",
+                    "componentId": "language",
+                    "method": {
+                      "name": "setValue",
+                      "parameters": {
+                        "key": "value",
+                        "value": "{{ language.value === 'zh-CN' ? 'en' : 'zh-CN'}}"
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "core/v1/style",
+              "properties": {
+                "styles": [
+                  {
+                    "styleSlot": "content",
+                    "style": "margin: auto 0;",
+                    "cssProperties": {
+                      "height": ""
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
           "id": "bg1",
           "type": "arco/v1/image",
           "properties": {
@@ -80,7 +248,7 @@
             "footerPosition": "inner",
             "simple": false,
             "preview": false,
-            "width": "100",
+            "width": 100,
             "height": 324,
             "error": ""
           },
@@ -117,7 +285,7 @@
             "footerPosition": "inner",
             "simple": false,
             "preview": false,
-            "width": "100",
+            "width": 100,
             "height": 324,
             "error": ""
           },
@@ -209,118 +377,6 @@
                   "id": "container",
                   "slot": "content"
                 }
-              }
-            }
-          ]
-        },
-        {
-          "id": "header",
-          "type": "core/v1/stack",
-          "properties": {
-            "spacing": 12,
-            "direction": "horizontal",
-            "align": "auto",
-            "wrap": false,
-            "justify": "space-between"
-          },
-          "traits": [
-            {
-              "type": "core/v1/slot",
-              "properties": {
-                "container": {
-                  "id": "content",
-                  "slot": "content"
-                }
-              }
-            },
-            {
-              "type": "core/v1/style",
-              "properties": {
-                "styles": [
-                  {
-                    "styleSlot": "content",
-                    "style": "max-width: 1128px;\npadding: 24px 0;\nmargin: auto;",
-                    "cssProperties": {
-                      "width": "100%"
-                    }
-                  }
-                ]
-              }
-            }
-          ]
-        },
-        {
-          "id": "logo",
-          "type": "arco/v1/image",
-          "properties": {
-            "src": "/logo.png",
-            "title": "",
-            "description": "",
-            "footerPosition": "inner",
-            "simple": false,
-            "preview": false,
-            "width": 48,
-            "height": 48,
-            "error": ""
-          },
-          "traits": [
-            {
-              "type": "core/v1/slot",
-              "properties": {
-                "container": {
-                  "id": "header",
-                  "slot": "content"
-                }
-              }
-            },
-            {
-              "type": "core/v1/style",
-              "properties": {
-                "styles": []
-              }
-            }
-          ]
-        },
-        {
-          "id": "button43",
-          "type": "arco/v1/button",
-          "properties": {
-            "type": "default",
-            "status": "default",
-            "long": false,
-            "size": "default",
-            "disabled": false,
-            "loading": false,
-            "shape": "square",
-            "text": "{{ language.value === 'zh-CN' ? 'EN' : '中文'}}"
-          },
-          "traits": [
-            {
-              "type": "core/v1/slot",
-              "properties": {
-                "container": {
-                  "id": "header",
-                  "slot": "content"
-                },
-                "ifCondition": true
-              }
-            },
-            {
-              "type": "core/v1/event",
-              "properties": {
-                "handlers": [
-                  {
-                    "type": "onClick",
-                    "componentId": "language",
-                    "method": {
-                      "name": "setValue",
-                      "parameters": {
-                        "key": "value",
-                        "value": "{{ language.value === 'zh-CN' ? 'en' : 'zh-CN'}}"
-                      }
-                    }
-                  }
-                ]
               }
             }
           ]
