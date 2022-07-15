@@ -13,7 +13,7 @@
   "featureExtensibleTitle": "灵活的可扩展性",
   "featureExtensibleDesc": "无论是组件，还是逻辑，甚至是编辑器本身，都是可扩展的。你的低代码工具，由你做主。",
   "featureEditorTitle": "强大的可视化编辑器",
-  "featureEditorDesc": "Sunmao 提供了功能强大且完善图形化的低代码编辑器，无需编程基础即可使用。",
+  "featureEditorDesc": "Sunmao 提供了功能强大且完善的图形化低代码编辑器，无需编程基础即可使用。",
   "featureTypeSafeTitle": "类型安全",
   "featureTypeSafeDesc": "无论是在开发组件过程中，还是使用编辑器的过程中，都能享受类型自动推断和补全。",
   "featureOpenTitle": "保持开放",
@@ -22,6 +22,6 @@
   "featureModuleDesc": "模块机制让使用者可以复用组件和逻辑，提升开发效率。",
   "featureValidatorTitle": "代码校验",
   "featureValidatorDesc": "内置代码校验器，提早发现潜在 Bug，让应用更健壮。",
-  "copyright": "Copyright © 2022 SmartX Inc. Made with Sunmao.",
+  "copyright": "Copyright © 2022 SmartX Inc. 保留所有权利。Made with Sunmao.",
   "mobileWarning": "我们检测到您可能正在使用手机观看，为了获得更加完整的体验，请切换到电脑浏览。"
 }

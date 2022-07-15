@@ -1,3 +1,27 @@
 {
-  "heroTitle": "A Framework for Developing Low-code Tool"
+  "heroTitle": "A framework for developing low-code tools.",
+  "heroDesc": "Sunmao is an open source framework for low-code tools. You can integrate custom UI components in Sunmao to create your own low-code tools.",
+  "heroButtonText": "Try it now.",
+  "sunmaoExperienceTitle": "How to progressively develop a schedule management application with Sunmao ?",
+  "sunmaoDay1Title": "Create a schedule management UI interface.",
+  "sunmaoDay1Desc": "With Sunmao editor, you can easily compile a complete form and table. Looks good! But it is just a beginning.",
+  "sunmaoDay2Title": "Wrap/Encapsulte a calendar component to replace the table.",
+  "sunmaoDay2Desc": "Calendar component is more suitabel for displaying schedule than table. Normally low-code tools have limited built-in components, lack calendar component, and cannot be extended., Sunmao is just the native framework to solve these problems.. Sunmao natively support encapsulating custom components. With just some code, you can encapsulate an existing calendar component into a Sunmao component.",
+  "sunmaoDay3Title": "Replace table component with calendar component.",
+  "sunmaoDay3Desc": "The Encapsulted Sunmao calendar component can be directly integrated into Sunmao editor, replacing the table component. You will feel the same as with the built-in components. With custom components, you can develop progressively, continuously enrich your components library, and iterate your application.",
+  "sunmaoFeatures": "You will find all low-code features in Sunmao......",
+  "featureExtensibleTitle": "Flexible extensibility",
+  "featureExtensibleDesc": "Component, logic, or even editor itself are all extensible. You can decide your own low-code tools.",
+  "featureEditorTitle": "Powerful GUI editor",
+  "featureEditorDesc": "Sunmao provides a powerful and perfect graphical low-code editor that can",
+  "featureTypeSafeTitle": "Type safety",
+  "featureTypeSafeDesc": "Whether in the process of developing components or editing, you can always obtain type auto-inference and auto-completion.",
+  "featureOpenTitle": "Keep open",
+  "featureOpenDesc": "We are open for anyone to participate in the process from License to decision making.",
+  "featureModuleTitle": "Module mechanism",
+  "featureModuleDesc": "Module mechanism allows users to reuse components and logic to improve development efficiency",
+  "featureValidatorTitle": "Code validation",
+  "featureValidatorDesc": "With the built-in validator, you can detect any potential bug at a early stage and make the application more robust.",
+  "copyright": "Copyright © 2022 SmartX Inc. All copyright reserved. Made with Sunmao.",
+  "mobileWarning": "We have detected that you may be watching on a mobile phone, for a more complete experience, please switch to a computer to browse."
 }
