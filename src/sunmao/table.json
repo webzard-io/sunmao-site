@@ -26,49 +26,6 @@
                     "styleSlot": "content",
                     "style": "border: 1px #eee solid;\nborder-radius: 4px;",
                     "cssProperties": {
-                      "0": "b",
-                      "1": "o",
-                      "2": "r",
-                      "3": "d",
-                      "4": "e",
-                      "5": "r",
-                      "6": ":",
-                      "7": " ",
-                      "8": "1",
-                      "9": "p",
-                      "10": "x",
-                      "11": " ",
-                      "12": "#",
-                      "13": "e",
-                      "14": "e",
-                      "15": "e",
-                      "16": " ",
-                      "17": "s",
-                      "18": "o",
-                      "19": "l",
-                      "20": "i",
-                      "21": "d",
-                      "22": ";",
-                      "23": "\n",
-                      "24": "b",
-                      "25": "o",
-                      "26": "r",
-                      "27": "d",
-                      "28": "e",
-                      "29": "r",
-                      "30": "-",
-                      "31": "r",
-                      "32": "a",
-                      "33": "d",
-                      "34": "i",
-                      "35": "u",
-                      "36": "s",
-                      "37": ":",
-                      "38": " ",
-                      "39": "4",
-                      "40": "p",
-                      "41": "x",
-                      "42": ";",
                       "paddingTop": "12px",
                       "paddingLeft": "12px",
                       "paddingRight": "12px",
@@ -734,7 +691,7 @@
                     "method": {
                       "name": "setValue",
                       "parameters": {
-                        "value": "{{\n(events.value || []).concat({\n  id: `${Math.random()}`,\n  title: eventInput.value,\n  start: startdate.dateString,\n  end: endDate.dateString\n})\n}}"
+                        "value": "{{\nevents.value.concat({\n  id: `${Math.random()}`,\n  title: eventInput.value,\n  start: startdate.dateString,\n  end: endDate.dateString\n})\n}}"
                       }
                     },
                     "disabled": false,
@@ -849,7 +806,7 @@
               "type": "core/v1/localStorage",
               "properties": {
                 "key": "value",
-                "initialValue": "{{ [\n    {\n      id: 0,\n      title: 'Board meeting',\n      start: '2022-06-10',\n      end: '2022-06-10',\n    },\n    {\n      id: 1,\n      title: 'MS training',\n      start: '2022-06-20',\n      end: '2022-06-20',\n    },\n    {\n      id: 2,\n      title: 'Team lead meeting',\n      start: '2022-06-22',\n      end: '2022-06-22',\n    },\n    {\n      id: 11,\n      title: 'Birthday Party',\n      start: '2022-06-06',\n      end: '2022-06-06',\n    },\n  ] }}"
+                "initialValue": "{{ [\n    {\n      id: 0,\n      title: 'Board meeting',\n      start: '2022-07-10',\n      end: '2022-07-10',\n    },\n    {\n      id: 1,\n      title: 'MS training',\n      start: '2022-07-20',\n      end: '2022-07-20',\n    },\n    {\n      id: 2,\n      title: 'Team lead meeting',\n      start: '2022-07-22',\n      end: '2022-07-22',\n    },\n    {\n      id: 11,\n      title: 'Birthday Party',\n      start: '2022-07-06',\n      end: '2022-07-06',\n    },\n  ] }}"
               }
             }
           ]

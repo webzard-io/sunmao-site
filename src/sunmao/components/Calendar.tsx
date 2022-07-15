@@ -55,7 +55,7 @@ export const SunmaoCalendar = implementRuntimeComponent({
       <Calendar
         toolbar={false}
         localizer={localizer}
-        defaultDate={new Date(2022, 5, 1)}
+        defaultDate={new Date(2022, 6, 1)}
         events={events}
         startAccessor="start"
         endAccessor="end"

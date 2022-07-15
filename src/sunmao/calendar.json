@@ -691,7 +691,7 @@
                     "method": {
                       "name": "setValue",
                       "parameters": {
-                        "value": "{{\n(events.value || []).concat({\n  id: `${Math.random()}`,\n  title: eventInput.value,\n  start: startdate.dateString,\n  end: endDate.dateString\n})\n}}"
+                        "value": "{{\nevents.value.concat({\n  id: `${Math.random()}`,\n  title: eventInput.value,\n  start: startdate.dateString,\n  end: endDate.dateString\n})\n}}"
                       }
                     },
                     "disabled": false,
@@ -748,7 +748,7 @@
               "type": "core/v1/localStorage",
               "properties": {
                 "key": "value",
-                "initialValue": "{{ [\n    {\n      id: 0,\n      title: 'Board meeting',\n      start: '2022-06-10',\n      end: '2022-06-10',\n    },\n    {\n      id: 1,\n      title: 'MS training',\n      start: '2022-06-20',\n      end: '2022-06-20',\n    },\n    {\n      id: 2,\n      title: 'Team lead meeting',\n      start: '2022-06-22',\n      end: '2022-06-22',\n    },\n    {\n      id: 11,\n      title: 'Birthday Party',\n      start: '2022-06-06',\n      end: '2022-06-06',\n    },\n  ] }}"
+                "initialValue": "{{ [\n    {\n      id: 0,\n      title: 'Board meeting',\n      start: '2022-07-10',\n      end: '2022-07-10',\n    },\n    {\n      id: 1,\n      title: 'MS training',\n      start: '2022-07-20',\n      end: '2022-07-20',\n    },\n    {\n      id: 2,\n      title: 'Team lead meeting',\n      start: '2022-07-22',\n      end: '2022-07-22',\n    },\n    {\n      id: 11,\n      title: 'Birthday Party',\n      start: '2022-07-06',\n      end: '2022-07-06',\n    },\n  ] }}"
               }
             }
           ]
