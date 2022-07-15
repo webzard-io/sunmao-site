@@ -53,6 +53,7 @@ export const SunmaoCalendar = implementRuntimeComponent({
   return (
     <div ref={elementRef} className={css(customStyle?.content)}>
       <Calendar
+        className={css`pointer-events: none;`}
         toolbar={false}
         localizer={localizer}
         defaultDate={new Date(2022, 6, 1)}
