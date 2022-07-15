@@ -687,7 +687,7 @@
                 "styles": [
                   {
                     "styleSlot": "content",
-                    "style": "box-shadow: 48px 16px 48px rgb(24 37 56 / 12%);\nborder-radius: 4px;\ntransform: perspective(1000px) rotateY(16deg) rotateX(2deg) rotateZ(-7deg) scale(1.2) translatex(8%);"
+                    "style": "display: {{window.innerWidth < 1024 ? 'none' : 'block' }};\nbox-shadow: 48px 16px 48px rgb(24 37 56 / 12%);\nborder-radius: 4px;\ntransform: perspective(1000px) rotateY(16deg) rotateX(2deg) rotateZ(-7deg) scale(1.2) translatex(8%);"
                   }
                 ]
               }
