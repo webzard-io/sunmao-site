@@ -24,7 +24,7 @@
                 "styles": [
                   {
                     "styleSlot": "content",
-                    "style": "position: relative;\noverflow: hidden;",
+                    "style": "position: relative;",
                     "cssProperties": {
                       "backgroundColor": "rgba(255, 255, 255, 1)",
                       "width": "100%",
@@ -407,7 +407,7 @@
                 "styles": [
                   {
                     "styleSlot": "content",
-                    "style": "max-width: 1128px;\nmargin: auto;\ntext-align: left;\npadding-top: 88px;\npadding-bottom: 120px;",
+                    "style": "max-width: 1128px;\nmargin: auto;\ntext-align: left;\npadding-top: 88px;\npadding-bottom: 120px;\noverflow: visible;",
                     "cssProperties": {
                       "width": "100%",
                       "marginBottom": "200px",
