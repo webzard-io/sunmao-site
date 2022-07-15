@@ -99,9 +99,9 @@
                 "styles": [
                   {
                     "styleSlot": "content",
-                    "style": "z-index: 1",
+                    "style": "z-index: 1;\nbackdrop-filter: blur(8px);",
                     "cssProperties": {
-                      "backgroundColor": "rgba(255, 255, 255, 1)",
+                      "backgroundColor": "rgba(255, 255, 255, 0.8)",
                       "paddingTop": "12px",
                       "marginTop": "",
                       "paddingBottom": "12px"
@@ -190,8 +190,8 @@
             "size": "large",
             "disabled": false,
             "loading": false,
-            "shape": "square",
-            "text": "{{ language.value === 'zh-CN' ? 'EN' : '中文'}}"
+            "shape": "round",
+            "text": "{{ language.value === 'zh-CN' ? 'English' : '中文'}}"
           },
           "traits": [
             {
