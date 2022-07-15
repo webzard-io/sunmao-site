@@ -24,7 +24,7 @@
                 "styles": [
                   {
                     "styleSlot": "content",
-                    "style": "position: relative;",
+                    "style": "position: relative;\noverflow: hidden;",
                     "cssProperties": {
                       "backgroundColor": "rgba(255, 255, 255, 1)",
                       "width": "100%",
