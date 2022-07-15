@@ -1093,7 +1093,7 @@
                 "styles": [
                   {
                     "styleSlot": "content",
-                    "style": "flex: 1;\ntransition: all .3s ease-in-out;\nbackground-size: contain;\nbackground-repeat: no-repeat;\nbackground-position: center center;\nbackground-image: url(/step-2-0{{Math.floor(day2Code.progress) + 1}}.png);",
+                    "style": "flex: 1;\ntransition: all .3s ease-in-out;\nbackground-size: contain;\nbackground-repeat: no-repeat;\nbackground-position: center center;\nbackground-image: url(/step-2-0{{Math.floor(day2Code.progress) + 1}}.png);\n\n&::after {\n  position:absolute;\n  width:0;\n  height:0;\n  overflow:hidden;\n  z-index:-1;\n  content:url(/step-2-01.png) url(/step-2-02.png) url(/step-2-03.png) url(/step-2-04.png);\n}",
                     "cssProperties": {
                       "height": "500px"
                     }
