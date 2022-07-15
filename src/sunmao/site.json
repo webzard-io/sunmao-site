@@ -445,7 +445,7 @@
                 "styles": [
                   {
                     "styleSlot": "content",
-                    "style": "padding-top: 40px;\npadding-right: 48px;\nmin-width: 448px;\nmax-width: 512px;"
+                    "style": "padding-top: 40px;\npadding-right: 48px;\nmax-width: 512px;"
                   }
                 ]
               }
