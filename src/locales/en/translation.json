@@ -6,7 +6,7 @@
   "sunmaoDay1Title": "Create a schedule management UI interface.",
   "sunmaoDay1Desc": "With Sunmao editor, you can easily compose a complete form and table. Looks good! But it is just a beginning.",
   "sunmaoDay2Title": "Encapsulte a calendar component to replace the table.",
-  "sunmaoDay2Desc": "Calendar component is more suitabel for displaying schedule than table. Normally low-code tools have limited built-in components, lack calendar component, and cannot be extended. Sunmao is just the native framework to solve these problems. Sunmao natively supports encapsulating custom components. With just some code, you can encapsulate an existing calendar component into a Sunmao component.",
+  "sunmaoDay2Desc": "Calendar component is more suitable for displaying schedule than table. Normally low-code tools have limited built-in components, lack calendar component, and cannot be extended. Sunmao is just the native framework to solve these problems. Sunmao natively supports encapsulating custom components. With just some code, you can encapsulate an existing calendar component into a Sunmao component.",
   "sunmaoDay3Title": "Replace table component with calendar component.",
   "sunmaoDay3Desc": "The Encapsulted Sunmao calendar component can be directly integrated into Sunmao editor, replacing the table component. You will feel the same as with the built-in components. With custom components, you can develop progressively, continuously enrich your components library, and iterate your application.",
   "sunmaoFeatures": "You will find all low-code features in Sunmao......",
