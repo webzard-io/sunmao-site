@@ -1367,7 +1367,7 @@
                 "styles": [
                   {
                     "styleSlot": "content",
-                    "style": ".module-container {\n  width: 0;\n  height: 100%;\n  min-width: {{isMobile.value ? '100%' : '0' }};\n  flex: 1 1 auto;\n}",
+                    "style": "align-items: stretch;\noverflow: hidden;\n.module-container {\n  width: 0;\n  display:flex;\n  min-width: {{isMobile.value ? '100%' : '0' }};\n  flex: 1 1 auto;\n}",
                     "cssProperties": {
                       "width": "100%",
                       "marginLeft": ""
@@ -1487,7 +1487,7 @@
                 "styles": [
                   {
                     "styleSlot": "content",
-                    "style": ".module-container {\n  width: 0;\n  height: 100%;\n  min-width: {{isMobile.value ? '100%' : '0' }};\n  flex: 1 1 auto;\n}",
+                    "style": "align-items: stretch;\noverflow: hidden;\n.module-container {\n  width: 0;\n  display: flex;\n  min-width: {{isMobile.value ? '100%' : '0' }};\n  flex: 1 1 auto;\n}",
                     "cssProperties": {
                       "width": "100%",
                       "marginLeft": ""
@@ -1721,7 +1721,7 @@
                 "styles": [
                   {
                     "styleSlot": "content",
-                    "style": "padding: 64px 0;\nborder-radius: 20px;\nmin-height: 100%;\noverflow: hidden;\nalign-items: baseline;\n",
+                    "style": "padding: 64px 0;\nborder-radius: 20px;\nflex-grow: 1;\noverflow: hidden;\nalign-items: baseline;\n",
                     "cssProperties": {
                       "backgroundColor": "rgba(237, 240, 247, 0.55)",
                       "paddingTop": "32px",

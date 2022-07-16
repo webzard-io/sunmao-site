@@ -58,7 +58,7 @@ export const CodeSurf = implementRuntimeComponent({
     styleSlots: ['outerWrapper', 'innerWrapper', 'content', 'code'],
     events: [],
   },
-})(({ height, customStyle, slotsElements, mergeState, steps }) => {
+})(({ height, customStyle, slotsElements, mergeState, steps = [] }) => {
   const [{ progress, teleport }, setProgress] = useState({
     progress: 0,
     teleport: true,
@@ -111,6 +111,10 @@ export const CodeSurf = implementRuntimeComponent({
       scrollWrapper.removeEventListener('scroll', onScroll);
     };
   }, [max]);
+
+  if (!steps.length) {
+    return null;
+  }
 
   return (
     <div
