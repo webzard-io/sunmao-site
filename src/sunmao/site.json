@@ -1384,7 +1384,11 @@
           "properties": {
             "id": "feature1Module",
             "type": "site/v1/feature",
-            "properties": "{{{\n  \"imgSrc\": \"/extension.png\",\n  \"title\": \"{{i18n.t('featureExtensibleTitle', { lng: language.value })}}\",\n  \"desc\": \"{{i18n.t('featureExtensibleDesc', { lng: language.value })}}\"\n}}}",
+            "properties": {
+              "imgSrc": "/extension.png",
+              "title": "{{i18n.t('featureExtensibleTitle', { lng: language.value })}}",
+              "desc": "{{i18n.t('featureExtensibleDesc', { lng: language.value })}}"
+            },
             "handlers": []
           },
           "traits": [
