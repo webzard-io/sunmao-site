@@ -1651,6 +1651,82 @@
           ]
         },
         {
+          "id": "editLinkFixed",
+          "type": "site/v1/link",
+          "properties": {
+            "href": "/dev.html"
+          },
+          "traits": [
+            {
+              "type": "core/v1/slot",
+              "properties": {
+                "container": {
+                  "id": "main",
+                  "slot": "content"
+                },
+                "ifCondition": true
+              }
+            },
+            {
+              "type": "core/v1/style",
+              "properties": {
+                "styles": [
+                  {
+                    "styleSlot": "content",
+                    "style": "position: fixed;\nbottom: 16px;\nright: 16px;\nz-index: 1000;",
+                    "cssProperties": {}
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "editLinkFixedBtn",
+          "type": "arco/v1/button",
+          "properties": {
+            "type": "text",
+            "status": "default",
+            "long": false,
+            "size": "large",
+            "disabled": false,
+            "loading": false,
+            "shape": "round",
+            "text": "Made with Sunmao"
+          },
+          "traits": [
+            {
+              "type": "core/v1/slot",
+              "properties": {
+                "container": {
+                  "id": "editLinkFixed",
+                  "slot": "content"
+                },
+                "ifCondition": true
+              }
+            },
+            {
+              "type": "core/v1/style",
+              "properties": {
+                "styles": [
+                  {
+                    "styleSlot": "content",
+                    "style": "border-radius: 6px;\nbox-shadow: 0px 2px 21px -4px rgb(0 0 0 / 20%);\nfont-size: 14px;\nfont-weight: 500;\ntext-decoration: none;",
+                    "cssProperties": {
+                      "color": "rgba(0, 0, 0, 1)",
+                      "backgroundColor": "rgba(255, 255, 255, 1)",
+                      "paddingTop": "6px",
+                      "paddingBottom": "6px",
+                      "paddingRight": "12px",
+                      "paddingLeft": "12px"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
           "id": "language",
           "type": "core/v1/dummy",
           "properties": {},
