@@ -1821,48 +1821,48 @@
     "@styled-system/core" "^5.1.2"
     "@styled-system/css" "^5.1.5"
 
-"@sunmao-ui/arco-lib@^0.3.2":
-  version "0.3.2"
-  resolved "https://registry.yarnpkg.com/@sunmao-ui/arco-lib/-/arco-lib-0.3.2.tgz#09a9538f1776efd3415e2f10535be4afcd0a01dd"
-  integrity sha512-E3iMjeh1JVjTaC8bSWRWfCU2eEotEtzo4uBbYzgxpEbUs0SIeBeuTpoEBKovklv9n5sFlQ2dGBHWCtuiHQL/nw==
+"@sunmao-ui/arco-lib@^0.3.3":
+  version "0.3.3"
+  resolved "https://registry.yarnpkg.com/@sunmao-ui/arco-lib/-/arco-lib-0.3.3.tgz#2d1a8bb41c439564cefebffe9feda6cf9c7d820e"
+  integrity sha512-C21RWsUz6Hq23e10EOkE/oJIU65GAgvgk5hxnp2mPXamCXDGF79MCRz8SD/XUc77GuWP6YNe7nT015vk959Otg==
   dependencies:
     "@arco-design/web-react" "^2.34.0"
-    "@sunmao-ui/editor-sdk" "^0.3.2"
-    "@sunmao-ui/shared" "^0.2.2"
+    "@sunmao-ui/editor-sdk" "^0.3.3"
+    "@sunmao-ui/shared" "^0.2.3"
     react-resizable "^3.0.4"
 
-"@sunmao-ui/chakra-ui-lib@^0.5.2":
-  version "0.5.2"
-  resolved "https://registry.yarnpkg.com/@sunmao-ui/chakra-ui-lib/-/chakra-ui-lib-0.5.2.tgz#8a441035543a28f90bb187e2e477abaa00a11a3d"
-  integrity sha512-tuuxFLdr/xME/A1mzv9GyIQJJ5yidTjmMvmTR5CgzyNa1rW7UPVDgcFyYS9BkMe7A+WNWY980ofMJfHQtJLdIA==
+"@sunmao-ui/chakra-ui-lib@^0.5.3":
+  version "0.5.3"
+  resolved "https://registry.yarnpkg.com/@sunmao-ui/chakra-ui-lib/-/chakra-ui-lib-0.5.3.tgz#bcf7c43c385374afb8ee0b3b74165c056275c353"
+  integrity sha512-/8HC7gYEXz340nOStkQsX2uUhczOMK5WfuBVKrWAhVEYQxqRPArDBQls9lCmpdxNpMRZyQ6bTOra8Iv8etPPHA==
   dependencies:
     "@chakra-ui/icons" "^1.0.15"
     "@chakra-ui/react" "^1.7.1"
     "@emotion/styled" "^11.6.0"
-    "@sunmao-ui/editor-sdk" "^0.3.2"
+    "@sunmao-ui/editor-sdk" "^0.3.3"
     chakra-react-select "^1.3.2"
     framer-motion "^4"
 
-"@sunmao-ui/core@^0.7.2":
-  version "0.7.2"
-  resolved "https://registry.yarnpkg.com/@sunmao-ui/core/-/core-0.7.2.tgz#66e12395fe45c06fb1a21d77341c13e13ccc40d6"
-  integrity sha512-ShfGnZBdG/cIjQ+qrJ9gEGGrjI0ttl8MA0W+9ZEvbTmWIYbMFuij+nGVD18jQ6B12g62X8SlRzNeYkrLUZnPZw==
+"@sunmao-ui/core@^0.7.3":
+  version "0.7.3"
+  resolved "https://registry.yarnpkg.com/@sunmao-ui/core/-/core-0.7.3.tgz#9f7808745785141e020d5d1acf4b26c65ebf8ee7"
+  integrity sha512-/OZ2SQLhHuEt7nrKegr1MRykQTqh1TSEc/A0rNXRvA9wG+k730n4nQriWpmfFVPZCE6nPNQR6PkABdSii/4/wQ==
   dependencies:
     lodash "^4.17.21"
 
-"@sunmao-ui/editor-sdk@^0.3.2":
-  version "0.3.2"
-  resolved "https://registry.yarnpkg.com/@sunmao-ui/editor-sdk/-/editor-sdk-0.3.2.tgz#c243c11826a35940e5a418d486d8c5089a985bb3"
-  integrity sha512-yXgVZZ8iNQIGOtpywrDfMocruYRf+frZYdtx4lYhyUH/LeGNHuRq21atjO7VsR0JQP3gwueqO9ziuh3+iuyB+w==
+"@sunmao-ui/editor-sdk@^0.3.3":
+  version "0.3.3"
+  resolved "https://registry.yarnpkg.com/@sunmao-ui/editor-sdk/-/editor-sdk-0.3.3.tgz#5afef5b62fe5b73ee89fd0d038f08b566668b00b"
+  integrity sha512-QaX6pALfkkzCT4+VUbHslx+/evmRVDcwPalX6hP7EuLBYs5YNsN8exjE3QvOewiC9reRYZ7XAelIGWtWXWgZTg==
   dependencies:
     "@chakra-ui/icons" "^1.0.15"
     "@chakra-ui/react" "^1.7.1"
     "@emotion/css" "^11.7.1"
     "@emotion/react" "^11.1.1"
     "@sinclair/typebox" "^0.21.2"
-    "@sunmao-ui/core" "^0.7.2"
-    "@sunmao-ui/runtime" "^0.7.2"
-    "@sunmao-ui/shared" "^0.2.2"
+    "@sunmao-ui/core" "^0.7.3"
+    "@sunmao-ui/runtime" "^0.7.3"
+    "@sunmao-ui/shared" "^0.2.3"
     codemirror "^5.63.3"
     formik "^2.2.9"
     framer-motion "^4"
@@ -1874,10 +1874,10 @@
     react-color "^2.19.3"
     tern "^0.24.3"
 
-"@sunmao-ui/editor@^0.7.2":
-  version "0.7.2"
-  resolved "https://registry.yarnpkg.com/@sunmao-ui/editor/-/editor-0.7.2.tgz#cdb2d24a073fe0ab15ed90991949a93f660b4227"
-  integrity sha512-kh4V+/nhS+HDY5aPLsd15cDDLvuOHBDlS1VEy1j6dg4u3YIn1vrNiqsI8c8oYd6Vtlp7c4Drv8OvcreNcmbcLw==
+"@sunmao-ui/editor@^0.7.3":
+  version "0.7.3"
+  resolved "https://registry.yarnpkg.com/@sunmao-ui/editor/-/editor-0.7.3.tgz#ae0e041a11580664a97087c295e2a2d58570427d"
+  integrity sha512-0Tb3QjC9XFF3+jaNY6n/HwGTS0yEbhmzDUwYJvBzahQ49wob14BsNcvmaAlXwp9f1+tP1d0iUR7Sx+lOKBO8FQ==
   dependencies:
     "@chakra-ui/icons" "^1.0.15"
     "@chakra-ui/react" "^1.7.1"
@@ -1885,12 +1885,12 @@
     "@emotion/css" "^11.7.1"
     "@optum/json-schema-editor" "^2.1.0"
     "@sinclair/typebox" "^0.21.2"
-    "@sunmao-ui/arco-lib" "^0.3.2"
-    "@sunmao-ui/chakra-ui-lib" "^0.5.2"
-    "@sunmao-ui/core" "^0.7.2"
-    "@sunmao-ui/editor-sdk" "^0.3.2"
-    "@sunmao-ui/runtime" "^0.7.2"
-    "@sunmao-ui/shared" "^0.2.2"
+    "@sunmao-ui/arco-lib" "^0.3.3"
+    "@sunmao-ui/chakra-ui-lib" "^0.5.3"
+    "@sunmao-ui/core" "^0.7.3"
+    "@sunmao-ui/editor-sdk" "^0.3.3"
+    "@sunmao-ui/runtime" "^0.7.3"
+    "@sunmao-ui/shared" "^0.2.3"
     acorn "^8.7.0"
     acorn-loose "^8.3.0"
     acorn-walk "^8.2.0"
@@ -1909,15 +1909,15 @@
     scroll-into-view "^1.16.2"
     tern "^0.24.3"
 
-"@sunmao-ui/runtime@^0.7.2":
-  version "0.7.2"
-  resolved "https://registry.yarnpkg.com/@sunmao-ui/runtime/-/runtime-0.7.2.tgz#5faf0036e3a1f6e3bb761f739c58559269720236"
-  integrity sha512-amzNeDgNIGrZNCJamoAH0buFM5SxZq5klUSr/jaqHp/8EdbfsGFhT7/BNJJyVNTNN4C+NRZO3cSRnj6X58IfUA==
+"@sunmao-ui/runtime@^0.7.3":
+  version "0.7.3"
+  resolved "https://registry.yarnpkg.com/@sunmao-ui/runtime/-/runtime-0.7.3.tgz#3362faff34f97ca7a34b388f905bd02f17f8feca"
+  integrity sha512-SDNluqngtNfVVDMk4OMFGcrSZRjvc9nAP+M6QmaGYas9U9nGB+71rSZUSg/OIbJRHK313aqxw+xGlYsbwuOIbw==
   dependencies:
     "@emotion/css" "^11.7.1"
     "@sinclair/typebox" "^0.21.2"
-    "@sunmao-ui/core" "^0.7.2"
-    "@sunmao-ui/shared" "^0.2.2"
+    "@sunmao-ui/core" "^0.7.3"
+    "@sunmao-ui/shared" "^0.2.3"
     "@vue/reactivity" "^3.1.5"
     "@vue/shared" "^3.2.20"
     copy-to-clipboard "^3.3.1"
@@ -1931,10 +1931,10 @@
     use-deep-compare "^1.1.0"
     wouter "^2.7.4"
 
-"@sunmao-ui/shared@^0.2.2":
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/@sunmao-ui/shared/-/shared-0.2.2.tgz#347af5949aae4f0d261f607ac3cdf50305dfdda6"
-  integrity sha512-uA8ZNENzyg2kg2vUqrDIIdtcf9XGxRNoF5X4KFF9hBrVOy6697WR+/3v5Q7F7AEGMkU37gv0Jnk7os58PcSI9w==
+"@sunmao-ui/shared@^0.2.3":
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/@sunmao-ui/shared/-/shared-0.2.3.tgz#df155debdb881442d3567c7aee9d4c0290356930"
+  integrity sha512-AZqvQCJdOHTl1nWUSIV0CQX2uDHcNvrpyZcpNycuASN3kFNWAqrK+3bF9lMxvh6RcuLsM72GFRuJ5SOfKjPlcQ==
   dependencies:
     "@sinclair/typebox" "^0.21.2"
     lodash "^4.17.21"
