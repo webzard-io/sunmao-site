@@ -6,4 +6,5 @@ i18n.use(LanguageDetector).init({
   resources: {
     ...locales,
   },
+  fallbackLng: 'en-US',
 });
