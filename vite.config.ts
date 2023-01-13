@@ -20,7 +20,10 @@ export default defineConfig({
       },
     },
   },
-
+  define: {
+    // react-codemirror2 need this
+    global: 'globalThis',
+  },
   plugins: [
     sunmaoFsVitePlugin({
       schemas: [
