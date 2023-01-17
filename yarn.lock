@@ -241,6 +241,13 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
+"@babel/runtime@^7.5.4":
+  version "7.20.7"
+  resolved "https://registry.npmmirror.com/@babel/runtime/-/runtime-7.20.7.tgz#fcb41a5a70550e04a7b708037c7c32f7f356d8fd"
+  integrity sha512-UF0tvkUtxwAgZ5W/KrkHf0Rn0fdnLDU9ScxBrEVNUprE/MzirjK4MJUX1/BVDv00Sv8cljtukVK1aky++X1SjQ==
+  dependencies:
+    regenerator-runtime "^0.13.11"
+
 "@babel/template@^7.18.6":
   version "7.18.6"
   resolved "https://registry.yarnpkg.com/@babel/template/-/template-7.18.6.tgz#1283f4993e00b929d6e2d3c72fdc9168a2977a31"
@@ -1510,7 +1517,7 @@
   resolved "https://registry.yarnpkg.com/@emotion/sheet/-/sheet-1.1.1.tgz#015756e2a9a3c7c5f11d8ec22966a8dbfbfac787"
   integrity sha512-J3YPccVRMiTZxYAY0IOq3kd+hUP8idY8Kz6B/Cyo+JuXq52Ek+zbPbSQUrVQp95aJ+lsAW7DPL1P2Z+U1jGkKA==
 
-"@emotion/styled@^11.0.0", "@emotion/styled@^11.6.0":
+"@emotion/styled@^11.0.0":
   version "11.9.3"
   resolved "https://registry.yarnpkg.com/@emotion/styled/-/styled-11.9.3.tgz#47f0c71137fec7c57035bf3659b52fb536792340"
   integrity sha512-o3sBNwbtoVz9v7WB1/Y/AmXl69YHmei2mrVnK7JgyBJ//Rst5yqPZCecEJlMlJrFeWHp+ki/54uN265V2pEcXA==
@@ -1821,52 +1828,50 @@
     "@styled-system/core" "^5.1.2"
     "@styled-system/css" "^5.1.5"
 
-"@sunmao-ui/arco-lib@^0.3.4":
-  version "0.3.4"
-  resolved "https://registry.yarnpkg.com/@sunmao-ui/arco-lib/-/arco-lib-0.3.4.tgz#1b6155056f593ed2175e6a84c93c10daefc79daa"
-  integrity sha512-2Atk8jWf3+BUH+UTEBdqco+lVRBf60eCjWUzOsh+IX3xV7PiK3VlSgVxKsvZWv7PQjjYFdFIbqpbKA0DYr1CGw==
+"@sunmao-ui/arco-lib@^0.5.0":
+  version "0.5.0"
+  resolved "https://registry.npmmirror.com/@sunmao-ui/arco-lib/-/arco-lib-0.5.0.tgz#7d761347da0ecb5944bc98b07f225400da10ddb5"
+  integrity sha512-wGunyZNlx/Gv1aut3ktWm4CN+2c/HNiHEdGPa8/V6K+vPozDhOat8gf34IeM38xLBLOxSXnlbAvsoMFVfLzfbQ==
   dependencies:
     "@arco-design/web-react" "^2.34.0"
-    "@sunmao-ui/editor-sdk" "^0.3.4"
-    "@sunmao-ui/shared" "^0.2.3"
+    "@sunmao-ui/editor-sdk" "^0.5.0"
+    "@sunmao-ui/shared" "^0.4.0"
     react-resizable "^3.0.4"
 
-"@sunmao-ui/chakra-ui-lib@^0.5.4":
-  version "0.5.4"
-  resolved "https://registry.yarnpkg.com/@sunmao-ui/chakra-ui-lib/-/chakra-ui-lib-0.5.4.tgz#1a1816ca43d91e8411abde2ba72321941c68aa3e"
-  integrity sha512-RF/svYfOJbW1cndCxeWG169a4kthlCuv99WG9DD2ebfggyYVALPbUiL3y9n9Uxg/stUT3x6AQY2Npgbf1WTUWw==
+"@sunmao-ui/chakra-ui-lib@^0.7.0":
+  version "0.7.0"
+  resolved "https://registry.npmmirror.com/@sunmao-ui/chakra-ui-lib/-/chakra-ui-lib-0.7.0.tgz#7dee8d54fc8feb8d3644105b44b60f77108662cf"
+  integrity sha512-kc0d4swL0+Imz1u1u+302ffThXEIiHnhEDmBkq554MEefOW1jGs99MciPmVH6v2ZuIi7Sx7/1w1wnLNtHmKYjg==
   dependencies:
     "@chakra-ui/icons" "^1.0.15"
     "@chakra-ui/react" "^1.7.1"
-    "@emotion/styled" "^11.6.0"
-    "@sunmao-ui/editor-sdk" "^0.3.4"
+    "@sunmao-ui/editor-sdk" "^0.5.0"
     chakra-react-select "^1.3.2"
-    framer-motion "^4"
+    framer-motion "^3.10.6"
 
-"@sunmao-ui/core@^0.7.3":
-  version "0.7.3"
-  resolved "https://registry.yarnpkg.com/@sunmao-ui/core/-/core-0.7.3.tgz#9f7808745785141e020d5d1acf4b26c65ebf8ee7"
-  integrity sha512-/OZ2SQLhHuEt7nrKegr1MRykQTqh1TSEc/A0rNXRvA9wG+k730n4nQriWpmfFVPZCE6nPNQR6PkABdSii/4/wQ==
-  dependencies:
-    lodash "^4.17.21"
+"@sunmao-ui/core@^0.9.0":
+  version "0.9.0"
+  resolved "https://registry.npmmirror.com/@sunmao-ui/core/-/core-0.9.0.tgz#2f99a3297a74157e16a1097ffbf7ce9d67730c68"
+  integrity sha512-co8ON6FPXlQ8TVuigah7P0VSbDtuOwm2UOdutyGvos/1L1jvm9pKq4hrg1D2B32pTKx4nU0k1u1Mved4hfiLDA==
 
-"@sunmao-ui/editor-sdk@^0.3.4":
-  version "0.3.4"
-  resolved "https://registry.yarnpkg.com/@sunmao-ui/editor-sdk/-/editor-sdk-0.3.4.tgz#c1fa17a217e125895910fcddbaabb14058756365"
-  integrity sha512-40VxjRismALKziPvoJxjGJjPKzeEcdVWfeH7MrGSa2N5GiiQQIRbNlBLBxZJdT7ZPkZ/HgJaPR9qq6E8CrUC2A==
+"@sunmao-ui/editor-sdk@^0.5.0":
+  version "0.5.0"
+  resolved "https://registry.npmmirror.com/@sunmao-ui/editor-sdk/-/editor-sdk-0.5.0.tgz#60fceec8f5928b230c4a299b34493d5ae1e629d3"
+  integrity sha512-pLOOqgta9jBvfn8S/Mke6b4Js3g/LyqZiwN9/spdLlkkCKljTImA9iSfFT37IkFP3bi9XH2ZnfoPlEhTf4kp5Q==
   dependencies:
     "@chakra-ui/icons" "^1.0.15"
     "@chakra-ui/react" "^1.7.1"
     "@emotion/css" "^11.7.1"
-    "@emotion/react" "^11.1.1"
     "@sinclair/typebox" "^0.21.2"
-    "@sunmao-ui/core" "^0.7.3"
-    "@sunmao-ui/runtime" "^0.7.3"
-    "@sunmao-ui/shared" "^0.2.3"
-    codemirror "^5.63.3"
+    "@sunmao-ui/core" "^0.9.0"
+    "@sunmao-ui/runtime" "^0.9.0"
+    "@sunmao-ui/shared" "^0.4.0"
+    ajv "^8.8.2"
+    codemirror "^5.65.9"
     formik "^2.2.9"
-    framer-motion "^4"
+    framer-motion "^3.10.6"
     immer "^9.0.6"
+    lodash "^4.17.21"
     mitt "^3.0.0"
     mobx "^6.3.8"
     mobx-react-lite "^3.2.2"
@@ -1874,10 +1879,10 @@
     react-color "^2.19.3"
     tern "^0.24.3"
 
-"@sunmao-ui/editor@^0.7.4":
-  version "0.7.4"
-  resolved "https://registry.yarnpkg.com/@sunmao-ui/editor/-/editor-0.7.4.tgz#fcfe4bd5ac481b51ad5d51154a22c01b5f428916"
-  integrity sha512-sMhSEqjn3mtfDpx223nge1JA9rSgiRPd0A/HXt9v3l2OZuMWu4nbUS/Zi0R3hsJBwj+wQYkGaf/vsAvNcEDNqw==
+"@sunmao-ui/editor@^0.9.0":
+  version "0.9.0"
+  resolved "https://registry.npmmirror.com/@sunmao-ui/editor/-/editor-0.9.0.tgz#4e68857f70f815191be8b76f74eeb19df7fa5304"
+  integrity sha512-nPNK1ptvtGSG35gEIM3PnGieRVFR6bhjuKPIrdrLARr+WWJx974wsUzy8xK7KYIIJsJ2zXTKxTd9UaPo+UJxuA==
   dependencies:
     "@chakra-ui/icons" "^1.0.15"
     "@chakra-ui/react" "^1.7.1"
@@ -1885,17 +1890,17 @@
     "@emotion/css" "^11.7.1"
     "@optum/json-schema-editor" "^2.1.0"
     "@sinclair/typebox" "^0.21.2"
-    "@sunmao-ui/arco-lib" "^0.3.4"
-    "@sunmao-ui/chakra-ui-lib" "^0.5.4"
-    "@sunmao-ui/core" "^0.7.3"
-    "@sunmao-ui/editor-sdk" "^0.3.4"
-    "@sunmao-ui/runtime" "^0.7.3"
-    "@sunmao-ui/shared" "^0.2.3"
+    "@sunmao-ui/arco-lib" "^0.5.0"
+    "@sunmao-ui/chakra-ui-lib" "^0.7.0"
+    "@sunmao-ui/core" "^0.9.0"
+    "@sunmao-ui/editor-sdk" "^0.5.0"
+    "@sunmao-ui/runtime" "^0.9.0"
+    "@sunmao-ui/shared" "^0.4.0"
     acorn "^8.7.0"
     acorn-loose "^8.3.0"
     acorn-walk "^8.2.0"
     ajv "^8.8.2"
-    codemirror "^5.63.3"
+    codemirror "^5.65.9"
     escodegen "^2.0.0"
     formik "^2.2.9"
     immer "^9.0.6"
@@ -1904,20 +1909,21 @@
     mobx-react-lite "^3.2.2"
     re-resizable "^6.9.5"
     react "^17.0.2"
+    react-codemirror2 "^7.2.1"
     react-dom "^17.0.2"
+    react-fiber-traverse "^0.0.8"
     react-json-tree "^0.16.1"
     scroll-into-view "^1.16.2"
-    tern "^0.24.3"
 
-"@sunmao-ui/runtime@^0.7.3":
-  version "0.7.3"
-  resolved "https://registry.yarnpkg.com/@sunmao-ui/runtime/-/runtime-0.7.3.tgz#3362faff34f97ca7a34b388f905bd02f17f8feca"
-  integrity sha512-SDNluqngtNfVVDMk4OMFGcrSZRjvc9nAP+M6QmaGYas9U9nGB+71rSZUSg/OIbJRHK313aqxw+xGlYsbwuOIbw==
+"@sunmao-ui/runtime@^0.9.0":
+  version "0.9.0"
+  resolved "https://registry.npmmirror.com/@sunmao-ui/runtime/-/runtime-0.9.0.tgz#8932ed30d57e71e03790098966323da3e0b96bad"
+  integrity sha512-ccvhOgmHs9YJZvcJu2BQeAd+yWBiVwGgzvHeWsOesBrMkwXYn9s6a52facdR0sHZRkZ+Rpgf3QFD1yZqtKiqnw==
   dependencies:
     "@emotion/css" "^11.7.1"
     "@sinclair/typebox" "^0.21.2"
-    "@sunmao-ui/core" "^0.7.3"
-    "@sunmao-ui/shared" "^0.2.3"
+    "@sunmao-ui/core" "^0.9.0"
+    "@sunmao-ui/shared" "^0.4.0"
     "@vue/reactivity" "^3.1.5"
     "@vue/shared" "^3.2.20"
     copy-to-clipboard "^3.3.1"
@@ -1931,13 +1937,13 @@
     use-deep-compare "^1.1.0"
     wouter "^2.7.4"
 
-"@sunmao-ui/shared@^0.2.3":
-  version "0.2.3"
-  resolved "https://registry.yarnpkg.com/@sunmao-ui/shared/-/shared-0.2.3.tgz#df155debdb881442d3567c7aee9d4c0290356930"
-  integrity sha512-AZqvQCJdOHTl1nWUSIV0CQX2uDHcNvrpyZcpNycuASN3kFNWAqrK+3bF9lMxvh6RcuLsM72GFRuJ5SOfKjPlcQ==
+"@sunmao-ui/shared@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.npmmirror.com/@sunmao-ui/shared/-/shared-0.4.0.tgz#bc3b6fbd0eb9c1cfc19f43e865e81b6b159fcd89"
+  integrity sha512-QhZjeZT9+1k4EuENxA/LFQNDdL1kTrBhkLdD8CBJVY1a9kzmx5sEP1FgeVsE+OUb5faD0UCXRPvfZBOE5Qmm5g==
   dependencies:
     "@sinclair/typebox" "^0.21.2"
-    lodash "^4.17.21"
+    ajv "^8.8.2"
 
 "@theme-ui/color-modes@0.14.6":
   version "0.14.6"
@@ -2677,10 +2683,10 @@ clsx@^1.1.1:
   resolved "https://registry.yarnpkg.com/clsx/-/clsx-1.2.0.tgz#b0e415ea7537dbac01b169c5cec1caeb11d86566"
   integrity sha512-EPRP7XJsM1y0iCU3Z7C7jFKdQboXSeHgEfzQUTlz7m5NP3hDrlz48aUsmNGp4pC+JOW9WA3vIRqlYuo/bl4Drw==
 
-codemirror@^5.63.3:
-  version "5.65.6"
-  resolved "https://registry.yarnpkg.com/codemirror/-/codemirror-5.65.6.tgz#fc313797331cbeb3bcab0652d1ec9d0f40c23ab5"
-  integrity sha512-zNihMSMoDxK9Gqv9oEyDT8oM51rcRrQ+IEo2zyS48gJByBq5Fj8XuNEguMra+MuIOuh6lkpnLUJeL70DoTt6yw==
+codemirror@^5.65.9:
+  version "5.65.11"
+  resolved "https://registry.npmmirror.com/codemirror/-/codemirror-5.65.11.tgz#c818edc3274788c008f636520c5490a1f7009b4f"
+  integrity sha512-Gp62g2eKSCHYt10axmGhKq3WoJSvVpvhXmowNq7pZdRVowwtvBR/hi2LSP5srtctKkRT33T6/n8Kv1UGp7JW4A==
 
 collection-visit@^1.0.0:
   version "1.0.0"
@@ -2842,6 +2848,11 @@ css-tree@^1.1.2, css-tree@^1.1.3:
   dependencies:
     mdn-data "2.0.14"
     source-map "^0.6.1"
+
+css-what@^3.2.0:
+  version "3.4.2"
+  resolved "https://registry.npmmirror.com/css-what/-/css-what-3.4.2.tgz#ea7026fcb01777edbde52124e21f327e7ae950e4"
+  integrity sha512-ACUm3L0/jiZTqfzRM3Hi9Q8eZqd6IK37mMWPLz9PJxkLWllYeRf+EHUSHYEtFop2Eqytaq1FizFVh7XfBnXCDQ==
 
 css-what@^6.0.1:
   version "6.1.0"
@@ -3723,7 +3734,20 @@ fragment-cache@^0.2.1:
   dependencies:
     map-cache "^0.2.2"
 
-framer-motion@^4, framer-motion@^4.0.0:
+framer-motion@^3.10.6:
+  version "3.10.6"
+  resolved "https://registry.npmmirror.com/framer-motion/-/framer-motion-3.10.6.tgz#67737ef05ed0408860751d81c919770ac831b394"
+  integrity sha512-OxOtKgQS4km9a8dm0IMBtNNp4f0DiHfQ/IzxKs818+Kg9V/Ve/pRUJ2dtWBb6+W4lIPNLgRSpbOwOACVj15XcQ==
+  dependencies:
+    framesync "5.2.0"
+    hey-listen "^1.0.8"
+    popmotion "9.3.1"
+    style-value-types "4.1.1"
+    tslib "^1.10.0"
+  optionalDependencies:
+    "@emotion/is-prop-valid" "^0.8.2"
+
+framer-motion@^4.0.0:
   version "4.1.17"
   resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-4.1.17.tgz#4029469252a62ea599902e5a92b537120cc89721"
   integrity sha512-thx1wvKzblzbs0XaK2X0G1JuwIdARcoNOW7VVwjO8BUltzXPyONGAElLu6CiCScsOQRI7FIk/45YTFtJw5Yozw==
@@ -3735,6 +3759,11 @@ framer-motion@^4, framer-motion@^4.0.0:
     tslib "^2.1.0"
   optionalDependencies:
     "@emotion/is-prop-valid" "^0.8.2"
+
+framesync@5.2.0:
+  version "5.2.0"
+  resolved "https://registry.npmmirror.com/framesync/-/framesync-5.2.0.tgz#f14480654cd05a6af4c72c9890cad93556841643"
+  integrity sha512-dcl92w5SHc0o6pRK3//VBVNvu6WkYkiXmHG6ZIXrVzmgh0aDYMDAaoA3p3LH71JIdN5qmhDcfONFA4Lmq22tNA==
 
 framesync@5.3.0:
   version "5.3.0"
@@ -4901,6 +4930,16 @@ picomatch@^2.2.2, picomatch@^2.3.1:
   resolved "https://registry.yarnpkg.com/picomatch/-/picomatch-2.3.1.tgz#3ba3833733646d9d3e4995946c1365a67fb07a42"
   integrity sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==
 
+popmotion@9.3.1:
+  version "9.3.1"
+  resolved "https://registry.npmmirror.com/popmotion/-/popmotion-9.3.1.tgz#134319ed4b9b8e3ec506c99064f7b2f14bc05781"
+  integrity sha512-Qozvg8rz2OGeZwWuIjqlSXqqgWto/+QL24ll8sAAc0n71KY/wvN1W4sAASxTuHv8YWdDnk9u9IdadyPo2DGvDA==
+  dependencies:
+    framesync "5.2.0"
+    hey-listen "^1.0.8"
+    style-value-types "4.1.1"
+    tslib "^1.10.0"
+
 popmotion@9.3.6:
   version "9.3.6"
   resolved "https://registry.yarnpkg.com/popmotion/-/popmotion-9.3.6.tgz#b5236fa28f242aff3871b9e23721f093133248d1"
@@ -5187,6 +5226,11 @@ react-clientside-effect@^1.2.2, react-clientside-effect@^1.2.5, react-clientside
   dependencies:
     "@babel/runtime" "^7.12.13"
 
+react-codemirror2@^7.2.1:
+  version "7.2.1"
+  resolved "https://registry.npmmirror.com/react-codemirror2/-/react-codemirror2-7.2.1.tgz#38dab492fcbe5fb8ebf5630e5bb7922db8d3a10c"
+  integrity sha512-t7YFmz1AXdlImgHXA9Ja0T6AWuopilub24jRaQdPVbzUJVNKIYuy3uCFZYa7CE5S3UW6SrSa5nAqVQvtzRF9gw==
+
 react-color@^2.19.3:
   version "2.19.3"
   resolved "https://registry.yarnpkg.com/react-color/-/react-color-2.19.3.tgz#ec6c6b4568312a3c6a18420ab0472e146aa5683d"
@@ -5226,6 +5270,15 @@ react-fast-compare@^2.0.1:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/react-fast-compare/-/react-fast-compare-2.0.4.tgz#e84b4d455b0fec113e0402c329352715196f81f9"
   integrity sha512-suNP+J1VU1MWFKcyt7RtjiSWUjvidmQSlqu+eHslq+342xCbGTYmC0mEhPCOHxlW0CywylOC1u2DFAT+bv4dBw==
+
+react-fiber-traverse@^0.0.8:
+  version "0.0.8"
+  resolved "https://registry.npmmirror.com/react-fiber-traverse/-/react-fiber-traverse-0.0.8.tgz#08987681bdeaba2c964593468fe22470e01ab486"
+  integrity sha512-UdCfB6inAFmB1/wT1NdMwqbZIuC2hh+i2vo8L9xy9ULKd2UjqTgxJiZBrF4RXmVmbP0XAFJSFWEz9axzXwKgPw==
+  dependencies:
+    "@babel/runtime" "^7.5.4"
+    css-what "^3.2.0"
+    prop-types "^15.7.2"
 
 react-focus-lock@2.5.0:
   version "2.5.0"
@@ -5466,6 +5519,11 @@ rebound@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/rebound/-/rebound-0.1.0.tgz#0638c61a93666bb515a58a03e1cfb34021e88b72"
   integrity sha512-pKCVuoHvyKPr0tWS+CTCbJcUgifaH3K0bcZlHZpUS7GdNK/m78QgndlZH6+JpvXzuTwbUKZCiHgix0sce433uw==
+
+regenerator-runtime@^0.13.11:
+  version "0.13.11"
+  resolved "https://registry.npmmirror.com/regenerator-runtime/-/regenerator-runtime-0.13.11.tgz#f6dca3e7ceec20590d07ada785636a90cdca17f9"
+  integrity sha512-kY1AZVr2Ra+t+piVaJ4gxaFaReZVH40AKNo7UCX6W+dEwBo/2oZJzqfuN1qLq1oL45o56cPaTXELwrTh8Fpggg==
 
 regenerator-runtime@^0.13.4:
   version "0.13.9"
@@ -5873,6 +5931,14 @@ strip-json-comments@^3.1.0, strip-json-comments@^3.1.1:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-3.1.1.tgz#31f1281b3832630434831c310c01cccda8cbe006"
   integrity sha512-6fPc+R4ihwqP6N/aIv2f1gMH8lOVtWQHoqC4yK6oSDVVocumAsfCqjkXnqiYMhmMwS/mEHLp7Vehlt3ql6lEig==
+
+style-value-types@4.1.1:
+  version "4.1.1"
+  resolved "https://registry.npmmirror.com/style-value-types/-/style-value-types-4.1.1.tgz#15d08bd9bb17ac3f5d4a863bf9d5e4eb8e4f0686"
+  integrity sha512-cNLrl6jk+I1T18ZI2KIp/fcqKVuykcNELDrOz7y+TYZR97xmNdN0ewupURvVFnQxVrRJv98TMBq92VMsggq3kw==
+  dependencies:
+    hey-listen "^1.0.8"
+    tslib "^1.10.0"
 
 style-value-types@4.1.4:
   version "4.1.4"
