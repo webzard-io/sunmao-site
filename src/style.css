@@ -7,3 +7,12 @@ video {
 pre {
   margin: 0;
 }
+
+*, *::before, ::after {
+  border-color: var(--chakra-colors-gray-200);
+  word-wrap: break-word;
+}
+
+body {
+  background: white;
+}
